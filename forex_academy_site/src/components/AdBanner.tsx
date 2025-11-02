@@ -1,10 +1,10 @@
 // Eugene Afriyie UEB3502023
 import React, { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence,type Variants } from "framer-motion";
 
 const ads = [
   {
-    title: "🔥 $200K + $1K Bonus!",
+    title: "200K + $1K Bonus!",
     shortTitle: "$200K + $1K Bonus!",
     description: "Join Exness via our link — trade & win up to $200K + $1K bonus!",
     shortDesc: "Trade & win $200K + $1K bonus!",
@@ -14,7 +14,7 @@ const ads = [
     button: "Explore Now",
   },
   {
-    title: "🎯 Accra Trading Academy!",
+    title: "Accra Trading Academy!",
     shortTitle: "Accra Academy!",
     description:
       "Learn, trade, and grow with mentors at our new in-person Accra Academy.",
@@ -26,7 +26,8 @@ const ads = [
   },
 ];
 
-const containerVariants = {
+// Define Variants with proper typing
+const containerVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
@@ -45,9 +46,55 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 15 },
-  visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 120 } },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "spring" as const, stiffness: 120 },
+  },
+};
+
+// Image variant
+const imageVariants: Variants = {
+  hidden: { opacity: 0, scale: 0.7, rotate: -8 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    rotate: 0,
+    transition: { duration: 0.6, type: "spring" as const },
+  },
+};
+
+// Title variant
+const titleVariants: Variants = {
+  hidden: { opacity: 0, x: -20 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { type: "spring" as const, stiffness: 150 },
+  },
+};
+
+// Description variant
+const descVariants: Variants = {
+  hidden: { opacity: 0, x: 20 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { type: "spring" as const, stiffness: 150, delay: 0.1 },
+  },
+};
+
+// Button variant
+const buttonVariants: Variants = {
+  hidden: { opacity: 0, scale: 0.8, y: 10 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: { delay: 0.25, type: "spring" as const },
+  },
 };
 
 const AdBanner: React.FC = () => {
@@ -80,15 +127,7 @@ const AdBanner: React.FC = () => {
         >
           {/* Image */}
           <motion.img
-            variants={{
-              hidden: { opacity: 0, scale: 0.7, rotate: -8 },
-              visible: {
-                opacity: 1,
-                scale: 1,
-                rotate: 0,
-                transition: { duration: 0.6, type: "spring" },
-              },
-            }}
+            variants={imageVariants}
             src={ads[currentAd].image}
             alt={ads[currentAd].title}
             className="w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover border border-[#00c896]/40 shadow-md"
@@ -97,14 +136,7 @@ const AdBanner: React.FC = () => {
           {/* Texts */}
           <motion.div variants={itemVariants} className="max-w-[550px] flex-1">
             <motion.h2
-              variants={{
-                hidden: { opacity: 0, x: -20 },
-                visible: {
-                  opacity: 1,
-                  x: 0,
-                  transition: { type: "spring", stiffness: 150 },
-                },
-              }}
+              variants={titleVariants}
               className="text-xs sm:text-sm md:text-base font-semibold text-[#00c896] leading-tight"
             >
               <span className="block sm:hidden">{ads[currentAd].shortTitle}</span>
@@ -112,14 +144,7 @@ const AdBanner: React.FC = () => {
             </motion.h2>
 
             <motion.p
-              variants={{
-                hidden: { opacity: 0, x: 20 },
-                visible: {
-                  opacity: 1,
-                  x: 0,
-                  transition: { type: "spring", stiffness: 150, delay: 0.1 },
-                },
-              }}
+              variants={descVariants}
               className="text-[10px] sm:text-sm text-gray-300 leading-snug"
             >
               <span className="block sm:hidden">{ads[currentAd].shortDesc}</span>
@@ -129,15 +154,7 @@ const AdBanner: React.FC = () => {
 
           {/* Button */}
           <motion.a
-            variants={{
-              hidden: { opacity: 0, scale: 0.8, y: 10 },
-              visible: {
-                opacity: 1,
-                scale: 1,
-                y: 0,
-                transition: { delay: 0.25, type: "spring" },
-              },
-            }}
+            variants={buttonVariants}
             href={ads[currentAd].link}
             target="_blank"
             rel="noopener noreferrer"
