@@ -14,9 +14,9 @@ import AdBanner from './components/AdBanner';
 const App: React.FC = () => {
   return (
     <>
-       <AdBanner />
+       {/* <AdBanner /> */}
       {/* <Header /> */}
-      {/* <Header /> */}
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

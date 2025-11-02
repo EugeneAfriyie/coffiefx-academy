@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { ThemeContext } from "../context/ThemeContext";
 import MobileMenuDrawer from "./MobileMenuDrawer";
+import AdBanner from "./AdBanner"; // ✅ import the new Ad component
 import { NavLink, useLocation } from "react-router-dom";
 
 const Header: React.FC = () => {
@@ -51,21 +52,22 @@ const Header: React.FC = () => {
     { name: "Contact", icon: <Phone size={22} />, href: "/contact" },
   ];
 
-  // Get active name from URL (for underline + highlighting)
-  const getActiveName = () => {
-    return navLinks.find((link) => link.href === location.pathname)?.name ?? "Home";
-  };
+  const getActiveName = () =>
+    navLinks.find((link) => link.href === location.pathname)?.name ?? "Home";
 
-  const active = getActiveName();  // No need for useState – derived from URL
+  const active = getActiveName();
 
   return (
     <>
+      {/* ✅ Top Animated Ad Banner */}
+      <AdBanner />
+
       {/* ===== Desktop Header ===== */}
       <motion.header
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
-        className={`hidden md:flex justify-between items-center fixed top-0 left-0 w-full z-50 px-6 py-4 ${bgClass} shadow-md transition-all duration-300`}
+        className={`hidden md:flex justify-between items-center sticky top-0 left-0 w-full z-40 px-6 py-4 ${bgClass} shadow-md transition-all duration-300`}
       >
         <h1 className={`text-2xl font-bold ${accentClass} font-montserrat`}>
           RoadMoney Forex Academy
@@ -76,7 +78,7 @@ const Header: React.FC = () => {
             <NavLink
               key={link.name}
               to={link.href}
-              end={link.href === "/"}  // Exact match for Home only
+              end={link.href === "/"}
               className={({ isActive }) =>
                 `relative font-medium transition-colors ${
                   isActive ? accentClass : textClass
@@ -85,10 +87,7 @@ const Header: React.FC = () => {
             >
               {({ isActive }) => (
                 <>
-                  <motion.span
-                    whileHover={{ scale: 1.05 }}
-                    className="inline-block"
-                  >
+                  <motion.span whileHover={{ scale: 1.05 }} className="inline-block">
                     {link.name}
                   </motion.span>
                   {isActive && (
@@ -96,7 +95,7 @@ const Header: React.FC = () => {
                       layoutId="desktopActive"
                       className="absolute -bottom-1 left-0 w-full h-0.5 bg-[#00c896] rounded-full"
                       transition={{ type: "spring", stiffness: 380, damping: 30 }}
-                      initial={false}  // Prevent animation on mount
+                      initial={false}
                     />
                   )}
                 </>
@@ -104,7 +103,7 @@ const Header: React.FC = () => {
             </NavLink>
           ))}
 
-          {/* Join Now Button */}
+          {/* ✅ Join Now Button */}
           <motion.a
             href="/mentorship"
             className="px-5 py-2.5 bg-[#00c896] text-white rounded-2xl font-medium hover:bg-[#00b589] transition"
@@ -128,7 +127,7 @@ const Header: React.FC = () => {
         </div>
       </motion.header>
 
-      {/* ===== Mobile Bottom Navbar ===== */}
+      {/* ===== Mobile Navbar (Auto-hide) ===== */}
       <motion.nav
         initial={{ y: 100 }}
         animate={{
@@ -136,7 +135,7 @@ const Header: React.FC = () => {
           opacity: isVisible ? 1 : 0,
         }}
         transition={{ duration: 0.4, ease: "easeInOut" }}
-        className={`fixed bottom-0 left-0 w-full md:hidden flex justify-around items-center py-3 px-4 ${bgClass} shadow-2xl z-50 border-t border-white/10`}
+        className={`fixed bottom-0 left-0 w-full md:hidden flex justify-around items-center py-1 px-0 ${bgClass} shadow-2xl z-50 border-t border-white/10`}
       >
         {navLinks.map((link) => (
           <NavLink
@@ -171,7 +170,7 @@ const Header: React.FC = () => {
           </NavLink>
         ))}
 
-        {/* Menu Button */}
+        {/* ✅ Menu Button (opens drawer) */}
         <button
           onClick={() => setMenuOpen(true)}
           className={`flex flex-col items-center space-y-1 ${textClass}`}
@@ -183,13 +182,13 @@ const Header: React.FC = () => {
         </button>
       </motion.nav>
 
-      {/* Mobile Drawer Component */}
+      {/* Drawer */}
       <MobileMenuDrawer
         menuOpen={menuOpen}
         setMenuOpen={setMenuOpen}
         navLinks={navLinks}
         active={active}
-        setActive={() => {}}  // No-op – drawer can use same `getActiveName()` logic if needed
+        setActive={() => {}}
         theme={theme}
       />
     </>
