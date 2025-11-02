@@ -11,35 +11,35 @@ const testimonials = [
     role: "Beginner Trader",
     quote:
       "RoadMoney’s mentorship reshaped how I see the markets. Within months, I finally achieved consistency and confidence in every trade.",
-    image: "/assets/testimonials/sarah.jpg",
+    image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1761140163/photo_2025-08-04_08-20-22_hmjomv.jpg",
   },
   {
     name: "James L.",
     role: "Full-Time Forex Trader",
     quote:
       "The advanced risk management lessons gave me total control of my capital. It’s the best investment I’ve made in my trading career.",
-    image: "/assets/testimonials/james.jpg",
+    image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1761140163/photo_2025-08-04_08-20-22_hmjomv.jpg",
   },
   {
     name: "Emma R.",
     role: "Part-Time Trader",
     quote:
       "I joined RoadMoney’s mentorship while working full-time — now my trading income exceeds my salary. Truly life-changing.",
-    image: "/assets/testimonials/emma.jpg",
+    image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1761140163/photo_2025-08-04_08-20-22_hmjomv.jpg",
   },
   {
     name: "Michael T.",
     role: "Professional Analyst",
     quote:
       "RoadMoney combines technical mastery with emotional discipline. I recommend it to anyone who takes trading seriously.",
-    image: "/assets/testimonials/michael.jpg",
+    image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1761140163/photo_2025-08-04_08-20-22_hmjomv.jpg",
   },
   {
     name: "Ava D.",
     role: "Crypto & Forex Enthusiast",
     quote:
       "The mentorship made complex strategies simple. I’ve doubled my accuracy and learned how to protect my wins.",
-    image: "/assets/testimonials/ava.jpg",
+    image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1761140163/photo_2025-08-04_08-20-22_hmjomv.jpg",
   },
 ];
 

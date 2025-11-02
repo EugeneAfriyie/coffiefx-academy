@@ -60,7 +60,7 @@ export default function ResourceModal({
     return () => overlay?.removeEventListener("mousedown", onMouseDown);
   }, [onClose]);
 
-  const embedSrc = getYouTubeEmbedSrc(resource.video ?? resource.link);
+  const embedSrc = getYouTubeEmbedSrc(resource.video );
 
   const copyLink = async () => {
     try {

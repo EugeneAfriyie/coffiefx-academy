@@ -4,13 +4,10 @@ import FeaturedResource from "../../components/Resources/FeaturedResource";
 import ResourceFilter from "../../components/Resources/ResourceFilter";
 import ResourceGrid from "../../components/Resources/ResourceGrid";
 import EXnessPromo from "../../components/Resources/EXnessPromo";
+import FAQSection from "../../components/Home/FAQSection/FAQSection";
+import Testimonials from "../../components/Testimonials";
 
-
-
-const ResourcesPage: React.FC = () => {
-  const [selectedCategory, setSelectedCategory] = useState("All");
-
-  const resources = [
+export const resources = [
 
 
 
@@ -24,12 +21,12 @@ const ResourcesPage: React.FC = () => {
   description: "Our state-of-the-art trading office in Accra McCarthy is officially open! Visit today for expert mentorship, live trading, and exclusive resources.",
   author: "RoadMoney Team",
   date: "2025-11-01",
-  image: "https://images.unsplash.com/photo-1590608897129-79da98d1590c?w=1600&h=900&fit=crop&crop=entropy",
+  image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1760408679/IMG_20251014_022039_477_ri1daj.jpg",
   fullText: `
 ### 🚨✨ **BIG ANNOUNCEMENT!** ✨🚨  
 **OUR TRADING OFFICE IS NOW OFFICIALLY OPEN TO THE PUBLIC!** 🎉🔥
 
-![Office Grand Opening](https://images.unsplash.com/photo-1556761175-4b46a572b786?w=1600&h=900&fit=crop&crop=entropy)
+![Office Grand Opening](https://res.cloudinary.com/djeorsh5d/image/upload/v1761139218/70bbb776-e28e-4492-a64c-32a2f7cd785a.png)
 
 **Location:** Ghana, Accra – McCarthy Hills (Full Address Below)
 
@@ -54,7 +51,7 @@ Whether you’re taking your **first step into forex**, scaling up your strategy
 | **Resource Library** | Downloadable templates, risk calculators, trade journals |
 | **Networking Lounge** | Weekly “Trader Meetups” – connect, collaborate, co-trade |
 
-![Inside the Office](https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&h=900&fit=crop&crop=entropy)
+![Inside the Office](https://res.cloudinary.com/djeorsh5d/image/upload/v1760408704/IMG_20251014_022030_942_qyj4yp.jpg)
 
 ---
 
@@ -87,7 +84,7 @@ Accra, Ghana
 - **By Uber/Bolt:** Search “RoadMoney Forex Academy”  
 - **Parking:** Free secure parking on-site  
 
-![Map Location](https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=1600&h=900&fit=crop)
+![Map Location](https://res.cloudinary.com/djeorsh5d/image/upload/v1762076912/6f681926-d6b3-4b46-b010-a0045f3fc6de.png)
 
 ---
 
@@ -127,14 +124,14 @@ See you at the desk.
   description: "Master NFP, CPI, FOMC, and central bank speeches. Learn how to read economic calendars, interpret data, and trade the news like a funded pro.",
   author: "Coach Ibrahim",
   date: "2025-11-01",
-  image: "https://images.unsplash.com/photo-1611979074699-4f11b0a9c57e?w=1600&h=900&fit=crop&crop=entropy",
-  video: "https://youtu.be/fundamental2025",
+  image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1762077128/2e5782d3-3fd6-46ff-9dd6-e61e5b774344.png",
+  // video: "https://youtu.be/fundamental2025",
   link: "https://roadmoney.co/fundamental-kit",
   fullText: `
 ### The Power of Fundamental Analysis in Forex  
 **Turn Global News Into Consistent Profits** 💹📈
 
-![Economic Calendar](https://images.unsplash.com/photo-1611979074699-4f11b0a9c57e?w=1600&h=900&fit=crop&crop=entropy)
+![Economic Calendar](https://res.cloudinary.com/djeorsh5d/image/upload/v1762077307/3b7c97db-484d-457c-a527-6417f65719cb.png)
 
 > “Price is what you pay. **Value is what you get.**”  
 > — Warren Buffett (and every smart forex trader)
@@ -161,7 +158,7 @@ Use **Investing.com** or **Forex Factory** — filter by:
 - **Currencies**: USD, EUR, GBP, JPY, AUD
 - **Time**: Your session (London/NY overlap = highest volatility)
 
-![Calendar Setup](https://images.unsplash.com/photo-1621503844873-1d58b7e5f2d2?w=1600&h=900&fit=crop)
+![Calendar Setup](https://res.cloudinary.com/djeorsh5d/image/upload/v1762078122/a6df57a8-27ea-4f14-a585-7802e74ea091.png)
 
 ---
 
@@ -209,7 +206,7 @@ Use **Investing.com** or **Forex Factory** — filter by:
 - **Deviation:** +70K → **Bullish USD**  
 - Enter 5 mins after release on 1M close
 
-![NFP Trade Example](https://images.unsplash.com/photo-1631603090974-97f99c44e81d?w=1600&h=900&fit=crop)
+![NFP Trade Example](https://res.cloudinary.com/djeorsh5d/image/upload/v1762078065/57c88cb9-6eac-40f3-b8cc-7ffc4421cd67.png)
 
 ---
 
@@ -268,14 +265,14 @@ Master both → become **unstoppable**.
   description: "Exact 7-phase system to pass FTMO, MyForexFunds, The5ers. Includes risk rules, drawdown recovery, payout scaling, and live $180K account breakdown.",
   author: "Coach Tolu (RoadMoney Prop Lead)",
   date: "2025-11-01",
-  image: "https://images.unsplash.com/photo-1621905252472-9a35e9e6c7d0?w=1600&h=900&fit=crop&crop=entropy",
-  video: "https://youtu.be/propfirm2025",
+  image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1762078611/cea5a203-0d9d-4783-a4d9-1ab5a8671b76.png",
+  // video: "https://youtu.be/propfirm2025",
   link: "https://roadmoney.co/prop-kit",
   fullText: `
 ### Prop Firm Mastery: Pass $200K Challenges & Scale to $1M+  
 **From Demo to 6-Figure Payouts — The Complete Playbook**  
 
-![Funded Dashboard](https://images.unsplash.com/photo-1621905252472-9a35e9e6c7d0?w=1600&h=900&fit=crop&crop=entropy)
+![Funded Dashboard](https://res.cloudinary.com/djeorsh5d/image/upload/v1762078366/49658763-618c-4402-be7b-ef553e06770f.png)
 
 > “90% of traders fail prop challenges.  
 > The 10% who pass? They follow **this system**.”  
@@ -323,8 +320,6 @@ Master both → become **unstoppable**.
 - **Reduce lot size last 2 days**  
 - **No trades 1 hour before close**  
 
-![Phase 1 Dashboard](https://images.unsplash.com/photo-1631603090974-97f99c44e81d?w=1600&h=900&fit=crop)
-
 ---
 
 ## Phase 4: Live $180K Funded Account Breakdown
@@ -343,7 +338,7 @@ Master both → become **unstoppable**.
 2. **NAS100 Short** – Tech Earnings Miss → +$14,200  
 3. **EUR/USD Scalp** – NFP Beat → +$9,800  
 
-![Live P&L](https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&h=900&fit=crop)
+![Live P&L](https://res.cloudinary.com/djeorsh5d/image/upload/v1762078434/d3c3193f-73ee-4861-b29a-ad0df9833e4a.png)
 
 ---
 
@@ -424,13 +419,13 @@ Follow this 7-phase system →
   description: "Trade 1 standard lot with Exness using our link — enter to win a fully funded $200K prop account + $1,000 instant cash. Open to all RoadMoney traders!",
   author: "RoadMoney Team",
   date: "2025-10-15",
-  image: "https://images.unsplash.com/photo-1605902711622-cfb43c4437d1?w=1600&h=900&fit=crop&crop=entropy",
-  video: "https://youtu.be/exnessgiveaway2025",
+  image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1762081423/25f42861-0895-42fa-b3e9-87ebc41265fe.png",
+  // video: "https://youtu.be/exnessgiveaway2025",
   link: "https://one.exnesslink.com/a/ttgurtgu",
   fullText: `
 ### MASSIVE GIVEAWAY: $200K PROP ACCOUNT + $1,000 CASH BONUS!  
 
-![Giveaway Banner](https://images.unsplash.com/photo-1605902711622-cfb43c4437d1?w=1600&h=900&fit=crop&crop=entropy)
+![Giveaway Banner](https://res.cloudinary.com/djeorsh5d/image/upload/v1762081423/25f42861-0895-42fa-b3e9-87ebc41265fe.png)
 
 **RoadMoney × Exness**  
 **October 15th – November 15th, 2025**  
@@ -481,7 +476,7 @@ Trade 10 lots → 10 entries → 10x chance to win!
 - **Winner Contacted:** Email + Telegram within 24 hrs  
 - **Prize Delivery:** Within 7 business days
 
-![Live Draw Setup](https://images.unsplash.com/photo-1622260875324-ec0b4b8ff59d?w=1600&h=900&fit=crop)
+![Live Draw Setup](https://res.cloudinary.com/djeorsh5d/image/upload/v1762081598/8895376a-f5ec-4d63-9238-f94cee886ee5.png)
 
 ---
 
@@ -550,14 +545,14 @@ Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours!
   description: "Live trading floor in Accra, 87% prop pass rate, 24/7 mentorship, $10M+ in funded payouts. Here's why 5,000+ traders chose us.",
   author: "RoadMoney Team",
   date: "2025-11-01",
-  image: "https://images.unsplash.com/photo-1590608897129-79da98d1590c?w=1600&h=900&fit=crop&crop=entropy",
+  image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1761140171/photo_2025-09-29_09-58-48_ouepjj.jpg",
   video: "https://youtu.be/whychooseus2025",
   link: "/mentorship",
   fullText: `
 ### Why RoadMoney Academy Is the #1 Choice for African Traders  
 **5,000+ Students | $10M+ Funded | 87% Prop Pass Rate**  
 
-![Academy Campus](https://images.unsplash.com/photo-1590608897129-79da98d1590c?w=1600&h=900&fit=crop&crop=entropy)
+![Academy Campus](https://res.cloudinary.com/djeorsh5d/image/upload/v1761140172/photo_2025-10-07_07-13-25_ljyjpa.jpg)
 
 > “I tried 3 online courses. Failed 5 prop challenges.  
 > Joined RoadMoney — passed $100K FTMO in 21 days.”  
@@ -614,7 +609,7 @@ Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours!
 
 **No theory. No slides. Just live P&L.**
 
-![Mentor Session](https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1600&h=900&fit=crop)
+![Mentor Session](https://res.cloudinary.com/djeorsh5d/image/upload/v1761140174/photo_2025-10-13_09-30-25_sjnvjq.jpg)
 
 ---
 
@@ -674,7 +669,7 @@ Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours!
 2. Join Live Floor Tour (Accra)  
 3. Get Funded in 30 Days  
 
-![Student Celebration](https://images.unsplash.com/photo-1626378725053-7cf8fbc68f3b?w=1600&h=900&fit=crop)
+![Student Celebration](https://res.cloudinary.com/djeorsh5d/image/upload/v1762078888/cac6b0e2-0021-4a14-a6d7-f6cb93ab9201.png)
 
 ---
 
@@ -702,12 +697,12 @@ Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours!
   description: "From youth unemployment to $10M+ funded payouts: How 1.3M African traders are building wealth via mobile forex — with real stories, stats, and economic impact.",
   author: "RoadMoney Research",
   date: "2025-11-01",
-  image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&h=900&fit=crop&crop=entropy",
+  image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1762078968/a6edcdd1-3b44-491f-8f29-b0cda1512bf4.png",
   fullText: `
 ### How Forex Is Creating a New Digital Middle Class in Africa  
 **1.3M Traders | $10M+ Funded | 30% YoY Growth**  
 
-![African Trader on Mobile](https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&h=900&fit=crop&crop=entropy)
+![African Trader on Mobile](https://res.cloudinary.com/djeorsh5d/image/upload/v1762079139/4efee111-80ce-4f9d-b19e-5c2d760142a6.png)
 
 > “I went from driving Uber 12 hours a day to managing a $200K funded account — all from my phone.”  
 > — **Kofi Mensah**, Lagos Trader
@@ -760,7 +755,7 @@ Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours!
 - **Focus:** Women & youth  
 - **Firm:** Bear Run Investments  
 
-![Success Stories Collage](https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1600&h=900&fit=crop)
+![Success Stories Collage](https://res.cloudinary.com/djeorsh5d/image/upload/v1761140148/photo_2023-12-12_17-33-45_m1idsn.jpg)
 
 ---
 
@@ -814,7 +809,7 @@ Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours!
 2. Join WhatsApp Trading Community  
 3. Demo $10K → Fund $200K  
 
-![Mobile Trading](https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&h=900&fit=crop)
+![Mobile Trading](https://res.cloudinary.com/djeorsh5d/image/upload/v1762079393/20e7d8fc-9d35-4f6d-beb1-ffddf209aa95.png)
 
 ---
 
@@ -833,14 +828,14 @@ Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours!
   description: "78% of losses are emotional. Learn the 7 mental models used by 6-figure funded traders: fear, greed, revenge, FOMO, discipline, journaling, and burnout recovery.",
   author: "Coach Aisha (RoadMoney Mindset Lead)",
   date: "2025-11-01",
-  image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1600&h=900&fit=crop&crop=entropy",
-  video: "https://youtu.be/traderpsych2025",
+  image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1762079697/a1cd8a92-a9c0-498a-947c-8340cb4d2316.png",
+  // video: "https://youtu.be/traderpsych2025",
   link: "https://roadmoney.co/mindset-kit",
   fullText: `
 ### The Psychology of a Consistent Trader  
 **78% of Losses Are Emotional — Here’s How to Fix It**  
 
-![Trader in Deep Focus](https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1600&h=900&fit=crop&crop=entropy)
+![Trader in Deep Focus](https://res.cloudinary.com/djeorsh5d/image/upload/v1762079449/05cc113f-b35c-4266-b7fe-532c77d24408.png)
 
 > “The market doesn’t beat you.  
 > **Your mind does.**”  
@@ -886,7 +881,7 @@ Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours!
 3. **Write 1-sentence lesson**  
 4. **Close platform**  
 
-![Journal Example](https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&h=900&fit=crop)
+![Journal Example](https://res.cloudinary.com/djeorsh5d/image/upload/v1762079516/ee887c29-b4bf-4263-b946-351e7651766e.png)
 
 ---
 
@@ -948,7 +943,7 @@ Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours!
 > I started fighting my impulses.”  
 > — **Samuel Osei**
 
-![P&L Recovery](https://images.unsplash.com/photo-1560472355-0367f8cc7d04?w=1600&h=900&fit=crop)
+![P&L Recovery](https://res.cloudinary.com/djeorsh5d/image/upload/v1762079639/8b28aeef-f90c-4e11-9e22-13ca41191760.png)
 
 ---
 
@@ -993,14 +988,14 @@ Master your mind →
   description: "Join 5,000+ African traders mastering Forex with live mentorship, 87% prop pass rate, and real funded results. Standard, Intense, or Premium — pick your path to profit.",
   author: "RoadMoney Team",
   date: "2025-11-01",
-  image: "https://images.unsplash.com/photo-1590608897129-79da98d1590c?w=1600&h=900&fit=crop&crop=entropy",
+  image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1761140174/photo_2025-10-13_09-30-25_sjnvjq.jpg",
   video: "https://youtu.be/welcome2025",
   link: "/mentorship",
   fullText: `
 ### 🌍 **Welcome to RoadMoney Forex Academy** 🚀  
 **Your Journey to Financial Freedom Starts Here!**
 
-![Academy Welcome Banner](https://images.unsplash.com/photo-1590608897129-79da98d1590c?w=1600&h=900&fit=crop&crop=entropy)
+![Academy Welcome Banner](https://res.cloudinary.com/djeorsh5d/image/upload/v1761140172/photo_2025-10-07_07-13-25_ljyjpa.jpg)
 
 > **We don’t just teach Forex.**  
 > **We build profitable traders.** 💪
@@ -1031,7 +1026,7 @@ To **equip you** with the **skills, mindset, and strategies** to **win consisten
 | **24/7 Live Trading Floor** | Accra – “The Nasdaq of West Africa” |
 | **Community** | 10K+ on Discord, WhatsApp, X |
 
-![Live Trading Floor](https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&h=900&fit=crop)
+![Live Trading Floor](https://res.cloudinary.com/djeorsh5d/image/upload/v1760408679/IMG_20251014_022039_477_ri1daj.jpg)
 
 ---
 
@@ -1088,13 +1083,13 @@ To **equip you** with the **skills, mindset, and strategies** to **win consisten
   description: "Connect with 10K+ traders! Follow @roadmoneyforex on TikTok for quick tips, live sessions & mindset hacks. Join our Telegram channel for real-time signals, daily education & community support.",
   author: "RoadMoney Team",
   date: "2025-11-01",
-  image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&h=900&fit=crop&crop=entropy",
+  image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1762081091/a89e3b0a-38a3-411a-85ed-2984ab139c06.png",
   video: "https://youtu.be/socials2025",
-  link: "https://t.me/roadmoneyforexacademy",
+  link: "https://t.me/roadmoneyforexcommunity_real",
   fullText: `
 ### 🌐 **Join Our Socials: Unlock Daily Insights, Live Sessions, Signals & Education** 🚀
 
-![Social Media Collage](https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&h=900&fit=crop&crop=entropy)
+![Social Media Collage](https://res.cloudinary.com/djeorsh5d/image/upload/v1762081091/a89e3b0a-38a3-411a-85ed-2984ab139c06.png)
 
 > **Knowledge shared is profit earned.**  
 > Join 10K+ traders leveling up daily — **no gatekeeping, just gains.** 💹
@@ -1125,7 +1120,7 @@ To **equip you** with the **skills, mindset, and strategies** to **win consisten
 
 [Follow on TikTok →](https://www.tiktok.com/@roadmoneyforex)
 
-![TikTok Live Screenshot](https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1600&h=900&fit=crop)
+![TikTok Live Screenshot](https://res.cloudinary.com/djeorsh5d/image/upload/v1760410146/104108b7-dd55-4172-b3f5-079da4bb7ea6.png)
 
 ---
 
@@ -1141,7 +1136,7 @@ To **equip you** with the **skills, mindset, and strategies** to **win consisten
 > “One signal last week? +$2,800 on GBP/JPY. Telegram is my edge.”  
 > — **Kofi Boateng**, Active Member
 
-[Join Telegram Now →](https://t.me/roadmoneyforexacademy)
+[Join Telegram Now →](https://t.me/roadmoneyforexcommunity_real)
 
 ---
 
@@ -1172,7 +1167,7 @@ To **equip you** with the **skills, mindset, and strategies** to **win consisten
 **They're your 24/7 mentor.**
 
 [Start with TikTok →](https://www.tiktok.com/@roadmoneyforex)  
-[Jump into Telegram →](https://t.me/roadmoneyforexacademy)  
+[Jump into Telegram →](https://t.me/roadmoneyforexcommunity_real)  
 [Follow on X →](https://x.com/TheRoadMoney)
 
 ---
@@ -1193,6 +1188,11 @@ To **equip you** with the **skills, mindset, and strategies** to **win consisten
 
 
   ];
+
+const ResourcesPage: React.FC = () => {
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
+
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#0b0f19] via-[#121826] to-[#0b0f19] text-white font-montserrat">
@@ -1216,8 +1216,15 @@ To **equip you** with the **skills, mindset, and strategies** to **win consisten
       </section>
 
       <div className="max-w-7xl mx-auto px-6">
-        <FeaturedResource />
-        <EXnessPromo />
+        <FeaturedResource 
+        resource={{
+           title: "Accra In-Person Trading Academy Launch",
+           description:"We’ve officially opened our first in-person trading academy in Accra! Experience live mentorship, structured forex education, and community-driven growth directly with our lead mentors.",
+          image:"https://res.cloudinary.com/djeorsh5d/image/upload/v1760408679/IMG_20251014_022039_477_ri1daj.jpg",
+          link: "/plans#in-person", // placeholder — update with your actual route later
+        }}/>
+     
+        {/* <EXnessPromo /> */}
 
         <ResourceFilter
           selectedCategory={selectedCategory}
@@ -1228,6 +1235,20 @@ To **equip you** with the **skills, mindset, and strategies** to **win consisten
           resources={resources}
           selectedCategory={selectedCategory}
         />
+
+           <FeaturedResource 
+        resource={{
+          title: "🔥 RoadMoney $200K Giveaway + $1,000 Chill Bonus",
+    description:
+      "Register, verify, and trade with Exness — and stand a chance to win a $200K funded prop account and a $1,000 chill bonus. Let’s make more traders funded!",
+    image:
+      "https://res.cloudinary.com/djeorsh5d/image/upload/v1762081423/25f42861-0895-42fa-b3e9-87ebc41265fe.png",
+    link: "https://one.exnesslink.com/a/ttgurtgu",
+        }}/>
+
+
+          <Testimonials />
+      <FAQSection />
       </div>
     </main>
   );

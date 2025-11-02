@@ -27,27 +27,56 @@ const Quotes: React.FC = () => {
   const autoRotateRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const quotes: QuoteItem[] = [
+      {
+      quote:
+        "Discipline is the bridge between strategy and success. The market rewards patience, not impulse.",
+      author: "RoadMoney Mentor",
+      role: "Founder, RoadMoney",
+      image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1761140163/photo_2025-08-04_08-20-22_hmjomv.jpg",
+    },
     {
       quote:
         "The goal of a successful trader is to make the best trades — money is simply a byproduct of consistency.",
       author: "Alexander Elder",
       role: "Author, Trading for a Living",
-      image: "/assets/quotes/elder.jpg",
+      image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1762082451/0c16c2b3-41b8-46d7-b51b-abc3b8312281.png",
+    },
+    {
+      quote:
+        "If most traders would learn to sit on their hands 50 percent of the time, they would make a lot more money.",
+      author: "Bill Lipschutz",
+      role: "Fundamental trader",
+      image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1762082720/813c1230-0d3b-499d-9f85-09e2f0dfd14a.png",
+    },
+    {
+      quote:
+        "Risk comes from not knowing what you're doing",
+      author: "Warren Buffett",
+      role: " American investor and philanthropist",
+      image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1762082977/bec347f5-7464-4bfd-9644-d790deba8d5e.png",
+    },
+    {
+      quote:
+        "Accepting losses is the most important single investment device to ensure the safety of capital",
+      author: "Gerald M. Loeb",
+      role: "Author, he Battle For Investment Survival",
+      image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1762083067/1050ef7d-e5b4-4a5b-852c-aa2b676de85c.png",
+    },
+    {
+      quote:
+        "It's only when the tide goes out that you learn who has been swimming naked",
+      author: "Warren Buffett",
+      role: " American investor and philanthropist",
+      image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1762082977/bec347f5-7464-4bfd-9644-d790deba8d5e.png",
     },
     {
       quote:
         "In trading, it's not about how much you make — it’s about how much you protect.",
       author: "Pro Trader",
       role: "Professional Mentor",
-      image: "/assets/quotes/trader.jpg",
+      image: "https://avatars.githubusercontent.com/u/164704347?v=4",
     },
-    {
-      quote:
-        "Discipline is the bridge between strategy and success. The market rewards patience, not impulse.",
-      author: "RoadMoney Mentor",
-      role: "Founder, RoadMoney",
-      image: "/assets/quotes/mentor.jpg",
-    },
+  
   ];
 
   // Rotation logic

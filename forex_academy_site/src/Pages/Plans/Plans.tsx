@@ -10,6 +10,8 @@ import SignalPlans from "../../components/Plans/SignalPlans";
 // import ServicesPlans from "../../components/Plans/ServicesPlans";
 import MentorshipPlans from "../../components/Plans/TestMentordhip";
 import SmartTradingQuiz from "../../components/Home/QuoteCard/Quiz";
+import FAQSection from "../../components/Home/FAQSection/FAQSection";
+import Testimonials from "../../components/Testimonials";
 
 
 const Mentorship: React.FC = () => {
@@ -30,6 +32,8 @@ const Mentorship: React.FC = () => {
       <SignalPlans />
       {/* <ServicesPlans /> */}
       <MentorshipCTA />
+        <Testimonials />
+      <FAQSection />
       
     </main>
   );

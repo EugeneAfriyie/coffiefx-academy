@@ -11,6 +11,7 @@ import {
   Ticket,
 } from "lucide-react";
 import SupportTicketModal from "../../components/Contact/SupportTicketModal";
+import FAQSection from "../../components/Home/FAQSection/FAQSection";
 // import SupportTicketModal from "./SupportTicketModal";
 
 export default function ContactHero() {
@@ -128,6 +129,8 @@ export default function ContactHero() {
           </div>
         </div>
       </section>
+            <FAQSection />
+      
 
       {/* Modal */}
       <SupportTicketModal
