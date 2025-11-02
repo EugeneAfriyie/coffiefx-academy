@@ -3,6 +3,8 @@
 
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Helmet } from "react-helmet-async";
+
 import {
   Phone,
   Send,
@@ -35,6 +37,17 @@ export default function ContactHero() {
 
   return (
     <>
+    <Helmet>
+        <title>Contact Forex Academy | Get in Touch</title>
+        <meta
+          name="description"
+          content="Have questions or need support? Contact Forex Academy via email or phone — our team is ready to guide you on your trading journey."
+        />
+        <meta name="keywords" content="forex contact, forex academy email, forex help, trading support" />
+        <meta property="og:title" content="Contact Forex Academy" />
+        <meta property="og:url" content="https://yourdomain.com/contact" />
+      </Helmet>
+
       <section
         className="relative h-[85vh] flex flex-col items-center justify-center text-center text-white px-6"
         style={{

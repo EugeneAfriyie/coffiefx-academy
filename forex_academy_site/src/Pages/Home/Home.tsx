@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from "react-helmet-async";
 import Hero from '../../components/Home/hero/Hero';
 import AboutMentor from '../../components/Home/AboutMentor/AboutMentor';
 import WhatIsForex from '../../components/Home/WhatIsForex/ForexCard';
@@ -26,6 +27,19 @@ import Testimonials from '../../components/Testimonials';
 
 const Home: React.FC = () => {
   return (
+      
+
+    <>
+      <Helmet>
+        <title>Forex Academy | Master Forex Trading</title>
+        <meta
+          name="description"
+          content="Welcome to Forex Academy. Learn how to trade Forex confidently with expert mentorship, live sessions, and real-world strategies."
+        />
+        <meta property="og:title" content="Forex Academy | Master Forex Trading" />
+        <meta property="og:description" content="Join our Forex Academy and elevate your trading skills today." />
+        <meta property="og:url" content="https://yourdomain.com/" />
+      </Helmet>
     <div className='pt-20'>
       {/* const globeImage = theme === 'dark' ? '/assets/globe/dark.png' : '/assets/globe/light.png'; */}
 
@@ -55,7 +69,8 @@ const Home: React.FC = () => {
        <FAQSection />
        <Testimonials />
 
-    </div>                                   
+    </div> 
+    </>                                  
   );
 };
 
