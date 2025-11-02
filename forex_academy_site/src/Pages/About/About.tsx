@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Helmet } from "react-helmet-async";
 // import { ThemeContext } from "../../context/ThemeContext";
 import AboutHero from "../../components/About/AboutHero";
 // import AboutJourney from "../../components/About/AboutJourney";
@@ -21,6 +22,21 @@ const About: React.FC = () => {
   const textClass = theme === "dark" ? "text-white/90" : "text-gray-900";
 
   return (
+
+   <>
+     <Helmet>
+        <title>About Us | RoadMoney Forex Academy</title>
+        <meta
+          name="description"
+          content="Learn more about RoadMoney Forex Academy — empowering traders through mentorship, education, and funded trading programs."
+        />
+        <meta property="og:title" content="About RoadMoney Forex Academy" />
+        <meta
+          property="og:description"
+          content="Discover how RoadMoney helps traders grow through education and mentorship."
+        />
+        <meta property="og:image" content="/logo.png" />
+      </Helmet>
     <main
       className={`min-h-screen font-montserrat transition-colors duration-500 ${bgClass} ${textClass}`}
     >
@@ -35,6 +51,7 @@ const About: React.FC = () => {
       <Testimonials />
       <FAQSection />
     </main>
+   </>
   );
 };
 

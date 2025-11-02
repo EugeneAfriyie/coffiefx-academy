@@ -1,5 +1,7 @@
 // src/pages/Mentorship/Mentorship.tsx
 import React, { useContext } from "react";
+import { Helmet } from "react-helmet-async";
+
 import { ThemeContext } from "../../context/ThemeContext";
 import MentorshipHero from "../../components/Plans/PlansHero";
 import MentorshipCurriculum from "../../components/Plans/MentorshipCurriculum";
@@ -23,6 +25,16 @@ const Mentorship: React.FC = () => {
   const textClass = theme === "dark" ? "text-white/90" : "text-gray-900";
 
   return (
+  <>
+     <Helmet>
+  <title>Mentorship & Trading Plans | RoadMoney Forex Academy</title>
+  <meta
+    name="description"
+    content="Explore our mentorship packages and trading plans — from beginner to advanced, both online and in-person at our Accra Academy."
+  />
+  <meta property="og:image" content="/plans-preview.png" />
+</Helmet>
+
     <main className={`font-montserrat transition-colors duration-500 ${bgClass} ${textClass}`}>
       <MentorshipHero />
       <MentorshipCurriculum />
@@ -36,6 +48,7 @@ const Mentorship: React.FC = () => {
       <FAQSection />
       
     </main>
+  </>
   );
 };
 
