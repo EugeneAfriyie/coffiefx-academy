@@ -8,13 +8,15 @@ import Contact from './Pages/Contact/Contact';
 import Header from './components/TestHeader';
 import Resources from './Pages/Resources/Resources';
 import ResourceDetail from './components/Resources/ResourceDetail';
+import AdBanner from './components/AdBanner';
 // import Contact from './Pages/Contact/Contact';
 
 const App: React.FC = () => {
   return (
     <>
+       <AdBanner />
       {/* <Header /> */}
-      <Header />
+      {/* <Header /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
