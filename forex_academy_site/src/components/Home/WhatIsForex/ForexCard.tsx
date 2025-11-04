@@ -4,7 +4,7 @@ import { Globe, AlertTriangle, Star } from 'lucide-react';
 import Tilt from 'react-parallax-tilt';
 // import { ThemeContext } from '../context/ThemeProvider';
 // import AnimatedBackground from '../Home/AnimatedBackground';
-import { ThemeContext } from '../../../context/ThemeContext';
+import { ThemeContext } from '../../context/ThemeContext';
 import AnimatedBackground from './AnimatedBackground';
 
 interface ForexCardProps {

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { motion } from "framer-motion";
 import { Users, Mic, Share2, Instagram, Youtube, Send } from "lucide-react";
-import { ThemeContext } from "../../context/ThemeContext";
+import { ThemeContext } from "../context/ThemeContext";
 
 const MentorImpact: React.FC = () => {
   const { theme } = useContext(ThemeContext);

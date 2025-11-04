@@ -3,7 +3,7 @@ import React, { useState, useContext } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 // import { ThemeContext } from "../../context/ThemeContext";
 import JoinCommunityAnimated from "../JoinCommunity/JoinCommunityAnimated";
-import JoinCommunity3D from "../JoinCommunity/JoinCommunity3D";
+import JoinCommunity3D from "../Home/JoinCommunity/JoinCommunity3D";
 import { ThemeContext } from "../../../../context/ThemeContext";
 
 const JoinCommunitySwitcher: React.FC = () => {

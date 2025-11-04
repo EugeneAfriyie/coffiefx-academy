@@ -2,7 +2,7 @@
 import React, { useState, useContext } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle, Laptop, Users } from 'lucide-react';
-import { ThemeContext } from '../../../context/ThemeContext';
+import { ThemeContext } from '../../context/ThemeContext';
 import SectionHeader from '../QuoteCard/SectionHeader';
 // import { ThemeContext } from '../../../context/ThemeContext';
 // import SectionHeader from '../QuoteCard/SectionHeader';

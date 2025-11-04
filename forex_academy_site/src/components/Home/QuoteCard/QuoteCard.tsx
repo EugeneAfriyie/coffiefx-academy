@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 import Tilt from "react-parallax-tilt";
 import { Quote, ChevronLeft, ChevronRight } from "lucide-react";
 import SectionHeader from "./SectionHeader";
-import { ThemeContext } from "../../../context/ThemeContext";
+import { ThemeContext } from "../../context/ThemeContext";
 
 interface QuoteItem {
   quote: string;

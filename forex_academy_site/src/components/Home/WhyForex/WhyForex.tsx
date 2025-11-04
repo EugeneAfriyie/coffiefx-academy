@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
 import { Clock, DollarSign, Globe } from 'lucide-react';
 import SectionHeader from '../QuoteCard/SectionHeader';
-import { ThemeContext } from '../../../context/ThemeContext';
+import { ThemeContext } from '../../context/ThemeContext';
 import AnimatedChartCanvas from './AnimatedChartCanvas';
 
 interface Reason {

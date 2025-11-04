@@ -1,7 +1,7 @@
 // src/components/AboutMentor.tsx
 import React, { useContext } from "react";
 import { motion } from "framer-motion";
-import { ThemeContext } from "../../../context/ThemeContext";
+import { ThemeContext } from "../../context/ThemeContext";
 import MentorImage from "./MentorImage";
 import StatsCard from "./StatsCard";
 import { Twitter, Instagram, Youtube, Linkedin } from "lucide-react";

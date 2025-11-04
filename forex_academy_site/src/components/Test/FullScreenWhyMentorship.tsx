@@ -2,7 +2,7 @@
 // Eugene Afriyie UEB3502023
 import React, { useContext } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { ThemeContext } from '../../context/ThemeContext';
+import { ThemeContext } from '../context/ThemeContext';
 import AnimatedChartCanvas from '../Home/WhyForex/AnimatedChartCanvas';
 
 // Define the shape of the panel data

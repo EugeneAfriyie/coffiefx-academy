@@ -2,7 +2,7 @@
 import  { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
-import MentorshipPlans from "./MentorshipPlans";
+import MentorshipPlans from "../UNUSED/MentorshipPlans";
 
 // 🧩 import your mentorship data (the same as before)
 // import { inPersonPackages, onlinePackages, PlanTypes } from "./MentorshipData"; 

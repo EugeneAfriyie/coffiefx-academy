@@ -11,7 +11,7 @@ import Services from '../../components/Home/Services/Services';
 import TradingAcademyAd from '../../components/Home/TradingAcademyAd/TradingAcademyAd';
 import AcademyPopupAd from '../../components/Home/TradingAcademyAd/AcademyPopupAd';
 import ContactInvite from '../../components/Home/ContactInvite/ContactInvite';
-import SmartTradingQuiz from '../../components/Home/TradingAcademyAd/FreeValueHook/SmartTradingQuiz';
+import SmartTradingQuiz from '../../components/Home/FreeValueHook/SmartTradingQuiz';
 import FAQSection from '../../components/Home/FAQSection/FAQSection';
 import Testimonials from '../../components/Testimonials/Testimonials';
 import JoinCommunity3D from '../../components/Home/JoinCommunity/JoinCommunity3D';

@@ -7,7 +7,7 @@ import { useInView } from "react-intersection-observer";
 import CommunityModal from "./CommunityModal";
 // import { ThemeContext } from "../../../../context/ThemeContext";
 import { Instagram, Facebook, Twitter, Send } from "lucide-react";
-import { ThemeContext } from "../../../context/ThemeContext";
+import { ThemeContext } from "../../context/ThemeContext";
 
 // Core rotating globe
 function SimpleGlobe() {

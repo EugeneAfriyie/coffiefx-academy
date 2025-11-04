@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { ThemeContext } from '../../../context/ThemeContext';
+import { ThemeContext } from '../../context/ThemeContext';
 import AnimatedBackground from '../WhatIsForex/AnimatedBackground';
 import SectionHeader from '../QuoteCard/SectionHeader';
 

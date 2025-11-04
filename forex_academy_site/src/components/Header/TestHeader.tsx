@@ -12,8 +12,8 @@ import {
   Moon,
 } from "lucide-react";
 import { ThemeContext } from "../context/ThemeContext";
-import MobileMenuDrawer from "./MobileMenuDrawer";
-import AdBanner from "./AdBanner"; // ✅ import the new Ad component
+import MobileMenuDrawer from "../MobileMenuDrawer/MobileMenuDrawer";
+import AdBanner from "../AdBanner/AdBanner"; // ✅ import the new Ad component
 import { NavLink, useLocation } from "react-router-dom";
 
 const Header: React.FC = () => {

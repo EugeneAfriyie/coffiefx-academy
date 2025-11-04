@@ -1,11 +1,11 @@
 import { Routes, Route } from 'react-router-dom';
 // import Header from './components/Header';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
 import Plans from './Pages/Plans/Plans';
 import Contact from './Pages/Contact/Contact';
-import Header from './components/TestHeader';
+import Header from './components/Header/TestHeader';
 import Resources from './Pages/Resources/Resources';
 import ResourceDetail from './components/Resources/ResourceDetail';
 // import AdBanner from './components/AdBanner';

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { motion } from "framer-motion";
-import { ThemeContext } from "../../context/ThemeContext";
+import { ThemeContext } from "../context/ThemeContext";
 // import { ThemeContext } from "../../../context/ThemeContext";
 
 const MentorJourney: React.FC = () => {

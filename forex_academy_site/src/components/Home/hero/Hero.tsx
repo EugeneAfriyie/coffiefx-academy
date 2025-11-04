@@ -3,7 +3,7 @@ import React, { useContext, useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Globe from "react-globe.gl";
 import { ArrowRight, BarChart3, Target } from "lucide-react";
-import { ThemeContext } from "../../../context/ThemeContext";
+import { ThemeContext } from "../../context/ThemeContext";
 
 // ------------------------------------------------------
 // Slide Data
