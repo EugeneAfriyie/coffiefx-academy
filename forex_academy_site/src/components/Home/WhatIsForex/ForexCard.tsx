@@ -5,7 +5,7 @@ import Tilt from 'react-parallax-tilt';
 // import { ThemeContext } from '../context/ThemeProvider';
 // import AnimatedBackground from '../Home/AnimatedBackground';
 import { ThemeContext } from '../../../context/ThemeContext';
-import AnimatedBackground from './AnimatedBackground';
+import AnimatedBackground from '../UNUSED/AnimatedBackground';
 
 interface ForexCardProps {
   title: string;

@@ -16,7 +16,7 @@ const slides = [
     id: 2,
     title: "Mentorship That Builds Traders, Not Followers",
     text: "This is more than signals — it’s transformation. Get guided by a self-funded mentor who’s walked the same journey.",
-    img: "https://res.cloudinary.com/djeorsh5d/image/upload/v1761140148/photo_2023-12-11_14-10-41_z3atio.jpg",
+    img: "https://res.cloudinary.com/djeorsh5d/image/upload/v1761140148/photo_2023-12-11_14-10-41_z3atio.jpg/.",
     ctaText: "Explore Mentorship Plans",
     scrollTo: "plans",
   },
