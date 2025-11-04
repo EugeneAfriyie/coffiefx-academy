@@ -1,0 +1,106 @@
+// src/components/Home/hero/Hero.tsx
+import React from "react";
+import { motion } from "framer-motion";
+import { MapPin, Users, TrendingUp, ArrowRight } from "lucide-react";
+
+const Hero: React.FC = () => {
+  return (
+    <section className="relative h-screen overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img
+          src="https://res.cloudinary.com/dzqdfaghg/image/upload/v1762240564/PHYSICAL_TEACH_ahfhc1.jpg"
+          alt="The CoffieFX Classroom in East Legon"
+          className="w-full h-full object-cover"
+        />
+        {/* ALWAYS DARK OVERLAY — NO THEME CHANGE */}
+        <div className="absolute inset-0 bg-black/55" />
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="max-w-5xl"
+        >
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-4 py-2 rounded-full mb-6 border border-white/40">
+            <MapPin size={18} className="text-white" />
+            <span className="text-sm font-medium text-white">
+              East Legon Okponglo, Accra
+            </span>
+          </div>
+
+          {/* Main Title */}
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 text-white drop-shadow-2xl">
+            MASTER FOREX <br />
+            <span className="text-coffie-accent drop-shadow-glow">WITH BIG COFFIE</span>
+          </h1>
+
+          <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-10 drop-shadow-lg">
+            In-Person Classes • Live Trading • VIP Signals • 85% Win Rate
+          </p>
+
+          {/* CTA Buttons — ALWAYS VISIBLE */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            {/* PRIMARY */}
+            <motion.a
+              href="/plans"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 py-4 rounded-full bg-coffie-primary text-black font-bold text-lg shadow-xl hover:bg-coffie-accent hover:text-white transition-all coffie-glow"
+            >
+              Join $50 Beginners Class
+            </motion.a>
+
+            {/* SECONDARY */}
+            <motion.a
+              href="/plans"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 py-4 rounded-full bg-white text-black font-bold text-lg shadow-xl hover:bg-coffie-accent hover:text-white transition-all"
+            >
+              View Advanced Class ($150)
+            </motion.a>
+          </div>
+
+          {/* Stats */}
+          <div className="grid grid-cols-3 gap-8 text-center text-white">
+            <div>
+              <div className="text-3xl md:text-4xl font-bold text-coffie-primary drop-shadow">
+                500+
+              </div>
+              <p className="text-sm text-white/80">Students Trained</p>
+            </div>
+            <div>
+              <div className="text-3xl md:text-4xl font-bold text-coffie-accent drop-shadow">
+                85%
+              </div>
+              <p className="text-sm text-white/80">Signal Win Rate</p>
+            </div>
+            <div>
+              <div className="text-3xl md:text-4xl font-bold text-coffie-primary drop-shadow">
+                1:1
+              </div>
+              <p className="text-sm text-white/80">Mentor Support</p>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Scroll Indicator */}
+        <motion.div
+          animate={{ y: [0, 10, 0] }}
+          transition={{ repeat: Infinity, duration: 2 }}
+          className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        >
+          <ArrowRight className="w-6 h-6 text-white rotate-90 drop-shadow" />
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+
+export default Hero;

@@ -31,7 +31,7 @@ const Home: React.FC = () => {
         <meta property="og:description" content="Join our Forex Academy and elevate your trading skills today." />
         <meta property="og:url" content="https://yourdomain.com/" />
       </Helmet>
-    <div className='pt-20'>
+    
       {/* const globeImage = theme === 'dark' ? '/assets/globe/dark.png' : '/assets/globe/light.png'; */}
 
       <Hero />
@@ -51,7 +51,7 @@ const Home: React.FC = () => {
        <FAQSection />
        <Testimonials />
 
-    </div> 
+
     </>                                  
   );
 };

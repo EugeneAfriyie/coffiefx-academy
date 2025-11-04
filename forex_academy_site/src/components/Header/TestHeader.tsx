@@ -10,6 +10,7 @@ import {
   Menu,
   Sun,
   Moon,
+  MapPin,
 } from "lucide-react";
 import { ThemeContext } from "../context/ThemeContext";
 import MobileMenuDrawer from "../MobileMenuDrawer/MobileMenuDrawer";
@@ -69,9 +70,26 @@ const Header: React.FC = () => {
         transition={{ duration: 0.5 }}
         className={`hidden md:flex justify-between items-center sticky top-0 left-0 w-full z-40 px-6 py-4 ${bgClass} shadow-md transition-all duration-300`}
       >
-        <h1 className={`text-2xl font-bold ${accentClass} font-montserrat`}>
-          RoadMoney Forex Academy
-        </h1>
+          <NavLink to="/" className="flex items-center space-x-3 group">
+          <div className="relative">
+            <img
+              src="/logo.png"
+              alt="CoffieFX Bull"
+              className="w-12 h-12 rounded-full object-cover border-2 border-coffie-primary dark:border-coffie-primary border-coffie-light-primary coffie-glow"
+            />
+            <div className={`absolute -top-1 -right-1 w-4 h-4 rounded-full animate-pulse ${
+              theme === 'dark' ? 'bg-coffie-accent' : 'bg-coffie-light-accent'
+            }`} />
+          </div>
+          <div>
+            <h1 className={`text-2xl font-bold ${accentClass} font-montserrat`}>
+              THE COFFIEFX
+            </h1>
+            <p className={`text-xs opacity-80 flex items-center gap-1 ${textClass}`}>
+              <MapPin size={12} /> East Legon Okponglo
+            </p>
+          </div>
+        </NavLink>
 
         <div className="flex items-center space-x-8">
           {navLinks.map((link) => (
@@ -113,17 +131,7 @@ const Header: React.FC = () => {
           </motion.a>
 
           {/* Theme Toggle */}
-          <button
-            onClick={toggleTheme}
-            className="p-2 rounded-full hover:bg-[#00c896]/20 transition"
-            aria-label="Toggle theme"
-          >
-            {theme === "dark" ? (
-              <Sun size={20} className="text-yellow-400" />
-            ) : (
-              <Moon size={20} className="text-slate-700" />
-            )}
-          </button>
+          
         </div>
       </motion.header>
 

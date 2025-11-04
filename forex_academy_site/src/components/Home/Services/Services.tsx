@@ -43,13 +43,14 @@ const services: Service[] = [
   },
   {
     id: "webinars",
-    title: "Webinars",
+    title: "Seminars",
     subtitle: "Live training & Q&A",
-    desc: "Weekly live webinars covering strategy, market structure, and trade psychology — recordings available on demand.",
+    desc: "Weekly live seminars covering strategy, market structure, and trade psychology — recordings available on demand.",
     image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1760408725/IMG_20251014_022015_196_cmrmsg.jpg", // replace with your image
     icon: Video,
     price: "On-demand access",
   },
+
 ];
 
 const ImageBlock: React.FC<{ src: string; alt: string; keyId: string }> = ({ src, alt, keyId }) => {

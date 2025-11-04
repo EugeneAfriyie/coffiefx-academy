@@ -5,6 +5,7 @@ import { ThemeContext } from "../../context/ThemeContext";
 import MentorImage from "./MentorImage";
 import StatsCard from "./StatsCard";
 import { Twitter, Instagram, Youtube, Linkedin } from "lucide-react";
+import { Music2 as Tiktok } from "lucide-react"; // ✅ TikTok icon
 
 const AboutMentor: React.FC = () => {
   const { theme } = useContext(ThemeContext);
@@ -27,6 +28,7 @@ const AboutMentor: React.FC = () => {
     { name: "Instagram", icon: Instagram, link: "https://instagram.com/" },
     { name: "YouTube", icon: Youtube, link: "https://youtube.com/" },
     { name: "LinkedIn", icon: Linkedin, link: "https://linkedin.com/" },
+    { name: "TikTok", icon: Tiktok, link: "https://tiktok.com/" }, // ✅ added
   ];
 
   return (
@@ -41,6 +43,7 @@ const AboutMentor: React.FC = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/40 pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 xs:px-6 sm:px-8 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+        
         {/* Mentor Image */}
         <motion.div
           whileHover={{ scale: 1.03, rotate: 0.5 }}
@@ -74,21 +77,22 @@ const AboutMentor: React.FC = () => {
           {/* Mentor Badges */}
           <div className="flex flex-wrap gap-2 mt-4 text-xs text-white/80">
             <span className="px-3 py-1 bg-white/5 rounded-full">Self-Funded Trader</span>
-            <span className="px-3 py-1 bg-white/5 rounded-full">Webinar Host</span>
+            <span className="px-3 py-1 bg-white/5 rounded-full">Seminar Host</span>
             <span className="px-3 py-1 bg-white/5 rounded-full">5+ Years Trading</span>
             <span className="px-3 py-1 bg-white/5 rounded-full">100+ Students</span>
             <span className="px-3 py-1 bg-white/5 rounded-full">Prop Firm Funded</span>
           </div>
 
           <p className="mt-5 text-base sm:text-lg leading-relaxed opacity-90">
-            After years of blowing accounts, I discovered what truly works. Now, I mentor others to do the same.{" "}
-            <span className="font-semibold text-[#00c896]">RoadMoney Forex</span>{" "}
-            is built around structure mastery, risk control, and trading psychology — the real pillars of consistency.
+            The charts didn’t make sense to me at first — until I learned to stop trading the market, and start trading myself.
+            Every breakthrough I’ve had came from discipline, not luck. That’s why{" "}
+            <span className="font-semibold text-[#00c896]">Coffiefx</span>{" "}
+            exists — to help you build a version of yourself that wins repeatedly, not occasionally.
           </p>
 
           <p className="mt-4 text-sm sm:text-base opacity-80">
-            As a self-funded trader and active webinar host, I regularly organize live sessions where I teach strategy,
-            discipline, and mindset — helping traders transform confusion into clarity and confidence.
+            I host live seminars because real transformation happens through clarity, not theory.
+            My mission is simple: turn confused traders into confident decision-makers who can survive the chaos of the market — and remain consistent.
           </p>
 
           {/* CTA */}
