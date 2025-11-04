@@ -6,7 +6,7 @@ import FeaturedResource from "../../components/Resources/FeaturedResource";
 import ResourceFilter from "../../components/Resources/ResourceFilter";
 import ResourceGrid from "../../components/Resources/ResourceGrid";
 import FAQSection from "../../components/Home/FAQSection/FAQSection";
-import Testimonials from "../../components/Testimonials";
+import Testimonials from "../../components/Testimonials/Testimonials";
 
 export const resources = [
 

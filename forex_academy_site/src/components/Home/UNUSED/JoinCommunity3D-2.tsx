@@ -4,7 +4,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Stars, Text } from "@react-three/drei";
 import { motion } from "framer-motion";
 import CommunityModal from "./CommunityModal";
-import { ThemeContext } from "../../../context/ThemeContext";
+import { ThemeContext } from "../../../../context/ThemeContext";
 import { Instagram, Facebook, Twitter, Send } from "lucide-react";
 
 function SimpleGlobe() {

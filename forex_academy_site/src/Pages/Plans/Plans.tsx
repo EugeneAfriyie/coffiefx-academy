@@ -11,9 +11,9 @@ import MentorshipCTA from "../../components/Plans/MentorshipCTA";
 import SignalPlans from "../../components/Plans/SignalPlans";
 // import ServicesPlans from "../../components/Plans/ServicesPlans";
 import MentorshipPlans from "../../components/Plans/TestMentordhip";
-import SmartTradingQuiz from "../../components/Home/QuoteCard/Quiz";
+import SmartTradingQuiz from "../../components/Home/UNUSED/Quiz";
 import FAQSection from "../../components/Home/FAQSection/FAQSection";
-import Testimonials from "../../components/Testimonials";
+import Testimonials from "../../components/Testimonials/Testimonials";
 
 
 const Mentorship: React.FC = () => {

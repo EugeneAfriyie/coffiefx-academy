@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { ThemeContext } from '../context/ThemeContext';
-import AnimatedBackground from './Home/UNUSED/AnimatedBackground';
-import SectionHeader from './Home/QuoteCard/SectionHeader';
+import { ThemeContext } from '../../../context/ThemeContext';
+import AnimatedBackground from '../WhatIsForex/AnimatedBackground';
+import SectionHeader from '../QuoteCard/SectionHeader';
 
 const panels = [
   {

@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { motion } from "framer-motion";
 // import { ThemeContext } from "../../context/ThemeContext";
 import { MessageCircle, Instagram, Facebook, Twitter } from "lucide-react";
-import { ThemeContext } from "../../../context/ThemeContext";
+import { ThemeContext } from "../../../../context/ThemeContext";
 
 const socialLinks = [
   { name: "Telegram", icon: MessageCircle, color: "#0088cc", href: "#" },

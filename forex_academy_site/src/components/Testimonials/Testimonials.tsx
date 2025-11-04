@@ -1,7 +1,7 @@
 // src/components/Testimonials.tsx
 import React, { useContext, useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ThemeContext } from "../context/ThemeContext";
+import { ThemeContext } from "../../context/ThemeContext";
 import { Quote, ChevronLeft, ChevronRight } from "lucide-react";
 import Tilt from "react-parallax-tilt";
 
