@@ -10,35 +10,35 @@ const testimonials = [
     role: "Beginner → Funded Trader",
     quote:
       "I joined the $50 class with zero knowledge. In 6 weeks, I passed a prop firm challenge. Big Coffie changed my life.",
-    image: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762240564/student1_kofi.jpg",
+    image: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762305489/59dbf662-646d-4f84-9661-c1e704ee9e6e.png",
   },
   {
     name: "Abena M.",
     role: "Full-Time Mom → Profitable Trader",
     quote:
       "I trade from home while raising kids. The VIP signals + live classes gave me 85% win rate. Now I fund my family’s future.",
-    image: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762240564/student2_abena.jpg",
+    image: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762305422/e1436b91-904a-4044-b66d-ae72c4e40368.png",
   },
   {
     name: "Kojo B.",
     role: "IT Guy → 6-Figure Trader",
     quote:
       "I was stuck in salary life. After $150 advanced class, I quit my job. CoffieFX strategies work — I’m proof.",
-    image: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762240564/student3_kojo.jpg",
+    image: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762302788/SnapInsta.to_459357308_18036807116161244_4760180188676183067_n_zl842r.jpg",
   },
   {
     name: "Esi P.",
     role: "University Student",
     quote:
       "I paid school fees with trading profits. The 1:1 mentorship and signal group are gold. Best decision I made.",
-    image: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762240564/student4_esi.jpg",
+    image: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762302715/SnapInsta.to_566378987_18076755266161244_3043820231663895936_n_tute5o.jpg",
   },
   {
     name: "Nana Y.",
     role: "Prop Firm Trader",
     quote:
       "CoffieFX taught me risk management that no YouTube video could. Now I trade $100K accounts with confidence.",
-    image: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762240564/student5_nana.jpg",
+    image: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762302714/SnapInsta.to_567470909_18076755254161244_760061549155219429_n_knzbbd.jpg",
   },
 ];
 

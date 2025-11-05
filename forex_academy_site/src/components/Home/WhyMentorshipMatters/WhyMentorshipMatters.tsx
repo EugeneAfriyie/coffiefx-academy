@@ -38,14 +38,14 @@ const FullScreenWhyMentorship: React.FC = () => {
         <AnimatedBackground />
         <motion.div
           style={{ opacity: bgMix }}
-          className="absolute inset-0 bg-black/40"
+          className="absolute inset-0 bg-gradient-to-tr from-[#00c896]/10 via-[#00ffcc]/10"
           aria-hidden="true"
         />
       </div>
 
       {/* Panels */}
       <div className="snap-y snap-mandatory h-screen overflow-y-scroll">
-        {panels.map((p, idx) => (
+        {panels.map((p,) => (
           <section
             key={p.id}
             className="snap-start h-screen flex items-center justify-center px-4 xs:px-6 sm:px-8 lg:px-12"

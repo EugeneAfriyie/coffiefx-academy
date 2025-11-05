@@ -1,5 +1,5 @@
 // Eugene Afriyie UEB3502023
-import React, { useContext, useEffect, useState } from "react";
+import React, {  useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import {
   Home,
@@ -8,17 +8,16 @@ import {
   BookOpen,
   Phone,
   Menu,
-  Sun,
-  Moon,
+ 
+
   MapPin,
 } from "lucide-react";
-import { ThemeContext } from "../context/ThemeContext";
 import MobileMenuDrawer from "../MobileMenuDrawer/MobileMenuDrawer";
 import AdBanner from "../AdBanner/AdBanner"; // ✅ import the new Ad component
 import { NavLink, useLocation } from "react-router-dom";
 
 const Header: React.FC = () => {
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  // const { theme, toggleTheme } = useContext(ThemeContext);
   const location = useLocation();
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -38,11 +37,11 @@ const Header: React.FC = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, [lastScrollY]);
 
-  const bgClass =
-    theme === "dark"
-      ? "bg-[#0b0f19]/80 backdrop-blur-md"
-      : "bg-[#f8f9fb]/80 backdrop-blur-md";
-  const textClass = theme === "dark" ? "text-white" : "text-[#1a1a1a]";
+  // cons=
+  //   theme === "dark"
+  //     ? "bg-[#0b0f19]/80 backdrop-blur-md"
+  //     : "bg-[#f8f9fb]/80 backdrop-blur-md";
+  // const textClass = theme === "dark" ? "text-white" : "text-[#1a1a1a]";
   const accentClass = "text-[#00c896]";
 
   const navLinks = [
@@ -68,24 +67,22 @@ const Header: React.FC = () => {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
-        className={`hidden md:flex justify-between items-center sticky top-0 left-0 w-full z-40 px-6 py-4 ${bgClass} shadow-md transition-all duration-300`}
+        className={`hidden md:flex justify-between items-center sticky top-0 left-0 w-full z-40 px-6 py-4  shadow-md transition-all duration-300 bg-[#0b0f19]/80 backdrop-blur-md `}
       >
           <NavLink to="/" className="flex items-center space-x-3 group">
           <div className="relative">
             <img
               src="https://res.cloudinary.com/dzqdfaghg/image/upload/v1762302080/84c2a67c-a5bf-4e1a-8ec2-75ac777d8a9e.png"
               alt="CoffieFX Bull"
-              className="w-12 h-12 rounded-full object-cover border-2 border-coffie-primary dark:border-coffie-primary border-coffie-light-primary coffie-glow"
+              className="w-12 h-12 rounded-full object-cover border-2   gold-glow border-[#00c896] "
             />
-            <div className={`absolute -top-1 -right-1 w-4 h-4 rounded-full animate-pulse ${
-              theme === 'dark' ? 'bg-coffie-accent' : 'bg-coffie-light-accent'
-            }`} />
+            <div className={`absolute -top-1 -right-1 w-4 h-4 rounded-full animate-pulse bg-[#00c896]`} />
           </div>
           <div>
-            <h1 className={`text-2xl font-bold ${accentClass} font-montserrat`}>
+            <h1 className={`text-2xl font-bold ${accentClass} font-montserrat text-glow `}>
               THE COFFIEFX
             </h1>
-            <p className={`text-xs opacity-80 flex items-center gap-1 ${textClass}`}>
+            <p className={`text-xs opacity-80 flex items-center gap-1 `}>
               <MapPin size={12} /> East Legon Okponglo
             </p>
           </div>
@@ -99,7 +96,7 @@ const Header: React.FC = () => {
               end={link.href === "/"}
               className={({ isActive }) =>
                 `relative font-medium transition-colors ${
-                  isActive ? accentClass : textClass
+                  isActive ? accentClass : ''
                 } hover:text-[#00c896]`
               }
             >
@@ -143,7 +140,7 @@ const Header: React.FC = () => {
           opacity: isVisible ? 1 : 0,
         }}
         transition={{ duration: 0.4, ease: "easeInOut" }}
-        className={`fixed bottom-0 left-0 w-full md:hidden flex justify-around items-center py-1 px-0 ${bgClass} shadow-2xl z-50 border-t border-white/10`}
+        className={`fixed bottom-0 left-0 w-full md:hidden flex justify-around items-center py-1 px-0  shadow-2xl z-50 border-t border-white/10 bg-[#0b0f19]/80 backdrop-blur-md`}
       >
         {navLinks.map((link) => (
           <NavLink
@@ -152,7 +149,7 @@ const Header: React.FC = () => {
             end={link.href === "/"}
             className={({ isActive }) =>
               `flex flex-col items-center space-y-1 transition-all ${
-                isActive ? "text-[#00c896]" : textClass
+                isActive ? "text-[#00c896]" :''
               }`
             }
           >
@@ -181,7 +178,7 @@ const Header: React.FC = () => {
         {/* ✅ Menu Button (opens drawer) */}
         <button
           onClick={() => setMenuOpen(true)}
-          className={`flex flex-col items-center space-y-1 ${textClass}`}
+          className={`flex flex-col items-center space-y-1 }`}
         >
           <div className="p-2.5 rounded-xl">
             <Menu size={22} />
@@ -197,7 +194,7 @@ const Header: React.FC = () => {
         navLinks={navLinks}
         active={active}
         setActive={() => {}}
-        theme={theme}
+        
       />
     </>
   );

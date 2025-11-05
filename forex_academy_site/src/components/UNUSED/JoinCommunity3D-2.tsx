@@ -3,9 +3,11 @@ import  { Suspense, useContext, useRef, useState, useMemo } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Stars, Text } from "@react-three/drei";
 import { motion } from "framer-motion";
-import CommunityModal from "./CommunityModal";
-import { ThemeContext } from "../../../../context/ThemeContext";
+// import CommunityModal from "./CommunityModal";
+// import { ThemeContext } from "../../../../context/ThemeContext";
 import { Instagram, Facebook, Twitter, Send } from "lucide-react";
+import { ThemeContext } from "../context/ThemeContext";
+import CommunityModal from "../Home/JoinCommunity/CommunityModal";
 
 function SimpleGlobe() {
   const ref = useRef<any>(null);

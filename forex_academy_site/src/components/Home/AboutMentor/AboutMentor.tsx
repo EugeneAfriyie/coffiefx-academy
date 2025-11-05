@@ -86,7 +86,7 @@ const AboutMentor: React.FC = () => {
           <p className="mt-5 text-base sm:text-lg leading-relaxed opacity-90">
             The charts didn’t make sense to me at first — until I learned to stop trading the market, and start trading myself.
             Every breakthrough I’ve had came from discipline, not luck. That’s why{" "}
-            <span className="font-semibold text-[#00c896]">Coffiefx</span>{" "}
+            <span className="font-semibold text-[#00c896] text-xl text-glow">Coffiefx</span>{" "}
             exists — to help you build a version of yourself that wins repeatedly, not occasionally.
           </p>
 

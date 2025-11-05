@@ -3,7 +3,7 @@
 
 import { useState, useRef } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
-import { ChevronDown, Mail, Send } from "lucide-react";
+import { ChevronDown, Send } from "lucide-react";
 
 interface FAQItem {
   q: string;

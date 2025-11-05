@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
   const globeRef = useRef<any>(null);
   const touchStartX = useRef<number | null>(null);
 
-  const bgClass = "bg-gradient-to-b from-[#001F3F] via-[#001022] to-[#001F3F]";
+  const bgClass = "bg-gradient-to-b  from-[#00c896]/10 via-[#00ffcc]/10 to-[#00c896]/10";
 
   // Auto-slide
   useEffect(() => {
@@ -125,7 +125,7 @@ const Hero: React.FC = () => {
         {slides[current].background === "gradient" && (
           <motion.div
             key="gradient-bg"
-            className="absolute inset-0 bg-gradient-to-r from-[#00c896]/25 via-transparent to-[#00c896]/25 blur-3xl"
+            className="absolute inset-0 bg-gradient-to-r  from-[#00c896]/10 via-[#00ffcc]/10 blur-3xl"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -184,18 +184,18 @@ const Hero: React.FC = () => {
             {/* Academy Badge */}
             <div className="flex items-center justify-center gap-3 text-[#00c896]">
               {slides[current].icon}
-              <span className="font-semibold tracking-wide uppercase text-sm md:text-base">
+              <span className="font-semibold tracking-wide uppercase text-sm md:text-base text-glow">
                 THE COFFIEFX ACADEMY
               </span>
             </div>
 
             {/* Title */}
-            <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white max-w-3xl mx-auto drop-shadow-lg">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white max-w-3xl mx-auto drop-shadow-lg text-glow">
               {slides[current].title}
             </h1>
 
             {/* Subtitle */}
-            <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-10 drop-shadow-lg">
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-10 drop-shadow-lg neon-glow">
               {slides[current].subtitle}
             </p>
 

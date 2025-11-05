@@ -40,7 +40,7 @@ const WhatYouGetSplit: React.FC = () => {
         tagline: "Learn from home with Big Coffie",
         highlight: "4 Weeks Live",
         mode: "Zoom + Telegram",
-        image: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762240564/online_class_preview.jpg",
+        image: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762305109/0103d37d-afc1-4517-bece-5901e53d5931.png",
         badge: "Beginner Friendly",
         features: [
           { title: "Live Zoom Classes", desc: "4 weeks of live training with Big Coffie.", Icon: Video },
@@ -219,13 +219,18 @@ const WhatYouGetSplit: React.FC = () => {
               transition={{ delay: 0.2 }}
               className="mt-6"
             >
-              <a
+              <motion.a
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ scale: 1.05, boxShadow: '0 12px 32px rgba(0,200,150,0.3)' }}
+              whileTap={{ scale: 0.98 }}
+              transition={{ duration: 0.35 }}
                 href="/plans"
                 className="inline-flex items-center gap-3 px-5 py-3 rounded-full bg-gradient-to-r from-[#00c896] to-[#FFD700] text-[#001F3F] font-semibold shadow-md hover:shadow-lg transition"
               >
                 Join {currentDetails.title}
                 <span className="text-sm">→</span>
-              </a>
+              </motion.a>
             </motion.div>
           </motion.div>
         </AnimatePresence>

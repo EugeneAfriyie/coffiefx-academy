@@ -1,6 +1,6 @@
 // src/components/Home/SmartQuiz/SmartTradingQuiz.tsx
 import { useState } from "react";
-import { motion, AnimatePresence, type Variants } from "framer-motion";
+import { motion, AnimatePresence,  } from "framer-motion";
 import { Sparkles, ArrowRight } from "lucide-react";
 
 interface Step {
@@ -136,7 +136,7 @@ const IntroPanel = ({ onStart }: { onStart: () => void }) => {
     >
       <h3 className="text-xl font-semibold text-[#00c896] mb-3">Quick Intro</h3>
       <p className="text-white/90 mb-4">
-        This quick quiz helps us match you with the right <strong>CoffieFX program</strong>. Tap any stat below or press{" "}
+        This quick quiz helps us match you with the right <strong className="text-glow">CoffieFX program</strong>. Tap any stat below or press{" "}
         <strong>Start Quiz</strong> — it’s fast, private, and tailored.
       </p>
 
@@ -311,7 +311,7 @@ export default function SmartTradingQuiz() {
             Smart Placement
           </div>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-[#00c896] mb-3">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#00c896] mb-3 text-glow">
             Which CoffieFX program fits you best?
           </h2>
 

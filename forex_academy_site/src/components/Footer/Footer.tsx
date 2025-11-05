@@ -2,7 +2,7 @@
 
 import  { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, ChevronDown } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Twitter, ChevronDown } from "lucide-react";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -79,23 +79,32 @@ export default function Footer() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          <h4 className="text-lg font-semibold text-[#00ffcc] mb-3">Stay Connected</h4>
-          <p className="text-[#ffffffb3] text-sm mb-3">
-            Follow RoadMoney on social media for trading tips and program updates.
+          <h4 className="text-lg font-semibold text-[#00c896] mb-3">Stay Connected</h4>
+          <p className="text-white/70 text-sm mb-3">
+            Follow Big Coffie for daily signals, live trades, and student wins.
           </p>
           <div className="flex items-center gap-4">
-            <a href="#" className="hover:text-[#00ffcc] transition"><Facebook className="w-5 h-5" /></a>
-            <a href="#" className="hover:text-[#00ffcc] transition"><Instagram className="w-5 h-5" /></a>
-            <a href="#" className="hover:text-[#00ffcc] transition"><Twitter className="w-5 h-5" /></a>
+            <a href="https://t.me/bigCoffie" target="_blank" rel="noopener noreferrer" className="hover:text-[#FFD700] transition">
+              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 8.053-3.491a.993.993 0 0 1 .38-.076z"/>
+              </svg>
+            </a>
+            <a href="https://instagram.com/the_coffiefx" target="_blank" rel="noopener noreferrer" className="hover:text-[#FFD700] transition"><Instagram className="w-5 h-5" /></a>
+            <a href="https://youtube.com/TheCoffieFX" target="_blank" rel="noopener noreferrer" className="hover:text-[#FFD700] transition">
+              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.016 3.016 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+            <a href="https://x.com/bigCoffie" target="_blank" rel="noopener noreferrer" className="hover:text-[#FFD700] transition"><Twitter className="w-5 h-5" /></a>
           </div>
         </motion.div>
       </div>
 
-      {/* Disclaimer toggle */}
+      {/* Disclaimer Toggle */}
       <div className="mt-12 max-w-4xl mx-auto text-center">
         <button
           onClick={() => setShowDisclaimer((s) => !s)}
-          className="inline-flex items-center gap-2 text-[#00ffcc] hover:text-[#00ffee] transition text-sm font-semibold"
+          className="inline-flex items-center gap-2 text-[#00c896] hover:text-[#FFD700] transition text-sm font-semibold"
         >
           <ChevronDown
             className={`w-4 h-4 transition-transform ${showDisclaimer ? "rotate-180" : ""}`}
@@ -113,20 +122,19 @@ export default function Footer() {
               transition={{ duration: 0.5 }}
               className="overflow-hidden mt-4"
             >
-              <p className="text-[#ffffff99] text-xs sm:text-sm italic leading-relaxed px-4">
-                The information provided by RoadMoney is for educational purposes only and should not be
-                considered financial or investment advice. Trading involves risk, and you should only trade with
-                capital you can afford to lose. Past performance is not indicative of future results.
+              <p className="text-white/70 text-xs sm:text-sm italic leading-relaxed px-4">
+                Trading involves substantial risk. The CoffieFX Academy provides education only — not financial advice. 
+                Past performance is not indicative of future results. Only trade with capital you can afford to lose.
               </p>
             </motion.div>
           )}
         </AnimatePresence>
       </div>
 
-      {/* divider */}
-      <div className="border-t border-[#ffffff10] mt-10 pt-6 text-center text-[#ffffff99] text-sm">
-        © {year} RoadMoney. All rights reserved. | Designed by{" "}
-        <span className="text-[#00ffcc]">Eugene Afriyie</span>
+      {/* Divider */}
+      <div className="border-t border-[#ffffff10] mt-10 pt-6 text-center text-white/70 text-sm">
+        © {year} The CoffieFX Academy. All rights reserved. | Built by{" "}
+        <span className="text-[#FFD700]">Kwame (CS Student, UENR)</span>
       </div>
     </footer>
   );
