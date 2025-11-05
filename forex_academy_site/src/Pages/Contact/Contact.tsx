@@ -14,7 +14,6 @@ import {
 import SupportTicketModal from "../../components/Contact/SupportTicketModal";
 import FAQSection from "../../components/Home/FAQSection/FAQSection";
 import { ContactHelmet } from "../../components/HelmetTags/HelmetTags";
-// import SupportTicketModal from "./SupportTicketModal";
 
 export default function ContactHero() {
   const [showContacts, setShowContacts] = useState(false);
@@ -38,7 +37,6 @@ export default function ContactHero() {
   return (
     <>
     <ContactHelmet />
-
       <section
         className="relative h-[85vh] flex flex-col items-center justify-center text-center text-white px-6"
         style={{
