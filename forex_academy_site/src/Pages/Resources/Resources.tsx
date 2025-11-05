@@ -1205,7 +1205,7 @@ const ResourcesPage: React.FC = () => {
         />
         <meta name="keywords" content="forex resources, forex materials, trading tutorials, forex education" />
         <meta property="og:title" content="Forex Trading Resources" />
-        <meta property="og:url" content="https://yourdomain.com/resources" />
+        <meta property="og:url" content="https://coffiefx-academy.web.app/resources" />
       </Helmet>
     <main className="min-h-screen bg-gradient-to-b from-[#0b0f19] via-[#121826] to-[#0b0f19] text-white font-montserrat">
       {/* Hero */}

@@ -1,7 +1,10 @@
 import React, { useContext } from "react";
 import { motion } from "framer-motion";
-import { Users, Mic, Share2, Instagram, Youtube, Send } from "lucide-react";
+import { Users, Mic, Share2, Instagram, Youtube, Send, } from "lucide-react";
+// import { TikTokIcon } from "lucide-react";
+import { Music2 as Tiktok } from "lucide-react"; // ✅ TikTok icon
 import { ThemeContext } from "../context/ThemeContext";
+
 
 const MentorImpact: React.FC = () => {
   const { theme } = useContext(ThemeContext);
@@ -16,6 +19,7 @@ const MentorImpact: React.FC = () => {
     { icon: <Instagram size={22} />, href: "https://instagram.com/", label: "Instagram" },
     { icon: <Youtube size={22} />, href: "https://youtube.com/", label: "YouTube" },
     { icon: <Send size={22} />, href: "https://t.me/", label: "Telegram" },
+    { icon: <Tiktok size={22} />, href: "https://tiktok.com/@yourprofile", label: "Tiktok" },
   ];
 
   return (

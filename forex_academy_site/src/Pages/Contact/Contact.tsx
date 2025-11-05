@@ -45,7 +45,7 @@ export default function ContactHero() {
         />
         <meta name="keywords" content="forex contact, forex academy email, forex help, trading support" />
         <meta property="og:title" content="Contact Forex Academy" />
-        <meta property="og:url" content="https://yourdomain.com/contact" />
+        <meta property="og:url" content="https://coffiefx-academy.web.app/contact" />
       </Helmet>
 
       <section

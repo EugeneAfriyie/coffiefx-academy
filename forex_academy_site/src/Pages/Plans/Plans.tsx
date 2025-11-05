@@ -30,7 +30,7 @@ const Mentorship: React.FC = () => {
     name="description"
     content="Explore our mentorship packages and trading plans — from beginner to advanced, both online and in-person at our Accra Academy."
   />
-  <meta property="og:image" content="/plans-preview.png" />
+  <meta property="og:image" content="https://res.cloudinary.com/dzqdfaghg/image/upload/v1762302080/84c2a67c-a5bf-4e1a-8ec2-75ac777d8a9e.png" />
 </Helmet>
 
     <main className={`font-montserrat transition-colors duration-500 ${bgClass} ${textClass}`}>

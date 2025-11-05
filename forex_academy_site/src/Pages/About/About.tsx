@@ -34,7 +34,8 @@ const About: React.FC = () => {
           property="og:description"
           content="Discover how RoadMoney helps traders grow through education and mentorship."
         />
-        <meta property="og:image" content="/logo.png" />
+        <meta property="og:url" content="https://coffiefx-academy.web.app/about" />
+        <meta property="og:image" content="https://res.cloudinary.com/dzqdfaghg/image/upload/v1762302080/84c2a67c-a5bf-4e1a-8ec2-75ac777d8a9e.png" />
       </Helmet>
     <main
       className={`min-h-screen font-montserrat transition-colors duration-500 ${bgClass} ${textClass}`}

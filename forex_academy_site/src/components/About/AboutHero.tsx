@@ -22,11 +22,14 @@ const AboutHero: React.FC = () => {
         className="relative z-10 max-w-4xl px-6"
       >
         <h1 className="text-4xl sm:text-5xl font-bold text-[#00c896] mb-4">
-          About RoadMoney Forex
+          About Coffiefx Academy
         </h1>
+
         <p className="text-lg sm:text-xl text-white/80 leading-relaxed max-w-2xl mx-auto">
-          Empowering traders to master structure, discipline, and psychology —
-          the pillars of true consistency.
+          Here, we don’t chase the market — we study it, we respect it, and we
+          extract from it with intention. Coffiefx is built for traders who want
+          mastery, not gambling. We teach clarity, structure and the mindset
+          required to stay consistent in any market condition.
         </p>
       </motion.div>
     </section>

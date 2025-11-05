@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "roadmoney-forex-academy"
-  }
+    "default": "coffiefx-academy"
+  },
+  "targets": {},
+  "etags": {}
 }

@@ -29,7 +29,7 @@ const Home: React.FC = () => {
         />
         <meta property="og:title" content="Forex Academy | Master Forex Trading" />
         <meta property="og:description" content="Join our Forex Academy and elevate your trading skills today." />
-        <meta property="og:url" content="https://yourdomain.com/" />
+        <meta property="og:url" content="https://coffiefx-academy.web.app" />
       </Helmet>
     
       {/* const globeImage = theme === 'dark' ? '/assets/globe/dark.png' : '/assets/globe/light.png'; */}

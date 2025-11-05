@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { motion } from "framer-motion";
 import { ThemeContext } from "../context/ThemeContext";
-// import { ThemeContext } from "../../../context/ThemeContext";
 
 const MentorJourney: React.FC = () => {
   const { theme } = useContext(ThemeContext);
@@ -45,15 +44,11 @@ const MentorJourney: React.FC = () => {
               alt="Young man reflecting on challenges"
               className="float-left w-28 h-24 sm:w-40 sm:h-40 object-cover rounded-xl mr-5 mb-4 shadow-md"
             />
-            My story began during one of the hardest times of my life — a period
-            marked by <span className="text-[#00c896] font-semibold">unemployment,
-            frustration, and uncertainty</span>. Opportunities were scarce in my
-            country, and each day felt like a battle to stay hopeful.  
-            But even in those moments of struggle, I believed God had placed a
-            seed of purpose within me. I didn’t know what it was yet, but I knew
-            that if I stayed faithful, something would change. That’s when I
-            stumbled upon the world of trading — not as an expert, but as a
-            curious learner searching for a way to rewrite my story.
+            My journey didn’t start from success — it started from survival.
+            There was a season where I felt stuck, overlooked, and forgotten by
+            the system. But in that wilderness I learned something powerful:
+            <span className="text-[#00c896] font-semibold"> struggles are not
+            signs of failure — they are the birthplace of calling.</span>
           </p>
 
           {/* 💡 Early Struggles */}
@@ -66,20 +61,15 @@ const MentorJourney: React.FC = () => {
               alt="Trader studying charts"
               className="float-right w-28 h-24 sm:w-40 sm:h-40 object-cover rounded-xl ml-5 mb-4 shadow-md"
             />
-            I had no mentor then — just determination, free YouTube videos, and
-            prayer. I remember staying up till 3 a.m., analyzing charts on a small
-            phone screen, trying to make sense of price movement and candlesticks.
-            I lost money, time, and even confidence.  
-            But every time I wanted to quit, I would pray for strength and
-            guidance. My faith became my anchor. I wasn’t just learning to trade;
-            I was learning <span className="text-[#00c896] font-semibold">
-            discipline, patience, and trust</span> — values that shaped both my
-            character and my craft.
+            I studied charts late at night with nothing but hope and a cracked
+            phone screen. I wasn’t chasing luxury — I was chasing freedom. And I
+            realized that consistency is not built on motivation but on habits...
+            habits reinforced by faith, patience, and resilience.
           </p>
 
           {/* 🔁 Turning Point */}
           <h3 className="text-[#00c896] font-semibold mb-2 text-lg">
-            3 Years Ago — Turning Pain into Purpose
+            Turning Pain into Purpose
           </h3>
           <p className={`${isDark ? "text-white/75" : "text-gray-700"} mb-6`}>
             <img
@@ -87,15 +77,11 @@ const MentorJourney: React.FC = () => {
               alt="Mentor teaching session"
               className="float-left w-28 h-24 sm:w-40 sm:h-40 object-cover rounded-xl mr-5 mb-4 shadow-md"
             />
-            My turning point came when I realized that trading wasn’t just about
-            making money — it was about mastering myself.  
-            I stopped chasing profit and started chasing growth. I learned that
-            success in the market mirrors success in life — both demand
-            consistency, humility, and belief in God’s timing.  
-            When I embraced that mindset, everything changed. I started helping
-            others who were also struggling. That’s how
-            <span className="text-[#00c896] font-semibold"> RoadMoney Forex </span>
-            was born — from a place of pain transformed into purpose.
+            When I stopped trying to prove myself and started trying to improve
+            myself — everything shifted. Trading stopped being an escape and
+            became a mission. That’s when RoadMoney Forex was born — not as a
+            business, but as a responsibility to help others avoid the same
+            mistakes I made.
           </p>
 
           {/* 🌍 Today */}
@@ -108,20 +94,17 @@ const MentorJourney: React.FC = () => {
               alt="Mentor speaking to youth"
               className="float-right w-28 h-24 sm:w-40 sm:h-40 object-cover rounded-xl ml-5 mb-4 shadow-md"
             />
-            Today, I mentor traders from around the world, teach structure-based
-            trading, and host webinars focused on psychology and risk
-            management. But through it all, I remain a
-            <span className="text-[#00c896] font-semibold"> God-fearing man</span>.
-            Every session begins with gratitude, because I know none of this would
-            be possible without His grace.  
-            My journey is a living testimony that even in the darkest seasons,
-            faith and persistence can turn struggle into strength.
+            Today I teach traders globally, guiding them not just in charts but
+            in mindset. And everything I do remains rooted in faith — because
+            skill without direction is wasted talent, and ambition without
+            humility is self-destruction.
           </p>
 
           <p
             className={`${isDark ? "text-white/85" : "text-gray-800"} font-semibold mt-8 text-center italic`}
           >
-            “Faith without work is dead — but work without faith is empty.”
+            “Your journey is not random. If you let God work — every season will
+            produce purpose.”
           </p>
         </motion.article>
       </div>
