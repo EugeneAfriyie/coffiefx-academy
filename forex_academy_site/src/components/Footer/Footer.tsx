@@ -23,10 +23,10 @@ export default function Footer() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h3 className="text-xl font-bold text-[#00ffcc] mb-3">RoadMoney</h3>
-          <p className="text-[#ffffffb3] text-sm leading-relaxed">
-            RoadMoney connects traders and learners with personalized mentorship programs —
-            online or in-person — to help you grow faster and trade smarter.
+         <h3 className="text-xl font-bold text-[#00c896] mb-3">CoffieFX Academy</h3>
+          <p className="text-white/80 text-sm leading-relaxed">
+            Ghana’s #1 Forex Academy — in-person in <strong>East Legon</strong> or online. 
+            Learn from Big Coffie, trade with 85% win rate, and join a winning community.
           </p>
         </motion.div>
 
@@ -38,11 +38,11 @@ export default function Footer() {
           transition={{ duration: 0.6, delay: 0.1 }}
         >
           <h4 className="text-lg font-semibold text-[#00ffcc] mb-3">Quick Links</h4>
-          <ul className="space-y-2 text-[#ffffffcc] text-sm">
+           <ul className="space-y-2 text-white/80 text-sm">
             <li><a href="#smart-quiz" className="hover:text-[#00ffcc] transition">Smart Quiz</a></li>
             <li><a href="#faq" className="hover:text-[#00ffcc] transition">FAQs</a></li>
-            <li><a href="/mentorship" className="hover:text-[#00ffcc] transition">Mentorship</a></li>
-            <li><a href="/about" className="hover:text-[#00ffcc] transition">About Us</a></li>
+            <li><a href="/plans" className="hover:text-[#00ffcc] transition">$50 / $150 Classes</a></li>
+            <li><a href="#community" className="hover:text-[#00ffcc] transition">Join Community</a></li>
           </ul>
         </motion.div>
 

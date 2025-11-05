@@ -6,7 +6,9 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import CommunityModal from "./CommunityModal";
 // import { ThemeContext } from "../../../../context/ThemeContext";
-import { Instagram, Facebook, Twitter, Send } from "lucide-react";
+import { Instagram, Facebook, Twitter, Send, Youtube } from "lucide-react";
+import { Music2 as Tiktok } from "lucide-react"; // ✅ TikTok icon
+
 import { ThemeContext } from "../../context/ThemeContext";
 
 // Core rotating globe
@@ -48,7 +50,7 @@ function SimpleGlobe() {
 // Orbiting text around globe
 function OrbitingText() {
   const ref = useRef<any>(null);
-  const words = ["R", "O", "A", "D", "T", "O", "M", "O", "N", "E", "Y", "A", "C", "A", "D", "E", "M", "Y"];
+  const words = ["T", "H", "E", "C", "O", "F", "F", "I", "E", "F", "X", "A", "C", "A", "D", "E", "M", "Y"];
   const radius = 2.3;
 
   useFrame((state) => {
@@ -88,8 +90,9 @@ export default function JoinCommunity3D() {
     () => [
       { name: "Telegram", href: "https://t.me/yourchannel", icon: <Send /> },
       { name: "Instagram", href: "https://instagram.com/yourpage", icon: <Instagram /> },
-      { name: "Facebook", href: "https://facebook.com/yourpage", icon: <Facebook /> },
+      { name: "Youtube", href: "https://facebook.com/yourpage", icon: <Youtube /> },
       { name: "Twitter (X)", href: "https://x.com/yourpage", icon: <Twitter /> },
+      { name: "Tiktok (X)", href: "https://x.com/yourpage", icon: <Tiktok /> },
     ],
     []
   );

@@ -1,6 +1,7 @@
+// src/components/Home/Programs/WhatYouGetSplit.tsx
 import React, { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Users, Video, Clock, Award } from "lucide-react";
+import { Users, Video, Clock, Award, MapPin } from "lucide-react";
 
 const FeatureCard: React.FC<{
   title: string;
@@ -13,23 +14,16 @@ const FeatureCard: React.FC<{
       initial={{ opacity: 0, y: 18 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.12 }}
-      className="bg-gradient-to-b from-white/5 to-white/2 dark:from-black/30 dark:to-black/20 border border-white/6 dark:border-white/6 rounded-2xl p-5 shadow-sm backdrop-blur-md hover:translate-y-[-6px] hover:shadow-[0_10px_30px_rgba(0,200,150,0.08)] transition-transform"
+      className="bg-white/5 border border-[#00c896]/20 rounded-2xl p-5 shadow-sm backdrop-blur-md hover:translate-y-[-6px] hover:shadow-[0_10px_30px_rgba(0,200,150,0.15)] transition-transform"
       viewport={{ once: true }}
     >
       <div className="flex items-start gap-4">
-        <div
-          className="flex items-center justify-center w-12 h-12 rounded-xl"
-          style={{
-            background: "linear-gradient(135deg, rgba(0,200,150,0.12), rgba(0,255,204,0.08))",
-            boxShadow: "inset 0 1px 0 rgba(255,255,255,0.02)",
-          }}
-          aria-hidden
-        >
+        <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-[#00c896]/20 to-[#00c896]/10">
           <Icon size={20} className="text-[#00c896]" />
         </div>
         <div>
           <h4 className="text-base font-semibold text-[#00c896] mb-1">{title}</h4>
-          <p className="text-sm opacity-90">{desc}</p>
+          <p className="text-sm text-white/80">{desc}</p>
         </div>
       </div>
     </motion.li>
@@ -42,31 +36,31 @@ const WhatYouGetSplit: React.FC = () => {
   const mentorshipDetails = useMemo(
     () => ({
       online: {
-        title: "Online Mentorship",
-        tagline: "Master trading from anywhere",
-        highlight: "4+ Live Sessions",
-        mode: "Virtual",
-        image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1761140161/photo_2025-06-15_14-13-39_yyrseb.jpg",
-        badge: "Exclusive Program",
+        title: "$50 Online Class",
+        tagline: "Learn from home with Big Coffie",
+        highlight: "4 Weeks Live",
+        mode: "Zoom + Telegram",
+        image: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762240564/online_class_preview.jpg",
+        badge: "Beginner Friendly",
         features: [
-          { title: "1-on-1 Video Calls", desc: "Personalized coaching via Zoom to refine your trading edge.", Icon: Users },
-          { title: "Live Market Streams", desc: "Join live trading sessions and learn in real-time.", Icon: Video },
-          { title: "Risk & Psychology Training", desc: "Master risk management and trading psychology online.", Icon: Clock },
-          { title: "Online Community Access", desc: "Lifetime access to our virtual trading community.", Icon: Award },
+          { title: "Live Zoom Classes", desc: "4 weeks of live training with Big Coffie.", Icon: Video },
+          { title: "VIP Signal Group", desc: "Daily signals with 85% win rate.", Icon: Award },
+          { title: "1:1 Mentor Chat", desc: "Ask questions anytime in Telegram.", Icon: Users },
+          { title: "Lifetime Access", desc: "Re-watch recordings forever.", Icon: Clock },
         ],
       },
       "in-person": {
-        title: "In-Person Mentorship",
-        tagline: "Immersive trading experience",
-        highlight: "2-Day Workshop",
-        mode: "In-Person",
-        image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1760408679/IMG_20251014_022039_477_ri1daj.jpg",
+        title: "$150 In-Person Class",
+        tagline: "Train at our East Legon campus",
+        highlight: "2-Day Intensive",
+        mode: "East Legon Okponglo",
+        image: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762302755/SnapInsta.to_486315081_18056517722161244_2095643982265963332_n_yhpgbg.jpg",
         badge: "Elite Training",
         features: [
-          { title: "In-Person Coaching", desc: "Face-to-face mentorship to build your trading skills.", Icon: Users },
-          { title: "Live Trading Floor", desc: "Experience real-time trading in a professional setting.", Icon: Video },
-          { title: "Advanced Risk Workshops", desc: "Hands-on training for risk and psychology mastery.", Icon: Clock },
-          { title: "Exclusive Community Events", desc: "Join in-person events and network with traders.", Icon: Award },
+          { title: "Face-to-Face Training", desc: "2 full days with Big Coffie in Accra.", Icon: MapPin },
+          { title: "Live Trading Floor", desc: "Trade live with mentors on real accounts.", Icon: Video },
+          { title: "Advanced Risk System", desc: "Master the 85% win rate strategy.", Icon: Award },
+          { title: "Lifetime VIP Group", desc: "Stay in the signal group forever.", Icon: Users },
         ],
       },
     }),
@@ -79,7 +73,7 @@ const WhatYouGetSplit: React.FC = () => {
     <section
       id="what-you-get"
       aria-labelledby="what-you-get-heading"
-      className="relative py-20 px-4 sm:px-6 lg:px-12 font-montserrat transition-colors duration-500 mt-20"
+      className="relative py-20 px-4 sm:px-6 lg:px-12 font-montserrat bg-gradient-to-tr from-[#00c896]/10 via-[#00ffcc]/1"
     >
       {/* Intro */}
       <div className="max-w-7xl mx-auto text-center mb-12">
@@ -88,17 +82,17 @@ const WhatYouGetSplit: React.FC = () => {
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-3xl sm:text-4xl font-bold mb-4 text-white"
+          className="text-3xl sm:text-4xl font-bold mb-4 text-[#00c896]"
         >
-          Explore Our Mentorship Programs
+          Choose Your CoffieFX Class
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 8 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.08 }}
-          className="text-base sm:text-lg text-slate-400 max-w-3xl mx-auto"
+          className="text-base sm:text-lg text-white/80 max-w-3xl mx-auto"
         >
-          Unlock your trading potential with our expertly designed mentorship programs, tailored for both virtual and in-person learning.
+          $50 online or $150 in-person — both include VIP signals, live training, and lifetime access.
         </motion.p>
       </div>
 
@@ -106,79 +100,85 @@ const WhatYouGetSplit: React.FC = () => {
       <div className="max-w-7xl mx-auto mb-8 flex justify-center gap-4">
         <button
           onClick={() => setMentorshipType("online")}
-          className={`px-6 py-2 rounded-full font-semibold text-sm transition-colors ${
+          className={`px-6 py-2 rounded-full font-semibold text-sm transition-all ${
             mentorshipType === "online"
-              ? "bg-[#00c896] text-black"
+              ? "bg-[#00c896] text-[#001F3F]"
               : "bg-white/5 text-white/70 hover:bg-white/10"
           }`}
         >
-          Online Mentorship
+          $50 Online
         </button>
         <button
           onClick={() => setMentorshipType("in-person")}
-          className={`px-6 py-2 rounded-full font-semibold text-sm transition-colors ${
+          className={`px-6 py-2 rounded-full font-semibold text-sm transition-all ${
             mentorshipType === "in-person"
-              ? "bg-[#00c896] text-black"
+              ? "bg-[#FFD700] text-[#001F3F]"
               : "bg-white/5 text-white/70 hover:bg-white/10"
           }`}
         >
-          In-Person Mentorship
+          $150 In-Person
         </button>
       </div>
 
       {/* Split Content */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center" aria-live="polite">
         
-        {/* --- Left: Crossfade + Blur Image --- */}
-        <div className="relative w-full h-[420px] md:h-[520px] rounded-2xl overflow-hidden border border-white/6">
-  <AnimatePresence mode="wait">
-    <motion.img
-      key={mentorshipType}
-      src={currentDetails.image}
-      alt={`${currentDetails.title} preview`}
-      initial={{ opacity: 0, filter: "blur(10px)", transform: "scale(1.05)" }}
-      animate={{ opacity: 1, filter: "blur(0px)", transform: "scale(1)" }}
-      exit={{ opacity: 0, filter: "blur(10px)", transform: "scale(1.05)" }}
-      transition={{ duration: 0.6, ease: "easeInOut" }}
-      className="absolute inset-0 w-full h-full object-cover"
-    />
-  </AnimatePresence>
+        {/* Left: Image with Overlay */}
+        <div className="relative w-full h-[420px] md:h-[520px] rounded-2xl overflow-hidden border border-[#00c896]/30">
+          <AnimatePresence mode="wait">
+            <motion.img
+              key={mentorshipType}
+              src={currentDetails.image}
+              alt={`${currentDetails.title} preview`}
+              initial={{ opacity: 0, filter: "blur(10px)", transform: "scale(1.05)" }}
+              animate={{ opacity: 1, filter: "blur(0px)", transform: "scale(1)" }}
+              exit={{ opacity: 0, filter: "blur(10px)", transform: "scale(1.05)" }}
+              transition={{ duration: 0.6, ease: "easeInOut" }}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </AnimatePresence>
 
-          {/* Overlay UI */}
-          <div className="absolute inset-6 rounded-xl p-4 z-10 flex flex-col justify-between pointer-events-none bg-black/20">
+          {/* Overlay */}
+          <div className="absolute inset-6 rounded-xl p-4 z-10 flex flex-col justify-between pointer-events-none bg-gradient-to-t from-black/70 via-black/30 to-transparent">
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-xs text-white/80">{currentDetails.tagline}</p>
                 <h3 className="text-lg font-bold text-white">{currentDetails.title}</h3>
               </div>
               <div className="text-right">
-                <p className="text-sm font-semibold text-[#00c896]">{currentDetails.highlight}</p>
-                <p className="text-xs text-white/70">Per Month</p>
+                <p className="text-sm font-semibold text-[#FFD700]">{currentDetails.highlight}</p>
+                <p className="text-xs text-white/70">{currentDetails.mode}</p>
               </div>
             </div>
 
             <div className="flex items-center justify-between">
-              <div className="text-xs text-white/70">Delivery: {currentDetails.mode}</div>
+              <div className="text-xs text-white/70"></div>
               <div className="flex gap-2">
-                <button className="px-3 py-1 rounded-full bg-[#00c896] text-black font-semibold text-xs pointer-events-auto">
-                  Join Now
-                </button>
-                <button className="px-3 py-1 rounded-full bg-white/5 text-white text-xs pointer-events-auto">
-                  View Curriculum
-                </button>
+                <a
+                  href="/plans"
+                  className="px-3 py-1 rounded-full bg-[#00c896] text-[#001F3F] font-semibold text-xs pointer-events-auto"
+                >
+                  Enroll Now
+                </a>
+                <a
+                  href="#faq"
+                  className="px-3 py-1 rounded-full bg-white/10 text-white text-xs pointer-events-auto"
+                >
+                  Learn More
+                </a>
               </div>
             </div>
           </div>
 
           {/* Badge */}
           <div className="absolute top-4 left-4 z-20">
-            <div className="px-3 py-1 rounded-full bg-black/40 text-white text-xs">
+            <div className="px-3 py-1 rounded-full bg-[#FFD700]/20 text-[#FFD700] text-xs font-semibold">
               {currentDetails.badge}
             </div>
           </div>
         </div>
 
-        {/* --- Right: Text + Features --- */}
+        {/* Right: Features */}
         <AnimatePresence mode="wait">
           <motion.div
             key={mentorshipType}
@@ -191,7 +191,7 @@ const WhatYouGetSplit: React.FC = () => {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-2xl sm:text-3xl font-bold mb-4"
+              className="text-2xl sm:text-3xl font-bold mb-4 text-[#00c896]"
             >
               What You’ll Get
             </motion.h2>
@@ -200,11 +200,11 @@ const WhatYouGetSplit: React.FC = () => {
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.08 }}
-              className="text-sm text-slate-400 mb-6"
+              className="text-sm text-white/80 mb-6"
             >
               {mentorshipType === "online"
-                ? "A comprehensive online mentorship program to build your trading edge through virtual coaching and community."
-                : "An immersive in-person mentorship experience with hands-on trading and exclusive networking opportunities."}
+                ? "Join thousands learning from Big Coffie via Zoom and Telegram — perfect for beginners."
+                : "Train in-person at our East Legon campus with live trading and advanced strategies."}
             </motion.p>
 
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -220,8 +220,8 @@ const WhatYouGetSplit: React.FC = () => {
               className="mt-6"
             >
               <a
-                href="/mentorship"
-                className="inline-flex items-center gap-3 px-5 py-3 rounded-full bg-gradient-to-r from-[#00c896] to-[#00ffcc] text-black font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-[#00c896]"
+                href="/plans"
+                className="inline-flex items-center gap-3 px-5 py-3 rounded-full bg-gradient-to-r from-[#00c896] to-[#FFD700] text-[#001F3F] font-semibold shadow-md hover:shadow-lg transition"
               >
                 Join {currentDetails.title}
                 <span className="text-sm">→</span>

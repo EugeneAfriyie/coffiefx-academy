@@ -46,8 +46,8 @@ const Home: React.FC = () => {
        <JoinCommunity3D />
        <TradingAcademyAd />
        <AcademyPopupAd />
-       <ContactInvite />
-       <SmartTradingQuiz />
+       <ContactInvite /> 
+        <SmartTradingQuiz />
        <FAQSection />
        <Testimonials />
 

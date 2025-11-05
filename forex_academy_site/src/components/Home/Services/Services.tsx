@@ -19,7 +19,7 @@ const services: Service[] = [
     title: "Trading Mentorship",
     subtitle: "Personal coaching to level up",
     desc: "Hands-on mentorship with live sessions, 1-on-1 reviews and real-time trade guidance to build a repeatable trading edge.",
-    image: "https://images.unsplash.com/photo-1563986768711-b3bde3dc821e?fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHRyYWRpbmd8ZW58MHx8MHx8fDA%3D&ixlib=rb-4.1.0&q=60&w=3000", // replace with your image
+    image: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762240565/ONLNE_arujzm.jpg", // replace with your image
     icon: Users,
     price: "4+ live sessions",
   },
@@ -37,7 +37,7 @@ const services: Service[] = [
     title: "Signals",
     subtitle: "High-quality trade setups",
     desc: "Receive timely, research-backed signals with entry, stop, and target levels — delivered to your inbox or mobile app.",
-    image: "https://images.unsplash.com/photo-1563986768711-b3bde3dc821e?fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHRyYWRpbmd8ZW58MHx8MHx8fDA%3D&ixlib=rb-4.1.0&q=60&w=3000", // replace with your image
+    image: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762240565/BUY_wdpkhf.jpg", // replace with your image
     icon: Bell,
     price: "Realtime alerts",
   },
@@ -46,7 +46,7 @@ const services: Service[] = [
     title: "Seminars",
     subtitle: "Live training & Q&A",
     desc: "Weekly live seminars covering strategy, market structure, and trade psychology — recordings available on demand.",
-    image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1760408725/IMG_20251014_022015_196_cmrmsg.jpg", // replace with your image
+    image: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762302713/SnapInsta.to_566193092_18076618766161244_6805338856814397302_n_fpa1rv.jpg", // replace with your image
     icon: Video,
     price: "On-demand access",
   },

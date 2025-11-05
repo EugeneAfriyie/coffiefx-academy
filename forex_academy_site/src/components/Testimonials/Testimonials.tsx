@@ -1,58 +1,55 @@
-// src/components/Testimonials.tsx
-import React, { useContext, useState, useEffect } from "react";
+// src/components/Home/Testimonials/Testimonials.tsx
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ThemeContext } from "../context/ThemeContext";
 import { Quote, ChevronLeft, ChevronRight } from "lucide-react";
 import Tilt from "react-parallax-tilt";
 
 const testimonials = [
   {
-    name: "Sarah K.",
-    role: "Beginner Trader",
+    name: "Kwame A.",
+    role: "Beginner → Funded Trader",
     quote:
-      "RoadMoney’s mentorship reshaped how I see the markets. Within months, I finally achieved consistency and confidence in every trade.",
-    image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1761140163/photo_2025-08-04_08-20-22_hmjomv.jpg",
+      "I joined the $50 class with zero knowledge. In 6 weeks, I passed a prop firm challenge. Big Coffie changed my life.",
+    image: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762240564/student1_kofi.jpg",
   },
   {
-    name: "James L.",
-    role: "Full-Time Forex Trader",
+    name: "Abena M.",
+    role: "Full-Time Mom → Profitable Trader",
     quote:
-      "The advanced risk management lessons gave me total control of my capital. It’s the best investment I’ve made in my trading career.",
-    image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1761140163/photo_2025-08-04_08-20-22_hmjomv.jpg",
+      "I trade from home while raising kids. The VIP signals + live classes gave me 85% win rate. Now I fund my family’s future.",
+    image: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762240564/student2_abena.jpg",
   },
   {
-    name: "Emma R.",
-    role: "Part-Time Trader",
+    name: "Kojo B.",
+    role: "IT Guy → 6-Figure Trader",
     quote:
-      "I joined RoadMoney’s mentorship while working full-time — now my trading income exceeds my salary. Truly life-changing.",
-    image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1761140163/photo_2025-08-04_08-20-22_hmjomv.jpg",
+      "I was stuck in salary life. After $150 advanced class, I quit my job. CoffieFX strategies work — I’m proof.",
+    image: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762240564/student3_kojo.jpg",
   },
   {
-    name: "Michael T.",
-    role: "Professional Analyst",
+    name: "Esi P.",
+    role: "University Student",
     quote:
-      "RoadMoney combines technical mastery with emotional discipline. I recommend it to anyone who takes trading seriously.",
-    image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1761140163/photo_2025-08-04_08-20-22_hmjomv.jpg",
+      "I paid school fees with trading profits. The 1:1 mentorship and signal group are gold. Best decision I made.",
+    image: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762240564/student4_esi.jpg",
   },
   {
-    name: "Ava D.",
-    role: "Crypto & Forex Enthusiast",
+    name: "Nana Y.",
+    role: "Prop Firm Trader",
     quote:
-      "The mentorship made complex strategies simple. I’ve doubled my accuracy and learned how to protect my wins.",
-    image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1761140163/photo_2025-08-04_08-20-22_hmjomv.jpg",
+      "CoffieFX taught me risk management that no YouTube video could. Now I trade $100K accounts with confidence.",
+    image: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762240564/student5_nana.jpg",
   },
 ];
 
 const Testimonials: React.FC = () => {
-  const { theme } = useContext(ThemeContext);
-  const isDark = theme === "dark";
   const [current, setCurrent] = useState(0);
 
-  // Auto-slide every 6 seconds
+  // Auto-slide every 7 seconds
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % testimonials.length);
-    }, 6000);
+    }, 7000);
     return () => clearInterval(timer);
   }, []);
 
@@ -65,15 +62,11 @@ const Testimonials: React.FC = () => {
   return (
     <section
       id="testimonials"
-      className={`relative py-24 overflow-hidden font-montserrat ${
-        isDark
-          ? "bg-gradient-to-br from-[#0b0f19] via-[#121826] to-[#0b0f19]"
-          : "bg-gradient-to-br from-[#f9fafb] via-[#e6f7f4] to-[#f0fdfa]"
-      }`}
+      className="relative py-24 overflow-hidden font-montserrat bg-gradient-to-tr from-[#00c896]/10 via-[#00ffcc]/10 to-transparent"
     >
       {/* Animated Glow */}
       <motion.div
-        className="absolute inset-0 bg-gradient-to-tr from-[#00c896]/10 via-[#00ffcc]/10 to-transparent blur-[150px]"
+        className="absolute inset-0 bg-gradient-to-tr from-[#00c896]/10 via-[#FFD700]/5 to-transparent blur-[150px]"
         animate={{
           backgroundPosition: ["0% 0%", "100% 100%", "0% 0%"],
         }}
@@ -92,23 +85,20 @@ const Testimonials: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl font-bold text-[#00c896]"
         >
-          What Traders Say
+          Student Success Stories
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className={`mt-4 text-base md:text-lg max-w-3xl mx-auto ${
-            isDark ? "text-gray-300" : "text-gray-700"
-          }`}
+          className="mt-4 text-base md:text-lg max-w-3xl mx-auto text-white/80"
         >
-          Real stories from traders who turned knowledge into profit with
-          <span className="text-[#00c896] font-semibold"> RoadMoney.</span>
+          Real Ghanaian traders who started with <span className="text-[#FFD700] font-semibold">CoffieFX</span> and won big.
         </motion.p>
       </div>
 
       {/* Testimonial Slider */}
-      <div className="relative z-10 max-w-3xl mx-auto text-center px-6">
+      <div className="relative z-PT10 max-w-3xl mx-auto text-center px-6">
         <AnimatePresence mode="wait">
           <Tilt tiltMaxAngleX={6} tiltMaxAngleY={6} perspective={900} key={current}>
             <motion.div
@@ -117,18 +107,10 @@ const Testimonials: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -40 }}
               transition={{ duration: 0.8 }}
-              className={`p-10 rounded-2xl backdrop-blur-xl border ${
-                isDark
-                  ? "bg-white/5 border-[#00c896]/20"
-                  : "bg-white/80 border-[#00c896]/30"
-              } shadow-xl`}
+              className="p-10 rounded-2xl backdrop-blur-xl bg-white/5 border border-[#00c896]/20 shadow-xl"
             >
               <Quote className="mx-auto mb-4 text-[#00c896]" size={36} />
-              <p
-                className={`italic text-lg leading-relaxed ${
-                  isDark ? "text-gray-300" : "text-gray-700"
-                }`}
-              >
+              <p className="italic text-lg leading-relaxed text-white/90">
                 “{t.quote}”
               </p>
 
@@ -136,16 +118,10 @@ const Testimonials: React.FC = () => {
                 <img
                   src={t.image}
                   alt={t.name}
-                  className="w-20 h-20 rounded-full border-2 border-[#00c896]/70 shadow-md mb-3"
+                  className="w-20 h-20 rounded-full border-2 border-[#00c896]/70 shadow-md mb-3 object-cover"
                 />
-                <h4 className="text-lg font-semibold">{t.name}</h4>
-                <p
-                  className={`text-sm ${
-                    isDark ? "text-gray-400" : "text-gray-600"
-                  }`}
-                >
-                  {t.role}
-                </p>
+                <h4 className="text-lg font-semibold text-white">{t.name}</h4>
+                <p className="text-sm text-[#FFD700]">{t.role}</p>
               </div>
             </motion.div>
           </Tilt>
@@ -156,6 +132,7 @@ const Testimonials: React.FC = () => {
           <button
             onClick={handlePrev}
             className="p-2 rounded-full bg-[#00c896]/20 hover:bg-[#00c896]/40 transition"
+            aria-label="Previous testimonial"
           >
             <ChevronLeft size={22} className="text-[#00c896]" />
           </button>
@@ -167,12 +144,14 @@ const Testimonials: React.FC = () => {
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   index === current ? "bg-[#00c896] w-6" : "bg-gray-500/50"
                 }`}
+                aria-label={`Go to testimonial ${index + 1}`}
               />
             ))}
           </div>
           <button
             onClick={handleNext}
             className="p-2 rounded-full bg-[#00c896]/20 hover:bg-[#00c896]/40 transition"
+            aria-label="Next testimonial"
           >
             <ChevronRight size={22} className="text-[#00c896]" />
           </button>

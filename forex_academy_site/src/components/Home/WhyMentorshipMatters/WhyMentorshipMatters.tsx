@@ -1,35 +1,33 @@
-import React, { useContext } from 'react';
+// src/components/Home/WhyMentorship/FullScreenWhyMentorship.tsx
+import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { ThemeContext } from '../../context/ThemeContext';
 import AnimatedBackground from '../WhatIsForex/AnimatedBackground';
-import SectionHeader from '../QuoteCard/SectionHeader';
 
 const panels = [
   {
     id: 'pain',
     eyebrow: 'The Struggle',
-    title: 'Feeling lost in the Forex market?',
-    text: 'You studied indicators, watched videos, and kept losing. Market noise, poor risk control, and emotional decisions turn promise into frustration.',
+    title: 'Tired of losing in Forex?',
+    text: 'You watched YouTube, followed signals, and still blew accounts. No system, no risk rules, no mentor — just noise and losses.',
     tone: 'dark',
   },
   {
     id: 'turn',
     eyebrow: 'The Turning Point',
-    title: 'What if clarity was a choice?',
-    text: 'A single system, weekly live review, and constant feedback can move you from random trades to a repeatable edge.',
+    title: 'What if one mentor changed everything?',
+    text: 'Big Coffie went from broke student to funding 100+ traders. Now he teaches the exact 85% win rate system he uses.',
     tone: 'mix',
   },
   {
     id: 'promise',
     eyebrow: 'The Promise',
-    title: 'From confusion to consistent results',
-    text: 'With mentorship, you get structure, accountability, and a proven process — not guessing. Learn position sizing, entries, psychology, and how to pass prop firms.',
+    title: 'From confusion to funded trader',
+    text: 'Join $50 online or $150 in-person. Get live training, VIP signals, risk templates, and pass prop firms — guaranteed.',
     tone: 'light',
   },
 ];
 
 const FullScreenWhyMentorship: React.FC = () => {
-  const { theme } = useContext(ThemeContext);
   const { scrollYProgress } = useScroll();
   const bgMix = useTransform(scrollYProgress, [0, 0.5, 1], [0, 0.6, 1]);
 
@@ -40,41 +38,55 @@ const FullScreenWhyMentorship: React.FC = () => {
         <AnimatedBackground />
         <motion.div
           style={{ opacity: bgMix }}
-          className={`absolute inset-0 ${theme === 'dark' ? 'bg-black/10' : 'bg-white/20'}`}
+          className="absolute inset-0 bg-black/40"
           aria-hidden="true"
         />
       </div>
 
       {/* Panels */}
       <div className="snap-y snap-mandatory h-screen overflow-y-scroll">
-        {panels.map((p, _) => (
+        {panels.map((p, idx) => (
           <section
             key={p.id}
-            className={`snap-start h-screen flex items-center justify-center px-4 xs:px-6 sm:px-8 lg:px-12`}
+            className="snap-start h-screen flex items-center justify-center px-4 xs:px-6 sm:px-8 lg:px-12"
             aria-labelledby={`${p.id}-title`}
           >
             <div className="max-w-4xl text-center">
-              <SectionHeader title={p.eyebrow} id={`${p.id}-title`} />
+              {/* Eyebrow */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="inline-flex items-center gap-2 bg-[#00c896]/10 px-3 py-1 rounded-full border border-[#00c896]/30 text-[#00c896] text-xs font-semibold mb-4"
+              >
+                {p.eyebrow}
+              </motion.div>
+
+              {/* Title */}
               <motion.h2
+                id={`${p.id}-title`}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
                 viewport={{ once: true }}
-                className={`text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold mb-4 ${theme === 'dark' ? 'text-white' : 'text-[#121826]'} drop-shadow-sm`}
+                className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-md"
               >
                 {p.title}
               </motion.h2>
+
+              {/* Text */}
               <motion.p
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.12, ease: 'easeOut' }}
                 viewport={{ once: true }}
-                className={`text-sm xs:text-base sm:text-lg max-w-3xl mx-auto ${theme === 'dark' ? 'text-white/80' : 'text-[#1e293b]'} drop-shadow-sm`}
+                className="text-base xs:text-lg sm:text-xl max-w-3xl mx-auto text-white/90 drop-shadow-sm leading-relaxed"
               >
                 {p.text}
               </motion.p>
 
-              {/* CTA and Micro-Community Preview on Promise Panel */}
+              {/* CTA + Preview on Promise Panel */}
               {p.id === 'promise' && (
                 <>
                   <motion.div
@@ -82,49 +94,53 @@ const FullScreenWhyMentorship: React.FC = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.25, ease: 'easeOut' }}
                     viewport={{ once: true }}
+                    className="mt-10"
                   >
                     <a
-                      href="/mentorship"
-                      className="mt-8 inline-block px-6 py-3 rounded-full bg-gradient-to-r from-[#00c896] to-[#00ffcc] text-black font-semibold shadow-lg hover:bg-[#00a77d] dark:hover:bg-[#00e6b3] focus:outline-none focus:ring-2 focus:ring-[#00c896]"
-                      aria-label="Apply for Forex mentorship"
+                      href="/plans"
+                      className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-[#00c896] to-[#FFD700] text-[#001F3F] font-bold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all"
+                      aria-label="Join CoffieFX $50 or $150 class"
                     >
-                      Get Mentored — Transform Your Journey
+                      Join Now — Start Winning
                     </a>
                   </motion.div>
+
                   <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
+                    transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
                     viewport={{ once: true }}
-                    className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4 xs:gap-6"
+                    className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6"
                   >
                     {[
                       {
-                        title: 'Live Reviews',
-                        text: 'Watch live trades and learn the rationale behind entries.',
+                        title: 'Live Classes',
+                        text: 'Train with Big Coffie weekly — online or in East Legon.',
                       },
                       {
-                        title: 'Structured Curriculum',
-                        text: 'Weekly lessons, exercises, and risk templates built for progress.',
+                        title: 'VIP Signals',
+                        text: '85% win rate signals sent daily in Telegram.',
                       },
                       {
-                        title: 'Accountability',
-                        text: 'Private community and mentor check-ins keep you on track.',
+                        title: 'Funded Trader Path',
+                        text: 'Pass prop firm challenges with our proven system.',
                       },
-                    ].map((card, idx) => (
-                      <div
-                        key={idx}
-                        className="p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/6"
+                    ].map((card, i) => (
+                      <motion.div
+                        key={i}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.4 + i * 0.1 }}
+                        className="p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-[#00c896]/30 shadow-lg"
                         role="article"
-                        aria-label={card.title}
                       >
-                        <h5 className="font-semibold text-[#00c896] dark:text-[#00ffcc] mb-2">
+                        <h5 className="font-bold text-[#FFD700] mb-2 text-lg">
                           {card.title}
                         </h5>
-                        <p className={`text-sm sm:text-base ${theme === 'dark' ? 'text-white/70' : 'text-[#1e293b]'}`}>
+                        <p className="text-sm text-white/80">
                           {card.text}
                         </p>
-                      </div>
+                      </motion.div>
                     ))}
                   </motion.div>
                 </>

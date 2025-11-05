@@ -73,7 +73,7 @@ const Header: React.FC = () => {
           <NavLink to="/" className="flex items-center space-x-3 group">
           <div className="relative">
             <img
-              src="/logo.png"
+              src="https://res.cloudinary.com/dzqdfaghg/image/upload/v1762302080/84c2a67c-a5bf-4e1a-8ec2-75ac777d8a9e.png"
               alt="CoffieFX Bull"
               className="w-12 h-12 rounded-full object-cover border-2 border-coffie-primary dark:border-coffie-primary border-coffie-light-primary coffie-glow"
             />
