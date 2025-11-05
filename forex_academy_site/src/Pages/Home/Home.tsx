@@ -12,7 +12,7 @@ import TradingAcademyAd from '../../components/Home/TradingAcademyAd/TradingAcad
 import AcademyPopupAd from '../../components/Home/TradingAcademyAd/AcademyPopupAd';
 import ContactInvite from '../../components/Home/ContactInvite/ContactInvite';
 import SmartTradingQuiz from '../../components/Home/FreeValueHook/CoffieFXSmartQuiz';
-import FAQSection from '../../components/Home/FAQSection/FAQSection';
+import FAQSection from '../../components/Home/FAQSection/CoffieFXFAQSection';
 import Testimonials from '../../components/Testimonials/Testimonials';
 import JoinCommunity3D from '../../components/Home/JoinCommunity/JoinCommunity3D';
 import { HomeHelmet } from '../../components/HelmetTags/HelmetTags';

@@ -10,7 +10,7 @@ import MentorshipCTA from "../../components/Plans/MentorshipCTA";
 import SignalPlans from "../../components/Plans/SignalPlans";
 import MentorshipPlans from "../../components/Plans/CoffieFXPlans";
 import SmartTradingQuiz from "../../components/Home/FreeValueHook/Quiz";
-import FAQSection from "../../components/Home/FAQSection/FAQSection";
+import FAQSection from "../../components/Home/FAQSection/CoffieFXFAQSection";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import { PlansHelmet } from "../../components/HelmetTags/HelmetTags";
 

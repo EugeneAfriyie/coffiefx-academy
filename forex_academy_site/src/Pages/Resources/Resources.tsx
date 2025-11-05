@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet-async";
 import FeaturedResource from "../../components/Resources/FeaturedResource";
 import ResourceFilter from "../../components/Resources/ResourceFilter";
 import ResourceGrid from "../../components/Resources/ResourceGrid";
-import FAQSection from "../../components/Home/FAQSection/FAQSection";
+import FAQSection from "../../components/Home/FAQSection/CoffieFXFAQSection";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import { ResourcesHelmet } from "../../components/HelmetTags/HelmetTags";
 

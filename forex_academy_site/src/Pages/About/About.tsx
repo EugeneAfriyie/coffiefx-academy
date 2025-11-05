@@ -10,7 +10,7 @@ import MentorJourney from "../../components/About/MentorJourney";
 import MissionVision from "../../components/About/MissionVision";
 import TeamCommunity from "../../components/About/TeamCommunity";
 import Testimonials from "../../components/Testimonials/Testimonials";
-import FAQSection from "../../components/Home/FAQSection/FAQSection";
+import FAQSection from "../../components/Home/FAQSection/CoffieFXFAQSection";
 import { AboutHelmet } from "../../components/HelmetTags/HelmetTags";
 
 const About: React.FC = () => {

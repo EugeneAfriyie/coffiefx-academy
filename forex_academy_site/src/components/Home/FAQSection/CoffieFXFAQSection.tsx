@@ -37,7 +37,7 @@ const faqs: FAQItem[] = [
   },
 ];
 
-export default function FAQSection() {
+export default function CoffieFXFAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const ref = useRef<HTMLDivElement | null>(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });

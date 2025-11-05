@@ -30,7 +30,7 @@ const COOLDOWN_HOURS = 1;
 const STORAGE_KEY_TIME = "support_last_submit_time";
 const STORAGE_KEY_ID = "support_last_ticket_id";
 
-export default function SupportTicketGlassy({
+export default function CoffieFXSupportTicketModal({
   isOpen,
   onClose,
   emailjsConfig = DEFAULT_CONFIG,
