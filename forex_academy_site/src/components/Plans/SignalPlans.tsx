@@ -1,7 +1,7 @@
-// src/components/Plans/SignalPlans.tsx
+// src/components/Plans/CoffieFXSignals.tsx
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, Zap, Crown, Shield } from "lucide-react";
 
 interface SignalPackage {
   name: string;
@@ -9,44 +9,45 @@ interface SignalPackage {
   priceUsd: number;
   features: string[];
   highlight?: boolean;
+  icon: React.ReactNode;
+  ctaLink: string;
 }
 
 const signalPackages: SignalPackage[] = [
   {
-    name: "Basic Signals",
-    description: "Perfect for new traders learning to follow structured entries.",
-    priceUsd: 29,
+    name: "VIP Signals",
+    description: "Daily high-probability entries with full analysis.",
+    priceUsd: 55,
+    icon: <Zap className="w-6 h-6" />,
+    ctaLink: "https://t.me/bigCoffie?text=Hi%20Big%20Coffie%2C%20I%20want%20VIP%20Signals%20%28%2455%29",
+    ctaText: "Join VIP Signals – $55",
     features: [
-      "3–5 signals per week",
-      "Entry, Stop Loss, Take Profit levels",
-      "Telegram private channel access",
-    ],
-  },
-  {
-    name: "Pro Signals",
-    description: "Designed for active traders looking for high-quality setups daily.",
-    priceUsd: 59,
-    features: [
-      "Daily signals (5–10 per week)",
-      "Market breakdowns & charts",
-      "VIP Telegram access",
-      "Priority support",
+      "5–10 signals per week",
+      "Entry, SL, TP with chart screenshots",
+      "Market breakdown & correlation",
+      "24/7 Telegram access",
+      "Weekly recap & psychology tips",
     ],
     highlight: true,
   },
   {
-    name: "Elite Signals",
-    description: "For professionals seeking the highest accuracy and mentorship combo.",
-    priceUsd: 99,
+    name: "Flipping Signals",
+    description: "Specialized for small account flipping under $1000.",
+    priceUsd: 150,
+    icon: <Crown className="w-6 h-6" />,
+    ctaLink: "https://t.me/bigCoffie?text=Hi%20Big%20Coffie%2C%20I%20want%20Flipping%20Signals%20%28%24150%29",
+    ctaText: "Get Flipping Signals – $150",
     features: [
-      "All Pro features",
-      "1-on-1 trade reviews monthly",
-      "Exclusive live sessions",
+      "All VIP Signals",
+      "Flipping-specific entries",
+      "Risk management for small accounts",
+      "Live flipping demos",
+      "1-on-1 review monthly",
     ],
   },
 ];
 
-const SignalPlans: React.FC = () => {
+const CoffieFXSignals: React.FC = () => {
   const [usdToGhs, setUsdToGhs] = useState<number | null>(null);
   const [lastUpdated, setLastUpdated] = useState<string>("");
 
@@ -55,18 +56,15 @@ const SignalPlans: React.FC = () => {
       try {
         const res = await fetch("https://open.er-api.com/v6/latest/USD");
         const data = await res.json();
-
         if (data?.rates?.GHS) {
-          setUsdToGhs(data.rates.GHS + 2); // add retail adjustment
+          setUsdToGhs(data.rates.GHS + 1.5); // adding buffer
           setLastUpdated(new Date(data.time_last_update_utc).toLocaleDateString());
         } else {
-          console.warn("⚠️ Fallback USD→GHS rate used");
-          setUsdToGhs(10.83 + 2);
+          setUsdToGhs(16.5);
           setLastUpdated(new Date().toLocaleDateString());
         }
-      } catch (err) {
-        console.warn("⚠️ Using fallback USD→GHS rate");
-        setUsdToGhs(10.83 + 2);
+      } catch {
+        setUsdToGhs(16.5);
         setLastUpdated(new Date().toLocaleDateString());
       }
     };
@@ -76,74 +74,143 @@ const SignalPlans: React.FC = () => {
   return (
     <section
       id="signals"
-      className="relative py-20 px-6 md:px-16 bg-gradient-to-b from-[#121826] via-[#0b0f19] to-[#0b0f19] text-white font-montserrat"
+      className="relative py-20 px-6 md:px-16 bg-gradient-to-b from-[#0a0e17] via-[#0f1a2e] to-[#0a0e17] text-white overflow-hidden"
     >
-      <motion.h2
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="text-4xl md:text-5xl font-bold text-center mb-4 text-[#00c896]"
-      >
-        Signal Subscription Plans
-      </motion.h2>
+      {/* Background Glow */}
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-10 left-10 w-80 h-80 bg-[#00ff88] rounded-full filter blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-10 right-10 w-96 h-96 bg-[#FFD700] rounded-full filter blur-3xl animate-pulse delay-700"></div>
+      </div>
 
-      <p className="text-center text-white/60 mb-12 text-sm">
-        {usdToGhs
-          ? `Exchange Rate: $1 ≈ ₵${usdToGhs.toFixed(2)} (Updated ${lastUpdated})`
-          : "Fetching latest exchange rate..."}
-      </p>
+      <div className="relative z-10 max-w-6xl mx-auto">
+        {/* Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="text-center mb-12"
+        >
+          <div className="flex justify-center mb-4">
+            <Shield className="w-12 h-12 text-[#00ff88] drop-shadow-lg" />
+          </div>
+          <h2 className="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00ff88] to-[#00cc66]">
+            COFFIEFX SIGNALS
+          </h2>
+          <p className="text-xl text-[#ffffffcc] mt-3">Trade Like Big Coffie</p>
+        </motion.div>
 
-      <div className="grid gap-8 md:grid-cols-3 max-w-7xl mx-auto">
-        {signalPackages.map((pkg, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: index * 0.1 }}
-            className={`relative rounded-2xl p-8 shadow-lg backdrop-blur-md 
-              ${
-                pkg.highlight
-                  ? "bg-[#00c896]/10 border border-[#00c896]/40 scale-105"
-                  : "bg-[#0b0f19]/60 border border-white/10"
-              } hover:scale-105 transition-all duration-300`}
-          >
-            <h3 className="text-2xl font-bold mb-2 text-[#FFD700]">
-              {pkg.name}
-            </h3>
-            <p className="text-white/70 mb-4">{pkg.description}</p>
+        {/* Exchange Rate */}
+        <p className="text-center text-[#ffffff80] mb-10 text-sm">
+          {usdToGhs
+            ? `Live Rate: $1 ≈ ₵${usdToGhs.toFixed(2)} GHS (Updated ${lastUpdated})`
+            : "Fetching rate..."}
+        </p>
 
-            {/* ✅ USD + GHS price display */}
-            <div className="mb-6">
-              <p className="text-3xl font-bold text-[#00c896]">
-                ${pkg.priceUsd.toFixed(2)} / month
-              </p>
-              {usdToGhs && (
-                <p className="text-sm text-[#FFD700]">
-                  ≈ ₵{(pkg.priceUsd * usdToGhs).toFixed(2)} / month
-                </p>
-              )}
-            </div>
-
-            <ul className="space-y-3 mb-8">
-              {pkg.features.map((feature, i) => (
-                <li key={i} className="flex items-center gap-2 text-white/80">
-                  <CheckCircle size={18} className="text-[#00c896]" />
-                  {feature}
-                </li>
-              ))}
-            </ul>
-
-            <button
-              className="w-full py-3 rounded-full bg-[#00c896] text-black font-semibold
-                         hover:scale-105 hover:shadow-[0_0_25px_rgba(0,200,150,0.5)] transition-all duration-300"
+        {/* Signal Cards */}
+        <div className="grid gap-8 md:grid-cols-2 max-w-5xl mx-auto">
+          {signalPackages.map((pkg, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              className={`relative rounded-2xl p-8 backdrop-blur-xl border transition-all duration-500
+                ${pkg.highlight
+                  ? "bg-gradient-to-br from-[#00ff8810] to-[#00cc6610] border-[#00ff88] shadow-2xl shadow-[#00ff88]/40 scale-105"
+                  : "bg-[#0f1a2e]/80 border-[#ffffff20] hover:border-[#00ff88]/50"
+                } hover:scale-105`}
             >
-              Subscribe Now
-            </button>
-          </motion.div>
-        ))}
+              {/* Icon */}
+              <div className={`inline-flex p-3 rounded-full mb-4 ${pkg.highlight ? "bg-[#00ff88] text-black" : "bg-[#FFD700] text-black"}`}>
+                {pkg.icon}
+              </div>
+
+              {/* Title */}
+              <h3 className="text-2xl font-bold mb-2 text-[#FFD700]">{pkg.name}</h3>
+              <p className="text-[#ffffffb3] mb-6">{pkg.description}</p>
+
+              {/* Price */}
+              <div className="mb-8">
+                <p className="text-4xl font-bold text-[#00ff88]">
+                  ${pkg.priceUsd} <span className="text-lg font-normal text-[#ffffff80]">/ month</span>
+                </p>
+                {usdToGhs && (
+                  <p className="text-lg text-[#FFD700] font-medium">
+                    ≈ ₵{(pkg.priceUsd * usdToGhs).toFixed(2)} GHS
+                  </p>
+                )}
+              </div>
+
+              {/* Features */}
+              <ul className="space-y-3 mb-8">
+                {pkg.features.map((feature, i) => (
+                  <motion.li
+                    key={i}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: i * 0.05 }}
+                    className="flex items-start gap-3 text-[#ffffffcc]"
+                  >
+                    <CheckCircle className="w-5 h-5 text-[#00ff88] mt-0.5 flex-shrink-0" />
+                    <span>{feature}</span>
+                  </motion.li>
+                ))}
+              </ul>
+
+              {/* CTA */}
+              <a
+                href={pkg.ctaLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`block w-full text-center py-4 rounded-full font-bold text-lg transition-all
+                  ${pkg.highlight
+                    ? "bg-gradient-to-r from-[#00ff88] to-[#00cc66] text-black hover:shadow-xl hover:shadow-[#00ff88]/60"
+                    : "bg-gradient-to-r from-[#FFD700] to-[#e6b800] text-black hover:shadow-xl hover:shadow-[#FFD700]/60"
+                  }`}
+              >
+                {pkg.highlight ? "Join VIP Now" : "Get Flipping Signals"}
+              </a>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Social Proof */}
+        <div className="flex justify-center gap-6 mt-12 text-[#00ff88]">
+  <a
+    href="https://t.me/bigCoffie"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-[#FFD700] transition duration-200"
+  >
+    Telegram
+  </a>
+  <a
+    href="https://instagram.com/the_coffiefx"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-[#FFD700] transition duration-200"
+  >
+    Instagram
+  </a>
+  <a
+    href="https://youtube.com/@TheCoffieFX"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-[#FFD700] transition duration-200"
+  >
+    YouTube
+  </a>
+  <a
+    href="https://vm.tiktok.com/ZMSUT1XT2/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-[#FFD700] transition duration-200"
+  >
+    TikTok
+  </a>
+</div>
       </div>
     </section>
   );
 };
 
-export default SignalPlans;
+export default CoffieFXSignals;

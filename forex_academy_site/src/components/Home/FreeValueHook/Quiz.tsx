@@ -1,20 +1,9 @@
 "use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { CheckCircle2 } from "lucide-react";
-import { inPersonPackages, onlinePackages } from "../../Plans/TestMentordhip";
-// import { inPersonPackages, onlinePackages } from "/QuoteCard/Plans/import { inPersonPackages, onlinePackages } from "./MentorshipPlans";
-
-// import { inPersonPackages, onlinePackages } from "./TestMentordhip";
-// import MentorshipPlans from "../../Plans/TestMentordhip";
-
-  const handleScrollToPlans = () => {
-    const section = document.getElementById("plans");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
-
+import { CheckCircle2, Zap } from "lucide-react";
+// import { inPersonPackages } from "../../Plans/TestMentordhip";
+import { onlinePackages, flippingPackage, inPersonPackages } from "../../Plans/CoffieFXPlans";
 
 interface Question {
   id: number;
@@ -33,13 +22,13 @@ const questions: Question[] = [
   {
     id: 2,
     question: "What’s your preferred learning style?",
-    options: ["Live sessions", "Self-paced videos", "1-on-1 mentorship"],
+    options: ["Live group sessions", "1-on-1 coaching", "Self-paced flipping"],
     key: "learning",
   },
   {
     id: 3,
     question: "Where are you currently located?",
-    options: ["Accra", "Outside Ghana", "Other regions in Ghana"],
+    options: ["Accra (can attend in-person)", "Outside Accra", "Outside Ghana"],
     key: "location",
   },
   {
@@ -56,10 +45,25 @@ const questions: Question[] = [
   },
 ];
 
-export default function SmartTradingQuiz() {
+export default function CoffieFXQuiz() {
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [result, setResult] = useState<any>(null);
+  const [usdToGhs, setUsdToGhs] = useState<number>(16.5);
+
+  // Fetch live USD → GHS rate
+  useState(() => {
+    const fetchRate = async () => {
+      try {
+        const res = await fetch("https://open.er-api.com/v6/latest/USD");
+        const data = await res.json();
+        if (data?.rates?.GHS) setUsdToGhs(data.rates.GHS + 1.5);
+      } catch {
+        setUsdToGhs(16.5);
+      }
+    };
+    fetchRate();
+  }, []);
 
   const handleSelect = (key: string, value: string) => {
     setAnswers({ ...answers, [key]: value });
@@ -67,20 +71,36 @@ export default function SmartTradingQuiz() {
   };
 
   const computeRecommendation = () => {
-    const { experience, schedule, location, capital,  } = answers;
-    let planType: "inPerson" | "online" = "online";
-    let planName = "Standard Mentorship";
+    const { experience, learning, location, capital } = answers;
 
-    // Determine plan type
-    if (location?.includes("Accra")) planType = "inPerson";
+    let plan: any = onlinePackages[1]; // default: Group Mentorship
+    let description = "";
 
-    // Determine level
-    if (experience === "1–3 years") planName = "Advanced Mentorship";
-    else if (experience === "Over 3 years") planName = "Premium Mentorship";
+    // 1. Location → In-Person?
+    if (location?.includes("Accra")) {
+      if (experience === "Beginner") {
+        plan = inPersonPackages[0]; // Beginners Class
+        description = `You're in Accra and new to trading — perfect for our **Beginners Class** with Big Coffie in-person.`;
+      } else {
+        plan = inPersonPackages[1]; // Advanced Class
+        description = `You're in Accra and experienced — join our **Advanced Class** with live market analysis.`;
+      }
+    } 
+    // 2. Online
+    else {
+      if (learning?.includes("flipping") || capital?.includes("Under $500")) {
+        plan = flippingPackage;
+        description = `You want to flip small accounts fast — **Online Flipping Sessions** is your best path.`;
+      } else if (learning?.includes("1-on-1")) {
+        plan = onlinePackages[2];
+        description = `You want personal coaching — **1-on-1 Mentorship** with Big Coffie is elite.`;
+      } else {
+        plan = onlinePackages[1];
+        description = `You want structure and community — **Group Mentorship** is ideal for growth.`;
+      }
+    }
 
-    const description = `Based on your profile (${experience?.toLowerCase()} trader, ${schedule?.toLowerCase()} schedule, and ${capital?.toLowerCase()} capital), we recommend the ${planName} under our ${planType === "inPerson" ? "In-Person" : "Online"} program.`;
-
-    setResult({ title: planName, description, planType, planName });
+    setResult({ plan, description });
   };
 
   const handleRestart = () => {
@@ -89,68 +109,67 @@ export default function SmartTradingQuiz() {
     setResult(null);
   };
 
+  const handleScrollToPlans = () => {
+    document.getElementById("plans")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <section className="relative py-20 px-6 md:px-16 bg-gradient-to-b from-[#0b0f19] via-[#121826] to-[#0b0f19] text-white font-montserrat">
-      
-      <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#00ffcc]">
-          Find Your Ideal Mentorship Path
+    <section className="relative py-24 px-6 md:px-16 bg-gradient-to-b from-[#0a0e17] via-[#0f1a2e] to-[#0a0e17] text-white overflow-hidden">
+      {/* Glow Background */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-20 left-20 w-96 h-96 bg-[#00ff88] rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-20 w-80 h-80 bg-[#FFD700] rounded-full blur-3xl animate-pulse delay-700" />
+      </div>
+
+      <div className="relative z-10 max-w-3xl mx-auto text-center">
+        {/* Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="flex justify-center mb-6"
+        >
+          <div className="p-4 bg-gradient-to-br from-[#00ff88] to-[#00cc66] rounded-full shadow-lg">
+            <Zap className="w-8 h-8 text-black" />
+          </div>
+        </motion.div>
+
+        <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#00ff88] to-[#00cc66]">
+          Find Your Perfect CoffieFX Path
         </h2>
-        <p className="text-[#ffffffcc] text-lg mb-12">
-          Take this short quiz and let’s match you with the perfect mentorship program tailored to your goals.
+        <p className="text-xl text-[#ffffffcc] mb-12">
+          Answer 5 quick questions — get your **personalized mentorship plan**.
         </p>
 
         <AnimatePresence mode="wait">
           {!result ? (
             step < questions.length ? (
-              <motion.div
-                key={step}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.5 }}
-                className="bg-[#121826]/70 border border-[#00ffcc40] rounded-2xl p-8 backdrop-blur-sm shadow-[0_0_25px_#00ffcc20]"
-              >
-                <h3 className="text-2xl font-semibold mb-8">
-                  {questions[step].question}
-                </h3>
-                <div className="flex flex-col gap-4">
-                  {questions[step].options.map((option) => (
-                    <motion.button
-                      key={option}
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                      onClick={() =>
-                        handleSelect(questions[step].key, option)
-                      }
-                      className="px-6 py-4 text-lg rounded-xl bg-[#0b1220]/70 border border-[#00ffcc30] hover:border-[#00ffcc80] hover:bg-[#00ffcc10] transition-all"
-                    >
-                      {option}
-                    </motion.button>
-                  ))}
-                </div>
-
-                <div className="mt-10 text-[#00ffcc] text-sm">
-                  Question {step + 1} of {questions.length}
-                </div>
-              </motion.div>
+              <QuizStep
+                step={step}
+                question={questions[step]}
+                onSelect={handleSelect}
+                total={questions.length}
+              />
             ) : (
               <motion.div
                 key="complete"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
               >
                 <button
                   onClick={computeRecommendation}
-                  className="px-10 py-4 bg-[#00ffcc] text-[#0b0f19] font-semibold rounded-xl hover:bg-[#00e6b3] transition"
+                  className="px-10 py-4 bg-gradient-to-r from-[#00ff88] to-[#00cc66] text-black font-bold rounded-xl hover:shadow-xl hover:shadow-[#00ff88]/50 transition"
                 >
                   Show My Recommendation
                 </button>
               </motion.div>
             )
           ) : (
-            <ResultPanel result={result} onRetake={handleRestart} />
+            <ResultPanel
+              result={result}
+              usdToGhs={usdToGhs}
+              onRetake={handleRestart}
+              onScroll={handleScrollToPlans}
+            />
           )}
         </AnimatePresence>
       </div>
@@ -158,87 +177,104 @@ export default function SmartTradingQuiz() {
   );
 }
 
+/* ------------------ Quiz Step ------------------ */
+const QuizStep = ({ step, question, onSelect, total }: any) => (
+  <motion.div
+    key={step}
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0, y: -20 }}
+    className="bg-[#0f1a2e]/80 border border-[#00ff88]/40 rounded-2xl p-8 backdrop-blur-md shadow-2xl"
+  >
+    <h3 className="text-2xl font-bold mb-8 text-[#00ff88]">{question.question}</h3>
+    <div className="flex flex-col gap-4">
+      {question.options.map((option: string) => (
+        <motion.button
+          key={option}
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          onClick={() => onSelect(question.key, option)}
+          className="px-6 py-4 text-lg rounded-xl bg-[#121826]/70 border border-[#00ff88]/30 hover:border-[#00ff88] hover:bg-[#00ff88]/10 transition-all"
+        >
+          {option}
+        </motion.button>
+      ))}
+    </div>
+    <p className="mt-8 text-[#00ff88] text-sm">Question {step + 1} of {total}</p>
+  </motion.div>
+);
+
 /* ------------------ Result Panel ------------------ */
-const ResultPanel = ({
-  result,
-  onRetake,
-}: {
-  result: {
-    title: string;
-    description: string;
-    planType: "inPerson" | "online";
-    planName: string;
-  };
-  onRetake: () => void;
-}) => {
-  const plans = result.planType === "inPerson" ? inPersonPackages : onlinePackages;
-  const matchedPlan = plans.find((p) => p.name === result.planName) || plans[0];
+const ResultPanel = ({ result, usdToGhs, onRetake, onScroll }: any) => {
+  const { plan, description } = result;
+  const isGHS = plan.priceGhs !== undefined;
+  const price = isGHS ? `₵${plan.priceGhs}` : `$${plan.priceUsd}`;
+  const priceGHS = !isGHS ? `≈ ₵${(plan.priceUsd * usdToGhs).toFixed(0)} GHS` : "";
 
   return (
     <motion.div
-      key="result"
       initial={{ opacity: 0, scale: 0.98 }}
       animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.98 }}
-      transition={{ duration: 0.5 }}
-      className="bg-[#121826]/70 border border-[#00ffcc44] rounded-3xl p-8 shadow-[0_0_25px_#00ffcc30]"
+      className="bg-gradient-to-br from-[#00ff8810] to-[#00cc6610] border border-[#00ff88] rounded-3xl p-8 shadow-2xl"
     >
-      <h3 className="text-2xl font-bold text-center text-[#00ffcc] mb-2">
-        Your Recommended Program
-      </h3>
-      <p className="text-center text-[#ffffffcc] mb-8">{result.description}</p>
+      <h3 className="text-3xl font-bold text-[#00ff88] mb-3">Your Perfect Match</h3>
+      <p className="text-[#ffffffcc] mb-8 leading-relaxed">{description}</p>
 
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="bg-[#0b1220]/50 border border-[#00ffcc30] rounded-2xl p-6 mb-8"
-      >
-        <div className="flex justify-between items-center mb-2">
-          <h4
-            className={`text-xl font-semibold ${
-              matchedPlan.premium ? "text-[#FFD700]" : "text-[#00ffcc]"
-            }`}
-          >
-            {matchedPlan.name}
+      <div className="bg-[#0f1a2e]/80 border border-[#00ff88]/50 rounded-2xl p-6">
+        <div className="flex justify-between items-center mb-3">
+          <h4 className={`text-2xl font-bold ${plan.premium ? "text-[#FFD700]" : "text-[#00ff88]"}`}>
+            {plan.name}
           </h4>
-          <p className="text-lg font-bold text-[#FFD700]">
-            ${matchedPlan.priceUsd}
-          </p>
+          <div className="text-right">
+            <p className="text-2xl font-bold text-white">{price}</p>
+            {priceGHS && <p className="text-sm text-[#00ff88]">{priceGHS}</p>}
+          </div>
         </div>
-        <p className="text-sm text-[#ffffffb3] mb-4">{matchedPlan.level}</p>
-        <ul className="space-y-2 text-[#ffffffcc] text-sm">
-          {matchedPlan.benefits.slice(0, 5).map((b) => (
-            <li key={b} className="flex items-start gap-2">
-              <CheckCircle2
-                className={`w-4 h-4 mt-0.5 ${
-                  matchedPlan.premium ? "text-[#FFD700]" : "text-[#00ffcc]"
-                }`}
-              />
+        <p className="text-sm text-[#ffffffb3] mb-4">{plan.level}</p>
+
+        <ul className="space-y-2 text-[#ffffffcc] text-sm mb-6">
+          {plan.benefits.slice(0, 5).map((b: string, i: number) => (
+            <motion.li
+              key={i}
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: i * 0.05 }}
+              className="flex items-start gap-2"
+            >
+              <CheckCircle2 className={`w-4 h-4 mt-0.5 ${plan.premium ? "text-[#FFD700]" : "text-[#00ff88]"}`} />
               {b}
-            </li>
+            </motion.li>
           ))}
         </ul>
 
-        <button
-          onClick={handleScrollToPlans}
-        //   href="/mentorship#plans"
-          className={`mt-6 block text-center w-full py-3 rounded-xl font-semibold transition-all ${
-            matchedPlan.premium
-              ? "bg-[#FFD700] text-[#0b0f19] hover:bg-[#e6c200]"
-              : "bg-[#00ffcc] text-[#0b0f19] hover:bg-[#00e6b3]"
+        <a
+          href={plan.ctaLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`block w-full text-center py-4 rounded-xl font-bold text-lg transition-all hover:scale-[1.02] ${
+            plan.premium
+              ? "bg-gradient-to-r from-[#FFD700] to-[#e6b800] text-black"
+              : "bg-gradient-to-r from-[#00ff88] to-[#00cc66] text-black"
           }`}
         >
-          Learn More & Register
-        </button>
-      </motion.div>
+          {plan.ctaText}
+        </a>
+      </div>
 
-      <button
-        onClick={onRetake}
-        className="px-6 py-2 border border-[#ffffff20] rounded-full text-[#ffffffb3] hover:bg-[#ffffff10] transition"
-      >
-        Retake Quiz
-      </button>
+      <div className="flex justify-center gap-4 mt-6">
+        <button
+          onClick={onScroll}
+          className="px-6 py-2 border border-[#00ff88] text-[#00ff88] rounded-full hover:bg-[#00ff88]/10 transition"
+        >
+          See All Plans
+        </button>
+        <button
+          onClick={onRetake}
+          className="px-6 py-2 border border-[#ffffff30] text-[#ffffffb3] rounded-full hover:bg-[#ffffff10] transition"
+        >
+          Retake Quiz
+        </button>
+      </div>
     </motion.div>
   );
 };
