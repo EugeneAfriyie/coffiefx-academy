@@ -1,7 +1,8 @@
-// src/components/Home/Programs/WhatYouGetSplit.tsx
+// src/components/Home/Programs/CoffieFXWhatYouGet.tsx
+"use client";
 import React, { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Users, Video, Clock, Award, MapPin } from "lucide-react";
+import { Video, Award, Users, Clock, MapPin, Zap, ArrowRight } from "lucide-react";
 
 const FeatureCard: React.FC<{
   title: string;
@@ -14,51 +15,53 @@ const FeatureCard: React.FC<{
       initial={{ opacity: 0, y: 18 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.12 }}
-      className="bg-white/5 border border-[#00c896]/20 rounded-2xl p-5 shadow-sm backdrop-blur-md hover:translate-y-[-6px] hover:shadow-[0_10px_30px_rgba(0,200,150,0.15)] transition-transform"
       viewport={{ once: true }}
+      className="bg-[#0f1a2e]/80 border border-[#00ff88]/30 rounded-2xl p-5 backdrop-blur-md hover:translate-y-[-6px] hover:shadow-2xl hover:shadow-[#00ff88]/40 transition-all duration-300"
     >
       <div className="flex items-start gap-4">
-        <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-[#00c896]/20 to-[#00c896]/10">
-          <Icon size={20} className="text-[#00c896]" />
+        <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-[#00ff88]/20 to-[#FFD700]/20">
+          <Icon size={22} className="text-[#00ff88]" />
         </div>
         <div>
-          <h4 className="text-base font-semibold text-[#00c896] mb-1">{title}</h4>
-          <p className="text-sm text-white/80">{desc}</p>
+          <h4 className="text-base font-bold text-[#FFD700] mb-1">{title}</h4>
+          <p className="text-sm text-[#ffffffcc] leading-relaxed">{desc}</p>
         </div>
       </div>
     </motion.li>
   );
 };
 
-const WhatYouGetSplit: React.FC = () => {
+const CoffieFXWhatYouGet: React.FC = () => {
   const [mentorshipType, setMentorshipType] = useState<"online" | "in-person">("online");
 
   const mentorshipDetails = useMemo(
     () => ({
       online: {
-        title: "$50 Online Class",
+        title: "Online Mentorship", // ← Price removed
         tagline: "Learn from home with Big Coffie",
         highlight: "4 Weeks Live",
         mode: "Zoom + Telegram",
         image: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762305109/0103d37d-afc1-4517-bece-5901e53d5931.png",
         badge: "Beginner Friendly",
+        ctaLink: "https://t.me/bigCoffie?text=Hi%20Big%20Coffie%2C%20I%20want%20the%20Online%20Mentorship",
         features: [
-          { title: "Live Zoom Classes", desc: "4 weeks of live training with Big Coffie.", Icon: Video },
+          { title: "4 Live Zoom Classes", desc: "Weekly training with Big Coffie.", Icon: Video },
           { title: "VIP Signal Group", desc: "Daily signals with 85% win rate.", Icon: Award },
-          { title: "1:1 Mentor Chat", desc: "Ask questions anytime in Telegram.", Icon: Users },
+          { title: "1:1 Telegram Support", desc: "Ask questions anytime.", Icon: Users },
           { title: "Lifetime Access", desc: "Re-watch recordings forever.", Icon: Clock },
         ],
       },
       "in-person": {
-        title: "$150 In-Person Class",
-        tagline: "Train at our East Legon campus",
-        highlight: "2-Day Intensive",
-        mode: "East Legon Okponglo",
+        title: "In-Person Class", // ← Price removed
+        tagline: "Train at East Legon Campus",
+        highlight: "14-Day Intensive",
+        mode: "Okponglo, East Legon",
         image: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762302755/SnapInsta.to_486315081_18056517722161244_2095643982265963332_n_yhpgbg.jpg",
         badge: "Elite Training",
+        ctaLink: "https://t.me/bigCoffie?text=Hi%20Big%20Coffie%2C%20I%20want%20the%20In-Person%20Class",
         features: [
-          { title: "Face-to-Face Training", desc: "2 full days with Big Coffie in Accra.", Icon: MapPin },
-          { title: "Live Trading Floor", desc: "Trade live with mentors on real accounts.", Icon: Video },
+          { title: "2-Day Live Training", desc: "Face-to-face with Big Coffie.", Icon: MapPin },
+          { title: "Live Trading Floor", desc: "Trade real accounts with mentors.", Icon: Video },
           { title: "Advanced Risk System", desc: "Master the 85% win rate strategy.", Icon: Award },
           { title: "Lifetime VIP Group", desc: "Stay in the signal group forever.", Icon: Users },
         ],
@@ -67,113 +70,133 @@ const WhatYouGetSplit: React.FC = () => {
     []
   );
 
-  const currentDetails = mentorshipDetails[mentorshipType];
+  const current = mentorshipDetails[mentorshipType];
 
   return (
     <section
       id="what-you-get"
-      aria-labelledby="what-you-get-heading"
-      className="relative py-20 px-4 sm:px-6 lg:px-12 font-montserrat bg-gradient-to-tr from-[#00c896]/10 via-[#00ffcc]/1"
+      className="relative py-24 px-6 md:px-16 bg-gradient-to-b from-[#0a0e17] via-[#0f1a2e] to-[#0a0e17] text-white overflow-hidden"
     >
-      {/* Intro */}
-      <div className="max-w-7xl mx-auto text-center mb-12">
+      {/* Glow Background */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-20 left-20 w-96 h-96 bg-[#00ff88] rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-20 w-80 h-80 bg-[#FFD700] rounded-full blur-3xl animate-pulse delay-700" />
+      </div>
+
+      {/* Header */}
+      <div className="relative z-10 max-w-7xl mx-auto text-center mb-12">
+        <motion.div
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          transition={{ delay: 0.3, type: "spring", stiffness: 200 }}
+          className="flex justify-center mb-6"
+        >
+          <div className="p-4 bg-gradient-to-br from-[#00ff88] to-[#00cc66] rounded-full shadow-xl shadow-[#00ff88]/60">
+            <Zap className="w-10 h-10 text-black" />
+          </div>
+        </motion.div>
+
         <motion.h2
-          id="what-you-get-heading"
-          initial={{ opacity: 0, y: 12 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-3xl sm:text-4xl font-bold mb-4 text-[#00c896]"
+          transition={{ duration: 0.7 }}
+          className="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00ff88] to-[#FFD700] mb-4"
         >
-          Choose Your CoffieFX Class
+          Choose Your Training
         </motion.h2>
+
         <motion.p
-          initial={{ opacity: 0, y: 8 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.08 }}
-          className="text-base sm:text-lg text-white/80 max-w-3xl mx-auto"
+          transition={{ duration: 0.8, delay: 0.1 }}
+          className="text-xl text-[#ffffffcc] max-w-3xl mx-auto"
         >
-          $50 online or $150 in-person — both include VIP signals, live training, and lifetime access.
+          Online or in-person — both include <strong>VIP signals</strong>, <strong>live training</strong>, and <strong>lifetime access</strong>.
         </motion.p>
       </div>
 
-      {/* Toggle */}
-      <div className="max-w-7xl mx-auto mb-8 flex justify-center gap-4">
+      {/* Toggle (Prices in buttons only) */}
+      <div className="max-w-7xl mx-auto mb-12 flex justify-center gap-6">
         <button
           onClick={() => setMentorshipType("online")}
-          className={`px-6 py-2 rounded-full font-semibold text-sm transition-all ${
+          className={`group relative px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 ${
             mentorshipType === "online"
-              ? "bg-[#00c896] text-[#001F3F]"
-              : "bg-white/5 text-white/70 hover:bg-white/10"
+              ? "bg-gradient-to-r from-[#00ff88] to-[#00cc66] text-black shadow-xl shadow-[#00ff88]/60"
+              : "bg-[#0f1a2e]/80 text-[#ffffffcc] border border-[#00ff88]/30 hover:border-[#00ff88] hover:text-[#00ff88]"
           }`}
         >
-          $50 Online
+          Online 
+          {mentorshipType === "online" && (
+            <motion.div
+              layoutId="activeTab"
+              className="absolute inset-0 bg-gradient-to-r from-[#00ff88] to-[#00cc66] rounded-full -z-10"
+            />
+          )}
         </button>
+
         <button
           onClick={() => setMentorshipType("in-person")}
-          className={`px-6 py-2 rounded-full font-semibold text-sm transition-all ${
+          className={`group relative px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 ${
             mentorshipType === "in-person"
-              ? "bg-[#FFD700] text-[#001F3F]"
-              : "bg-white/5 text-white/70 hover:bg-white/10"
+              ? "bg-gradient-to-r from-[#FFD700] to-[#00cc66] text-black shadow-xl shadow-[#FFD700]/60"
+              : "bg-[#0f1a2e]/80 text-[#ffffffcc] border border-[#00ff88]/30 hover:border-[#00ff88] hover:text-[#00ff88]"
           }`}
         >
-          $150 In-Person
+          In-Person 
+          {mentorshipType === "in-person" && (
+            <motion.div
+              layoutId="activeTab"
+              className="absolute inset-0 bg-gradient-to-r from-[#FFD700] to-[#00cc66] rounded-full -z-10"
+            />
+          )}
         </button>
       </div>
 
       {/* Split Content */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center" aria-live="polite">
-        
-        {/* Left: Image with Overlay */}
-        <div className="relative w-full h-[420px] md:h-[520px] rounded-2xl overflow-hidden border border-[#00c896]/30">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        {/* Left: Image */}
+        <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl">
           <AnimatePresence mode="wait">
             <motion.img
               key={mentorshipType}
-              src={currentDetails.image}
-              alt={`${currentDetails.title} preview`}
-              initial={{ opacity: 0, filter: "blur(10px)", transform: "scale(1.05)" }}
-              animate={{ opacity: 1, filter: "blur(0px)", transform: "scale(1)" }}
-              exit={{ opacity: 0, filter: "blur(10px)", transform: "scale(1.05)" }}
-              transition={{ duration: 0.6, ease: "easeInOut" }}
-              className="absolute inset-0 w-full h-full object-cover"
+              src={current.image}
+              alt={current.title}
+              initial={{ opacity: 0, scale: 1.05 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 1.05 }}
+              transition={{ duration: 0.6 }}
+              className="w-full h-full object-cover"
             />
           </AnimatePresence>
 
-          {/* Overlay */}
-          <div className="absolute inset-6 rounded-xl p-4 z-10 flex flex-col justify-between pointer-events-none bg-gradient-to-t from-black/70 via-black/30 to-transparent">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-xs text-white/80">{currentDetails.tagline}</p>
-                <h3 className="text-lg font-bold text-white">{currentDetails.title}</h3>
-              </div>
-              <div className="text-right">
-                <p className="text-sm font-semibold text-[#FFD700]">{currentDetails.highlight}</p>
-                <p className="text-xs text-white/70">{currentDetails.mode}</p>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0a0e17]/95 via-[#0a0e17]/60 to-transparent" />
+
+          <div className="absolute inset-6 flex flex-col justify-between">
+            <div>
+              <div className="flex justify-between items-start">
+                <div>
+                  <p className="text-sm text-[#ffffffb3]">{current.tagline}</p>
+                  <h3 className="text-2xl font-bold text-[#FFD700] mt-1">{current.title}</h3>
+                </div>
+                <div className="text-right">
+                  <p className="text-lg font-bold text-[#00ff88]">{current.highlight}</p>
+                  <p className="text-xs text-[#ffffff99]">{current.mode}</p>
+                </div>
               </div>
             </div>
 
-            <div className="flex items-center justify-between">
-              <div className="text-xs text-white/70"></div>
-              <div className="flex gap-2">
-                <a
-                  href="/plans"
-                  className="px-3 py-1 rounded-full bg-[#00c896] text-[#001F3F] font-semibold text-xs pointer-events-auto"
-                >
-                  Enroll Now
-                </a>
-                <a
-                  href="#faq"
-                  className="px-3 py-1 rounded-full bg-white/10 text-white text-xs pointer-events-auto"
-                >
-                  Learn More
-                </a>
+            <div className="flex justify-between items-end">
+              <div className="px-4 py-2 bg-[#FFD700]/20 rounded-full text-[#FFD700] text-sm font-bold">
+                {current.badge}
               </div>
-            </div>
-          </div>
-
-          {/* Badge */}
-          <div className="absolute top-4 left-4 z-20">
-            <div className="px-3 py-1 rounded-full bg-[#FFD700]/20 text-[#FFD700] text-xs font-semibold">
-              {currentDetails.badge}
+              <a
+                href={current.ctaLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 bg-gradient-to-r from-[#00ff88] to-[#00cc66] text-black font-bold rounded-full hover:scale-105 hover:shadow-xl hover:shadow-[#00ff88]/60 transition-all"
+              >
+                Enroll Now
+              </a>
             </div>
           </div>
         </div>
@@ -182,56 +205,36 @@ const WhatYouGetSplit: React.FC = () => {
         <AnimatePresence mode="wait">
           <motion.div
             key={mentorshipType}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.5, ease: "easeInOut", delay: 0.1 }}
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -50 }}
+            transition={{ duration: 0.5 }}
+            className="space-y-6"
           >
-            <motion.h2
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="text-2xl sm:text-3xl font-bold mb-4 text-[#00c896]"
-            >
-              What You’ll Get
-            </motion.h2>
+            <div>
+              <h3 className="text-3xl font-bold text-[#FFD700] mb-2">What You’ll Get</h3>
+              <p className="text-lg text-[#ffffffcc]">
+                {mentorshipType === "online"
+                  ? "Perfect for beginners. Learn from anywhere with live Zoom classes."
+                  : "Elite training. 2 days of live trading at our East Legon campus."}
+              </p>
+            </div>
 
-            <motion.p
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.08 }}
-              className="text-sm text-white/80 mb-6"
-            >
-              {mentorshipType === "online"
-                ? "Join thousands learning from Big Coffie via Zoom and Telegram — perfect for beginners."
-                : "Train in-person at our East Legon campus with live trading and advanced strategies."}
-            </motion.p>
-
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {currentDetails.features.map((f, idx) => (
-                <FeatureCard key={f.title} index={idx} title={f.title} desc={f.desc} Icon={f.Icon} />
+            <ul className="grid grid-cols-1 gap-4">
+              {current.features.map((f, i) => (
+                <FeatureCard key={f.title} index={i} title={f.title} desc={f.desc} Icon={f.Icon} />
               ))}
             </ul>
 
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="mt-6"
+            <a
+              href={current.ctaLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#00ff88] to-[#00cc66] text-black font-bold text-lg rounded-full shadow-xl hover:shadow-2xl hover:shadow-[#00ff88]/70 hover:scale-105 transition-all duration-300"
             >
-              <motion.a
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              whileHover={{ scale: 1.05, boxShadow: '0 12px 32px rgba(0,200,150,0.3)' }}
-              whileTap={{ scale: 0.98 }}
-              transition={{ duration: 0.35 }}
-                href="/plans"
-                className="inline-flex items-center gap-3 px-5 py-3 rounded-full bg-gradient-to-r from-[#00c896] to-[#FFD700] text-[#001F3F] font-semibold shadow-md hover:shadow-lg transition"
-              >
-                Join {currentDetails.title}
-                <span className="text-sm">→</span>
-              </motion.a>
-            </motion.div>
+              Join {current.title}
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </a>
           </motion.div>
         </AnimatePresence>
       </div>
@@ -239,4 +242,4 @@ const WhatYouGetSplit: React.FC = () => {
   );
 };
 
-export default WhatYouGetSplit;
+export default CoffieFXWhatYouGet;

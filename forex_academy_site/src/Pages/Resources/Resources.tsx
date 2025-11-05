@@ -7,6 +7,7 @@ import ResourceFilter from "../../components/Resources/ResourceFilter";
 import ResourceGrid from "../../components/Resources/ResourceGrid";
 import FAQSection from "../../components/Home/FAQSection/FAQSection";
 import Testimonials from "../../components/Testimonials/Testimonials";
+import { ResourcesHelmet } from "../../components/HelmetTags/HelmetTags";
 
 export const resources = [
 
@@ -1197,16 +1198,7 @@ const ResourcesPage: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Forex Trading Resources | Learn and Grow</title>
-        <meta
-          name="description"
-          content="Access valuable forex trading resources, tutorials, and market insights to improve your trading skills."
-        />
-        <meta name="keywords" content="forex resources, forex materials, trading tutorials, forex education" />
-        <meta property="og:title" content="Forex Trading Resources" />
-        <meta property="og:url" content="https://coffiefx-academy.web.app/resources" />
-      </Helmet>
+      <ResourcesHelmet />
     <main className="min-h-screen bg-gradient-to-b from-[#0b0f19] via-[#121826] to-[#0b0f19] text-white font-montserrat">
       {/* Hero */}
       <section className="relative py-24 text-center overflow-hidden">

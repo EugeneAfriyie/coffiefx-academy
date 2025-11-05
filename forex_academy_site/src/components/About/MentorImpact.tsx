@@ -1,47 +1,50 @@
-import React, { useContext } from "react";
+// src/components/Home/Impact/CoffieFXMentorImpact.tsx
+"use client";
+
+import React from "react";
 import { motion } from "framer-motion";
-import { Users, Mic, Share2, Instagram, Youtube, Send, } from "lucide-react";
-// import { TikTokIcon } from "lucide-react";
-import { Music2 as Tiktok } from "lucide-react"; // ✅ TikTok icon
-import { ThemeContext } from "../context/ThemeContext";
+import { Users, Mic, Share2, Instagram, Youtube, Send, ArrowRight, Zap } from "lucide-react";
+import { Music2 as Tiktok } from "lucide-react";
 
-
-const MentorImpact: React.FC = () => {
-  const { theme } = useContext(ThemeContext);
-  const isDark = theme === "dark";
-
-  const bgClass = isDark
-    ? "bg-gradient-to-b from-[#0b0f19] via-[#121826] to-[#0b0f19]"
-    : "bg-gradient-to-b from-[#f8f9fb] via-[#e0e2e7] to-[#f8f9fb]";
-  const textClass = isDark ? "text-white/90" : "text-gray-900";
-
+const CoffieFXMentorImpact: React.FC = () => {
   const socials = [
-    { icon: <Instagram size={22} />, href: "https://instagram.com/", label: "Instagram" },
-    { icon: <Youtube size={22} />, href: "https://youtube.com/", label: "YouTube" },
-    { icon: <Send size={22} />, href: "https://t.me/", label: "Telegram" },
-    { icon: <Tiktok size={22} />, href: "https://tiktok.com/@yourprofile", label: "Tiktok" },
+    { icon: <Instagram size={22} />, href: "https://instagram.com/the_coffiefx", label: "Instagram" },
+    { icon: <Youtube size={22} />, href: "https://youtube.com/@TheCoffieFX", label: "YouTube" },
+    { icon: <Send size={22} />, href: "https://t.me/bigCoffie", label: "Telegram" },
+    { icon: <Tiktok size={22} />, href: "https://tiktok.com/@bigcoffie", label: "TikTok" },
   ];
 
   return (
     <section
       id="impact"
-      className={`relative py-24 px-4 sm:px-6 lg:px-12 overflow-hidden font-montserrat transition-colors duration-500 ${bgClass} ${textClass}`}
+      className="relative py-24 px-6 md:px-16 bg-gradient-to-b from-[#0a0e17] via-[#0f1a2e] to-[#0a0e17] text-white overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      {/* Glow Background */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-20 left-20 w-96 h-96 bg-[#00ff88] rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-20 w-80 h-80 bg-[#FFD700] rounded-full blur-3xl animate-pulse delay-700" />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left: Image */}
         <motion.div
           initial={{ opacity: 0, x: -80 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="relative rounded-2xl overflow-hidden shadow-[0_0_40px_rgba(0,200,150,0.15)]"
+          className="relative rounded-3xl overflow-hidden shadow-2xl shadow-[#00ff88]/40"
         >
           <img
-            src="https://res.cloudinary.com/djeorsh5d/image/upload/v1761140158/photo_2025-05-22_19-10-54_es9xb1.jpg"
-            alt="Mentor helping youth and traders"
-            className="w-full h-full object-cover"
+            src="https://res.cloudinary.com/dzqdfaghg/image/upload/v1762302755/SnapInsta.to_486315081_18056517722161244_2095643982265963332_n_yhpgbg.jpg"
+            alt="Big Coffie mentoring students in East Legon"
+            className="w-full h-auto object-cover"
+            loading="lazy"
           />
-          <div className="absolute inset-0 bg-gradient-to-tr from-[#00c896]/15 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0a0e17]/90 via-transparent to-transparent" />
+          <div className="absolute bottom-6 left-6">
+            <p className="text-sm text-[#00ff88]">East Legon Campus</p>
+            <p className="text-xs text-[#ffffff99]">Live Training Session</p>
+          </div>
         </motion.div>
 
         {/* Right: Text */}
@@ -50,82 +53,101 @@ const MentorImpact: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
+          className="space-y-6"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#00c896] mb-4">
-            Empowering the Next Generation
-          </h2>
+          {/* Header */}
+          <div>
+            <motion.div
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              transition={{ delay: 0.3, type: "spring", stiffness: 200 }}
+              className="flex justify-start mb-4"
+            >
+              <div className="p-4 bg-gradient-to-br from-[#00ff88] to-[#00cc66] rounded-full shadow-xl shadow-[#00ff88]/60">
+                <Zap className="w-8 h-8 text-black" />
+              </div>
+            </motion.div>
 
-          <p
-            className={`text-base sm:text-lg leading-relaxed mb-4 ${
-              isDark ? "text-white/80" : "text-gray-700"
-            }`}
-          >
-            Beyond trading mentorship, our founder is passionate about impacting
-            young people and aspiring traders through{" "}
-            <span className="text-[#00c896] font-semibold">
-              educational webinars, seminars, and outreach programs
-            </span>
-            . These sessions focus on financial literacy, trading psychology,
-            and building a disciplined mindset for success — in trading and in
-            life.
+            <motion.h2
+              initial={{ y: 20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.4, duration: 0.8 }}
+              className="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00ff88] to-[#FFD700] mb-4"
+            >
+              Beyond Trading
+            </motion.h2>
+          </div>
+
+          <p className="text-lg text-[#ffffffcc] leading-relaxed">
+            Big Coffie isn’t just a mentor — he’s a <strong className="text-[#FFD700]">movement</strong>.
+            From <strong>East Legon seminars</strong> to <strong>online webinars</strong>, he’s trained over
+            <strong className="text-[#00ff88]"> 1,800 students</strong> in financial discipline and mindset.
           </p>
 
-          <p
-            className={`text-base sm:text-lg leading-relaxed ${
-              isDark ? "text-white/70" : "text-gray-600"
-            }`}
-          >
-            He also shares insights daily across social media, helping thousands
-            of traders stay informed, motivated, and aligned with their goals.
-            Every post, every talk, and every webinar is designed to{" "}
-            <span className="text-[#00c896] font-semibold">
-              inspire growth and confidence
-            </span>
-            .
+          <p className="text-base text-[#ffffffb3]">
+            Every week, he hosts <strong className="text-[#FFD700]">live classes</strong> and shares
+            <strong className="text-[#00ff88]"> free signals</strong> across social media — helping thousands stay
+            <strong> consistent, confident, and profitable</strong>.
           </p>
 
           {/* Impact Stats */}
-          <div className="mt-8 grid grid-cols-3 gap-4">
-            <div className="flex flex-col items-center">
-              <Users size={26} className="text-[#00c896] mb-2" />
-              <p className="text-xl font-semibold">1K+</p>
-              <p className="text-xs opacity-70">Youth Reached</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <Mic size={26} className="text-[#00c896] mb-2" />
-              <p className="text-xl font-semibold">50+</p>
-              <p className="text-xs opacity-70">Webinars Hosted</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <Share2 size={26} className="text-[#00c896] mb-2" />
-              <p className="text-xl font-semibold">10K+</p>
-              <p className="text-xs opacity-70">Social Followers</p>
-            </div>
+          <div className="grid grid-cols-3 gap-4 mt-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+              className="text-center"
+            >
+              <Users className="w-8 h-8 text-[#00ff88] mx-auto mb-2" />
+              <p className="text-2xl font-bold text-[#FFD700]">1,800+</p>
+              <p className="text-xs text-[#ffffff99]">Students Trained</p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6 }}
+              className="text-center"
+            >
+              <Mic className="w-8 h-8 text-[#00ff88] mx-auto mb-2" />
+              <p className="text-2xl font-bold text-[#FFD700]">50+</p>
+              <p className="text-xs text-[#ffffff99]">Seminars Hosted</p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.7 }}
+              className="text-center"
+            >
+              <Share2 className="w-8 h-8 text-[#00ff88] mx-auto mb-2" />
+              <p className="text-2xl font-bold text-[#FFD700]">50K+</p>
+              <p className="text-xs text-[#ffffff99]">Community Reach</p>
+            </motion.div>
           </div>
 
           {/* CTA + Socials */}
-          <div className="mt-10 flex flex-col items-center md:items-start">
-            <a
-              href="/webinars"
-              className="inline-block px-8 py-3 bg-[#00c896] text-black font-semibold rounded-2xl hover:scale-105 hover:shadow-[0_0_20px_rgba(0,200,150,0.5)] transition-all duration-300"
+          <div className="mt-10">
+            <motion.a
+              href="https://t.me/bigCoffie?text=Hi%20Big%20Coffie%2C%20I%20want%20to%20join%20a%20live%20webinar"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+              className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#00ff88] to-[#00cc66] text-black font-bold text-lg rounded-full shadow-xl hover:shadow-2xl hover:shadow-[#00ff88]/70 transition-all duration-300"
             >
-              Join a Live Webinar
-            </a>
+              Join Live Webinar
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </motion.a>
 
-            {/* Animated Social Links */}
-            <div className="flex items-center gap-5 mt-8">
+            <div className="flex items-center gap-4 mt-8">
               {socials.map((s, i) => (
                 <motion.a
                   key={i}
                   href={s.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  whileHover={{
-                    scale: 1.15,
-                    boxShadow: "0 0 20px rgba(0,200,150,0.5)",
-                  }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                  className="p-3 rounded-full border border-[#00c896]/30 hover:border-[#00c896] bg-transparent hover:bg-[#00c896]/10 text-[#00c896] transition-all duration-300"
+                  whileHover={{ scale: 1.2, rotate: 5 }}
+                  whileTap={{ scale: 0.9 }}
+                  className="text-[#ffffff99] hover:text-[#00ff88] transition-colors"
                   aria-label={s.label}
                 >
                   {s.icon}
@@ -135,11 +157,8 @@ const MentorImpact: React.FC = () => {
           </div>
         </motion.div>
       </div>
-
-      {/* Bottom gradient fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-black/10 to-transparent pointer-events-none" />
     </section>
   );
 };
 
-export default MentorImpact;
+export default CoffieFXMentorImpact;

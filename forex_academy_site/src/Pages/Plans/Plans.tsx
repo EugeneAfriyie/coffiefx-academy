@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { Helmet } from "react-helmet-async";
 
 import { ThemeContext } from "../../components/context/ThemeContext";
-import MentorshipHero from "../../components/Plans/PlansHero";
+import MentorshipHero from "../../components/Plans/CoffieFXPlansHero";
 import MentorshipCurriculum from "../../components/Plans/MentorshipCurriculum";
 import MentorshipImpact from "../../components/Plans/CoffieFXImpact";
 import MentorshipCTA from "../../components/Plans/MentorshipCTA";
@@ -12,6 +12,7 @@ import MentorshipPlans from "../../components/Plans/CoffieFXPlans";
 import SmartTradingQuiz from "../../components/Home/FreeValueHook/Quiz";
 import FAQSection from "../../components/Home/FAQSection/FAQSection";
 import Testimonials from "../../components/Testimonials/Testimonials";
+import { PlansHelmet } from "../../components/HelmetTags/HelmetTags";
 
 
 const Mentorship: React.FC = () => {
@@ -24,14 +25,7 @@ const Mentorship: React.FC = () => {
 
   return (
   <>
-     <Helmet>
-  <title>Mentorship & Trading Plans | RoadMoney Forex Academy</title>
-  <meta
-    name="description"
-    content="Explore our mentorship packages and trading plans — from beginner to advanced, both online and in-person at our Accra Academy."
-  />
-  <meta property="og:image" content="https://res.cloudinary.com/dzqdfaghg/image/upload/v1762302080/84c2a67c-a5bf-4e1a-8ec2-75ac777d8a9e.png" />
-</Helmet>
+     <PlansHelmet />
 
     <main className={`font-montserrat transition-colors duration-500 ${bgClass} ${textClass}`}>
       <MentorshipHero />
