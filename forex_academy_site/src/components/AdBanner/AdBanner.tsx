@@ -4,10 +4,10 @@ import { motion, AnimatePresence,type Variants } from "framer-motion";
 
 const ads = [
   {
-    title: "200K + $1K Bonus!",
-    shortTitle: "$200K + $1K Bonus!",
+    title: "Prop + $Cash Bonus!",
+    shortTitle: "$200K Prop + $Cash Bonus!",
     description: "Join Exness via our link — trade & win up to $200K + $1K bonus!",
-    shortDesc: "Trade & win $200K + $1K bonus!",
+    shortDesc: "Trade & win Prop + Cash bonus!",
     image:
       "https://res.cloudinary.com/djeorsh5d/image/upload/v1762081423/25f42861-0895-42fa-b3e9-87ebc41265fe.png",
     link: "https://one.exnesslink.com/a/ttgurtgu",
@@ -20,7 +20,7 @@ const ads = [
       "Learn, trade, and grow with mentors at our new in-person Accra Academy.",
     shortDesc: "Join Accra’s top trading academy!",
     image:
-      "https://res.cloudinary.com/djeorsh5d/image/upload/v1760408679/IMG_20251014_022039_477_ri1daj.jpg",
+      "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762302779/SnapInsta.to_486942441_18056517719161244_803634609561239457_n_wnclvf.jpg",
     link: "/plans#in-person",
     button: "Join Now",
   },

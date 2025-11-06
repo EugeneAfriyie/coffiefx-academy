@@ -10,7 +10,7 @@ const CoffieFXMentorJourneyV2: React.FC = () => {
     {
       year: "2019",
       title: "The Dark Days",
-      desc: "Unemployed. Broke. Praying at 3 AM over a cracked phone screen.",
+      desc: "Unemployed. Broke. Praying at 3 AM over a  phone screen.",
       icon: <Heart className="w-6 h-6" />,
       color: "from-red-500 to-orange-500",
     },

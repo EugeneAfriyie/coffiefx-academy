@@ -14,9 +14,9 @@ const CoffieFXTeamCommunity: React.FC = () => {
       desc: "From unemployment to 1,800+ students — Big Coffie turned pain into purpose. He teaches structure, psychology, and faith-driven discipline. Every signal is free. Every student is family.",
     },
     {
-      name: "Kwame — Tech Lead",
+      name: "Kwame — Tech Guy",
       role: "Web Developer | Student Success Engineer",
-      img: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762305109/kwame_profile.jpg",
+      img: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762305489/59dbf662-646d-4f84-9661-c1e704ee9e6e.png",
       desc: "CS student at UENR building the future of CoffieFX Academy. From live sites to student dashboards — he ensures every trader has the tools to win.",
     },
     {
@@ -123,7 +123,7 @@ const CoffieFXTeamCommunity: React.FC = () => {
             className="text-center"
           >
             <Globe2 className="w-12 h-12 text-[#00ff88] mx-auto mb-3" />
-            <p className="text-3xl font-bold text-[#FFD700]">20+</p>
+            <p className="text-3xl font-bold text-[#FFD700]">5+</p>
             <p className="text-sm text-[#ffffff99]">Countries</p>
           </motion.div>
           <motion.div

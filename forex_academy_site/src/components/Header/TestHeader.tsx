@@ -120,7 +120,7 @@ const Header: React.FC = () => {
 
           {/* ✅ Join Now Button */}
           <motion.a
-            href="/mentorship"
+            href="/plans"
             className="px-5 py-2.5 bg-[#00c896] text-white rounded-2xl font-medium hover:bg-[#00b589] transition"
             whileHover={{ scale: 1.05 }}
           >
