@@ -12,7 +12,7 @@ const slides = [
     ctaText: "Start Flipping Now",
     ctaLink: "https://t.me/bigCoffie?text=Hi%20Big%20Coffie%2C%20I%20want%20Flipping%20Sessions%20%28%24150%29",
     icon: <Zap className="w-8 h-8" />,
-    bgImage: "https://res.cloudinary.com/djeorsh5d/image/upload/v1762078888/cac6b0e2-0021-4a14-a6d7-f6cb93ab9201.png", // Flipping chart
+    bgImage: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762240591/MORE_zqp9zm.jpg", // Flipping chart
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const slides = [
     ctaText: "Book Your Seat",
     ctaLink: "https://t.me/bigCoffie?text=Hi%20Big%20Coffie%2C%20I%20want%20to%20book%20a%20mentorship%20seat",
     icon: <Users className="w-8 h-8" />,
-    bgImage: "https://res.cloudinary.com/djeorsh5d/image/upload/v1761140148/photo_2023-12-11_14-10-41_z3atio.jpg", // Big Coffie teaching
+    bgImage: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762240565/SIG_AND_MEN_cwx029.jpg", // Big Coffie teaching
   },
   {
     id: 3,

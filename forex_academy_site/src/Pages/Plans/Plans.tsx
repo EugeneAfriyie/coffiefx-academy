@@ -1,6 +1,5 @@
 // src/pages/Mentorship/Mentorship.tsx
 import React, { useContext } from "react";
-import { Helmet } from "react-helmet-async";
 
 import { ThemeContext } from "../../components/context/ThemeContext";
 import MentorshipHero from "../../components/Plans/CoffieFXPlansHero";
@@ -10,9 +9,9 @@ import MentorshipCTA from "../../components/Plans/MentorshipCTA";
 import SignalPlans from "../../components/Plans/SignalPlans";
 import MentorshipPlans from "../../components/Plans/CoffieFXPlans";
 import SmartTradingQuiz from "../../components/Home/FreeValueHook/Quiz";
-import FAQSection from "../../components/Home/FAQSection/CoffieFXFAQSection";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import { PlansHelmet } from "../../components/HelmetTags/HelmetTags";
+import CoffieFXFAQSection from "../../components/Home/FAQSection/CoffieFXFAQSection";
 
 
 const Mentorship: React.FC = () => {
@@ -37,7 +36,7 @@ const Mentorship: React.FC = () => {
       {/* <ServicesPlans /> */}
       <MentorshipCTA />
         <Testimonials />
-      <FAQSection />
+      <CoffieFXFAQSection />
       
     </main>
   </>

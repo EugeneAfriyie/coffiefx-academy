@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { Helmet } from "react-helmet-async";
 // import { ThemeContext } from "../../context/ThemeContext";
 import AboutHero from "../../components/About/AboutHero";
 import AboutCTA from "../../components/About/AboutCTA";
@@ -10,8 +9,9 @@ import MentorJourney from "../../components/About/MentorJourney";
 import MissionVision from "../../components/About/MissionVision";
 import TeamCommunity from "../../components/About/TeamCommunity";
 import Testimonials from "../../components/Testimonials/Testimonials";
-import FAQSection from "../../components/Home/FAQSection/CoffieFXFAQSection";
+// import FAQSection from "../../components/Home/FAQSection/FAQSection";
 import { AboutHelmet } from "../../components/HelmetTags/HelmetTags";
+import CoffieFXFAQSection from "../../components/Home/FAQSection/CoffieFXFAQSection";
 
 const About: React.FC = () => {
   const { theme } = useContext(ThemeContext);
@@ -38,7 +38,7 @@ const About: React.FC = () => {
       <TeamCommunity />
       <AboutCTA />
       <Testimonials />
-      <FAQSection />
+      <CoffieFXFAQSection />
     </main>
    </>
   );

@@ -11,6 +11,7 @@ interface SignalPackage {
   highlight?: boolean;
   icon: React.ReactNode;
   ctaLink: string;
+  ctaText: string;
 }
 
 const signalPackages: SignalPackage[] = [

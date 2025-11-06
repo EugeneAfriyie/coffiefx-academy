@@ -25,19 +25,7 @@ interface Package {
 }
 
 export const onlinePackages: Package[] = [
-  {
-    name: "VIP Signals",
-    priceUsd: 55,
-    level: "Beginners",
-    ctaText: "Join VIP Signals",
-    ctaLink: "https://t.me/bigCoffie?text=Hi%20Big%20Coffie%2C%20I%20want%20to%20join%20VIP%20Signals%20%28%2455%29",
-    benefits: [
-      "Daily live trade alerts",
-      "Entry & exit signals",
-      "Market analysis updates",
-      "Access to private Telegram group",
-    ],
-  },
+
   {
     name: "Group Mentorship",
     priceUsd: 150,
@@ -166,7 +154,7 @@ export default function CoffieFXPlans() {
       <div className="max-w-7xl mx-auto text-center relative z-10">
         {/* Logo + Title */}
         <div className="flex justify-center mb-6">
-          <img src="/assets/coffiefx-logo.png" alt="THE COFFIE FX" className="w-20 h-20 drop-shadow-lg" />
+          <img src="https://res.cloudinary.com/dzqdfaghg/image/upload/v1762302080/84c2a67c-a5bf-4e1a-8ec2-75ac777d8a9e.png" alt="THE COFFIE FX" className="w-20 h-20 drop-shadow-lg" />
         </div>
         <h2 className="text-5xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-[#00ff88] to-[#00cc66]">
           THE COFFIEFX ACADEMY

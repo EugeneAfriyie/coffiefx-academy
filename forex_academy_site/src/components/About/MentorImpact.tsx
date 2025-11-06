@@ -35,7 +35,7 @@ const CoffieFXMentorImpact: React.FC = () => {
           className="relative rounded-3xl overflow-hidden shadow-2xl shadow-[#00ff88]/40"
         >
           <img
-            src="https://res.cloudinary.com/dzqdfaghg/image/upload/v1762302755/SnapInsta.to_486315081_18056517722161244_2095643982265963332_n_yhpgbg.jpg"
+            src="https://res.cloudinary.com/dzqdfaghg/image/upload/v1762395603/SnapInsta.to_573146741_18078681389161244_8695105450639066888_n_omvcma.jpg"
             alt="Big Coffie mentoring students in East Legon"
             className="w-full h-auto object-cover"
             loading="lazy"

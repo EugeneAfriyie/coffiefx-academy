@@ -11,7 +11,7 @@ const CoffieFXAboutCTA: React.FC = () => {
       {/* Background Image + Overlay */}
       <div className="absolute inset-0">
         <img
-          src="https://res.cloudinary.com/dzqdfaghg/image/upload/v1762302755/SnapInsta.to_486315081_18056517722161244_2095643982265963332_n_yhpgbg.jpg"
+          src="https://res.cloudinary.com/dzqdfaghg/image/upload/v1762302713/SnapInsta.to_566846249_18076755227161244_5083847515239079115_n_aszzyz.jpg"
           alt="CoffieFX East Legon Class"
           className="w-full h-full object-cover opacity-30"
           loading="lazy"

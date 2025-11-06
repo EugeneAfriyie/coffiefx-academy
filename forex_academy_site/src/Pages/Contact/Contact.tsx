@@ -35,7 +35,7 @@ export default function CoffieFXContactHero() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="https://res.cloudinary.com/dzqdfaghg/image/upload/v1762302755/SnapInsta.to_486315081_18056517722161244_2095643982265963332_n_yhpgbg.jpg"
+            src="https://res.cloudinary.com/djeorsh5d/image/upload/v1761804514/06f5adb8-b5f4-4516-ba21-82078fb4cb98.png"
             alt="CoffieFX East Legon Campus"
             className="w-full h-full object-cover opacity-30"
             loading="lazy"

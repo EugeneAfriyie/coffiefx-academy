@@ -223,35 +223,62 @@ export default function CoffieFXSupportTicketModal({
     localStorage.setItem(STORAGE_KEY_ID, newId);
     return newId;
   };
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  if (isSubmitting || cooldownActive) return;
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (isSubmitting || cooldownActive) return;
+  setIsSubmitting(true);
+  setIsLoading(true);
+  setGlobalError(null);
 
-    setIsSubmitting(true);
-    setIsLoading(true);
-    setGlobalError(null);
+  if (!validateForm()) {
+    setIsSubmitting(false);
+    setIsLoading(false);
+    return;
+  }
 
-    if (!validateForm()) {
-      setIsSubmitting(false);
-      setIsLoading(false);
-      return;
-    }
+  try {
+    // 1. SEND EMAILS
+    const newId = await sendWithEmailJS();
+    setTicketId(newId);
+    setIsSubmitted(true);
+    setCooldownActive(true);
+    startCountdown(COOLDOWN_HOURS * 60 * 60 * 1000);
 
+    // 2. SEND TO GOOGLE SHEET (AFTER EMAIL SUCCESS)
+    const MAKE_WEBHOOK = "https://hook.eu2.make.com/zuwpxtukmk4fjcfvq2bkbc1226a3y46i";
+    
     try {
-      const newId = await sendWithEmailJS();
-      setTicketId(newId);
-      setIsSubmitted(true);
-      setCooldownActive(true);
-      startCountdown(COOLDOWN_HOURS * 60 * 60 * 1000);
-      setTimeout(() => resetAndClose(), 4500);
-    } catch (err: any) {
-      setGlobalError(err?.text || "Failed to send. Please try again.");
-    } finally {
-      setIsSubmitting(false);
-      setIsLoading(false);
+      await fetch(MAKE_WEBHOOK, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          timestamp: new Date().toISOString(),
+          ticket_id: newId,
+          name: formData.name.trim(),
+          email: formData.email.trim(),
+          phone: formData.phone.trim(),
+          telegram: formData.telegram.trim(),
+          subject: formData.subject.trim(),
+          message: formData.message.trim(),
+          status: "New"
+        }),
+      });
+    } catch (err) {
+      console.warn("Google Sheet log failed (non-critical)", err);
+      // Don't block user if sheet fails
     }
-  };
+
+    setTimeout(() => resetAndClose(), 4500);
+  } catch (err: any) {
+    setGlobalError(err?.text || "Failed to send. Please try again.");
+  } finally {
+    setIsSubmitting(false);
+    setIsLoading(false);
+  }
+};
+
+  
 
   const copyTicketId = async () => {
     if (!ticketId) return;

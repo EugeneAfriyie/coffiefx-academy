@@ -223,24 +223,22 @@ export default function ResourceModal({
             </div>
 
             {/* CTA */}
-            <div className="mt-10 flex flex-wrap gap-4">
-              <a
-                href="/mentorship"
-                className="bg-[#00c896] text-black font-semibold px-5 py-3 rounded-full hover:shadow-[0_0_20px_rgba(0,200,150,0.4)] transition"
-              >
-                Enroll / Learn More
-              </a>
-              {resource.link && (
-                <a
-                  href={resource.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="border border-white/10 text-white/90 px-5 py-3 rounded-full hover:bg-white/5 transition"
-                >
-                  Open Source / Watch External
-                </a>
-              )}
-            </div>
+            <div className="mt-12 flex flex-wrap gap-4 justify-center">
+  <a
+    href="https://t.me/bigCoffie"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#00ff88] to-[#00cc66] text-black font-bold rounded-full shadow-xl hover:shadow-2xl hover:shadow-[#00ff88]/50 transition-all"
+  >
+    Message Big Coffie Now
+  </a>
+  <a
+    href="/mentorship"
+    className="px-6 py-3 border-2 border-[#FFD700] text-[#FFD700] font-bold rounded-full hover:bg-[#FFD700]/10 transition"
+  >
+    Join Mentorship
+  </a>
+</div>
           </div>
         </motion.div>
       </motion.div>

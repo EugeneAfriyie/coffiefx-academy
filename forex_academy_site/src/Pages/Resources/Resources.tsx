@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
 
 import FeaturedResource from "../../components/Resources/FeaturedResource";
 import ResourceFilter from "../../components/Resources/ResourceFilter";
@@ -10,116 +9,114 @@ import Testimonials from "../../components/Testimonials/Testimonials";
 import { ResourcesHelmet } from "../../components/HelmetTags/HelmetTags";
 
 export const resources = [
-
-
-
   // ──────────────────────────────────────────────────────────────
-  // 1. ANNOUNCEMENT – ACCRA ACADEMY OPENING
+  // 1. ANNOUNCEMENT – COFFIEFX ACADEMY OPENING (EAST LEGON)
   // ──────────────────────────────────────────────────────────────
-{
-  id: 24,
-  title: "BIG ANNOUNCEMENT! RoadMoney Trading Office NOW OPEN to the Public in Accra",
-  category: "Announcements",
-  description: "Our state-of-the-art trading office in Accra McCarthy is officially open! Visit today for expert mentorship, live trading, and exclusive resources.",
-  author: "RoadMoney Team",
-  date: "2025-11-01",
-  image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1760408679/IMG_20251014_022039_477_ri1daj.jpg",
-  fullText: `
-### 🚨✨ **BIG ANNOUNCEMENT!** ✨🚨  
-**OUR TRADING OFFICE IS NOW OFFICIALLY OPEN TO THE PUBLIC!** 🎉🔥
+  {
+    id: 24,
+    title: "BIG ANNOUNCEMENT! CoffieFX Academy NOW OPEN in East Legon, Accra",
+    category: "Announcements",
+    description: "Our flagship trading academy in East Legon Okponglo is officially open! Walk-in mentorship, live signals, and prop funding prep — all under one roof.",
+    author: "Big Coffie",
+    date: "2025-11-06",
+    image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1760408679/IMG_20251014_022039_477_ri1daj.jpg",
+    fullText: `
+### BIG ANNOUNCEMENT!  
+**COFFIEFX ACADEMY IS NOW OPEN TO THE PUBLIC IN EAST LEGON!**
 
-![Office Grand Opening](https://res.cloudinary.com/djeorsh5d/image/upload/v1761139218/70bbb776-e28e-4492-a64c-32a2f7cd785a.png)
+![Academy Front](https://res.cloudinary.com/djeorsh5d/image/upload/v1761139218/70bbb776-e28e-4492-a64c-32a2f7cd785a.png)
 
-**Location:** Ghana, Accra – McCarthy Hills (Full Address Below)
+**Location:** East Legon Okponglo, Accra (Near American House)
 
 ---
 
-#### The Moment You’ve Been Waiting For
+#### Your New Trading Home
 
-After months of anticipation, **RoadMoney Forex Academy** proudly opens the doors to **Africa’s most advanced public-access trading office** — and **you’re invited!**
+**Big Coffie** personally welcomes you to **Ghana’s #1 public-access forex academy** — built for **real traders**.
 
-Whether you’re taking your **first step into forex**, scaling up your strategy, or hunting for **prop firm funding**, this is **your new home base**.
+Whether you're:
+- Starting from $0
+- Stuck in drawdown
+- Chasing **$100K prop funding**
+
+This is **your launchpad**.
 
 ---
 
-### What Awaits You Inside
+### What’s Inside
 
-| Feature | What You Get |
-|--------|--------------|
-| **Professional Trading Floor** | 20+ dual-monitor workstations, ultra-fast fiber internet, MT5/MT4 live accounts |
-| **Expert Mentorship** | Daily 1-on-1 sessions with funded traders (average 5+ years live market experience) |
-| **Live Market Analysis** | 9:00 AM – 5:00 PM GMT: Real-time breakdowns of EUR/USD, XAU/USD, NAS100 |
-| **Prop Challenge Lab** | Free access to FTMO & MyForexFunds simulators + mentor feedback |
-| **Resource Library** | Downloadable templates, risk calculators, trade journals |
-| **Networking Lounge** | Weekly “Trader Meetups” – connect, collaborate, co-trade |
+| Feature | Benefit |
+|--------|--------|
+| **Live Trading Floor** | 30+ workstations, 1ms latency, MT5 live accounts |
+| **Big Coffie 1-on-1** | Daily 30-min sessions (book via Telegram) |
+| **Live Signal Room** | NAS100, XAU, GBP/JPY — 9 AM – 5 PM GMT |
+| **Prop Lab** | FTMO, FundedNext, MyForexFunds simulators |
+| **Resource Vault** | 50+ templates, journals, risk tools |
+| **Mentor Network** | Weekly "CoffieFX Fridays" — trade with 6-figure earners |
 
-![Inside the Office](https://res.cloudinary.com/djeorsh5d/image/upload/v1760408704/IMG_20251014_022030_942_qyj4yp.jpg)
+![Inside Academy](https://res.cloudinary.com/djeorsh5d/image/upload/v1760408704/IMG_20251014_022030_942_qyj4yp.jpg)
 
 ---
 
 ### Who This Is For
 
-- **Beginners**: Learn price action, risk management, and psychology from scratch  
-- **Intermediate Traders**: Refine edge, build consistency, pass funding challenges  
-- **Advanced Traders**: Access Level 2 data, co-working with 6-figure earners  
+- **Beginners**: Learn **SNR**, **FVG**, **liquidity grabs**  
+- **Intermediate**: Pass **$50K challenges** in 14 days  
+- **Advanced**: Scale to **$1M allocation**
 
-> “I walked in with a $100 demo. Two weeks later? I’m prepping for a $50K challenge.”  
-> — **Efua A., First Public Visitor**
+> “I came with a $200 account. Now I’m funded.”  
+> — **Kwame A., First Walk-In**
 
 ---
 
-### Visit Us Today!
+### Visit Today!
 
 **Address:**  
-RoadMoney House  
-Plot 12, McCarthy Hills  
+CoffieFX House  
+Plot 45, East Legon Okponglo  
 Accra, Ghana  
-*(5 mins from West Hills Mall)*
+*(3 mins from American House)*
 
-**Opening Hours:**  
-- **Mon–Fri:** 8:00 AM – 8:00 PM  
-- **Sat:** 10:00 AM – 4:00 PM  
-- **Sun:** Closed (Online Support Active)
+**Hours:**  
+- **Mon–Fri:** 8:00 AM – 9:00 PM  
+- **Sat:** 10:00 AM – 6:00 PM  
+- **Sun:** Online Only
 
 **How to Get Here:**  
-- **By Tro-Tro:** Alight at McCarthy Junction → 3-min walk  
-- **By Uber/Bolt:** Search “RoadMoney Forex Academy”  
-- **Parking:** Free secure parking on-site  
+- **Tro-Tro:** Alight at American House → 2-min walk  
+- **Uber/Bolt:** Search “CoffieFX Academy”  
+- **Parking:** Free & secure
 
-![Map Location](https://res.cloudinary.com/djeorsh5d/image/upload/v1762076912/6f681926-d6b3-4b46-b010-a0045f3fc6de.png)
-
----
-
-### Special Launch Perks (First 100 Visitors)
-
-| Perk | Details |
-|------|---------|
-| **Free 1-Hour Mentorship** | Sit with a funded trader, review your journal |
-| **$50K Challenge Voucher** | 50% off any prop firm evaluation |
-| **Lifetime Resource Access** | Templates, checklists, video library |
+![Map](https://res.cloudinary.com/djeorsh5d/image/upload/v1762076912/6f681926-d6b3-4b46-b010-a0045f3fc6de.png)
 
 ---
 
-### Ready to Level Up?
+### Launch Perks (First 100 Visitors)
 
-**Walk in. Plug in. Trade live.**  
-No appointment needed — just bring your drive.
-
-[Get Directions on Google Maps →](https://maps.google.com/?q=RoadMoney+House+McCarthy+Accra)  
-[Join WhatsApp Community →](https://chat.whatsapp.com/roadmoneygh)  
-[Book a Free Seat →](/mentorship)
+| Perk | Value |
+|------|-------|
+| **Free 1-Hour with Big Coffie** | $150 value |
+| **$100K Challenge Voucher** | 60% off evaluation |
+| **Lifetime Signal Access** | All premium channels |
 
 ---
 
-**Your financial freedom doesn’t start online.**  
-**It starts here — in Accra. Right now.**
+### Ready to Trade Like a Pro?
 
-See you at the desk.  
-**RoadMoney Forex Academy** — *Where Ghana Trades to Win.*
-  `
-},
+**Walk in. Plug in. Get funded.**  
+No booking. Just show up.
 
-{
+[Get Directions →](https://maps.google.com/?q=CoffieFX+Academy+East+Legon)  
+[Join Telegram →](https://t.me/coffiefx)  
+[Book Seat →](/mentorship)
+
+---
+
+**Your 6-figure account starts here.**  
+**CoffieFX Academy — Where Ghana Gets Funded.**
+    `,
+  },
+  {
   id: 25,
   title: "The Power of Fundamental Analysis in Forex: Turn News Into Profits",
   category: "Tutorials",
@@ -1180,82 +1177,69 @@ To **equip you** with the **skills, mindset, and strategies** to **win consisten
 *#RoadMoneyForexAcademy #ForexSignals #TradingEducation #TikTokTrading #TelegramTips*
   `
 }
-
-  
-
-
-
-
-
-
-
-  ];
+];
 
 const ResourcesPage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-
-
   return (
     <>
       <ResourcesHelmet />
-    <main className="min-h-screen bg-gradient-to-b from-[#0b0f19] via-[#121826] to-[#0b0f19] text-white font-montserrat">
-      {/* Hero */}
-      <section className="relative py-24 text-center overflow-hidden">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="max-w-4xl mx-auto px-6"
-        >
-          <h1 className="text-4xl sm:text-5xl font-bold text-[#00c896] mb-4">
-            Resources & Learning Hub
-          </h1>
-          <p className="text-white/70 text-base sm:text-lg max-w-2xl mx-auto">
-            Explore in-depth articles, trading guides, webinar replays and announcements crafted to elevate your trading journey.
-          </p>
-        </motion.div>
+      <main className="min-h-screen bg-gradient-to-b from-[#0a0e17] via-[#0f1a2e] to-[#0a0e17] text-white font-montserrat">
+        {/* Hero */}
+        <section className="relative py-28 text-center overflow-hidden">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="max-w-5xl mx-auto px-6"
+          >
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00ff88] to-[#FFD700] mb-6">
+              CoffieFX Learning Hub
+            </h1>
+            <p className="text-white/70 text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed">
+              Master  CoffieFX strategy, and prop funding  with guides, live signals, and in-person mentorship at East Legon Academy.
+            </p>
+          </motion.div>
 
-        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_bottom_right,rgba(0,200,150,0.05),transparent_70%)] -z-10" />
-      </section>
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,rgba(0,255,136,0.08),transparent_70%)] -z-10" />
+        </section>
 
-      <div className="max-w-7xl mx-auto px-6">
-        <FeaturedResource 
-        resource={{
-           title: "Accra In-Person Trading Academy Launch",
-           description:"We’ve officially opened our first in-person trading academy in Accra! Experience live mentorship, structured forex education, and community-driven growth directly with our lead mentors.",
-          image:"https://res.cloudinary.com/djeorsh5d/image/upload/v1760408679/IMG_20251014_022039_477_ri1daj.jpg",
-          link: "/plans#in-person", // placeholder — update with your actual route later
-        }}/>
-     
-        {/* <EXnessPromo /> */}
+        <div className="max-w-7xl mx-auto px-6">
+          {/* Featured: Academy Launch */}
+          <FeaturedResource 
+            resource={{
+              title: "CoffieFX Academy East Legon — NOW OPEN",
+              description: "Walk-in mentorship, live signals, prop lab, and 1-on-1 with Big Coffie. Your funding journey starts here.",
+              image: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762302727/SnapInsta.to_490724547_18058763129161244_3424482830605663776_n_a8rqoc.jpg",
+              link: "/academy",
+            }}
+          />
 
-        <ResourceFilter
-          selectedCategory={selectedCategory}
-          setSelectedCategory={setSelectedCategory}
-        />
+          <ResourceFilter
+            selectedCategory={selectedCategory}
+            setSelectedCategory={setSelectedCategory}
+          />
 
-        <ResourceGrid
-          resources={resources}
-          selectedCategory={selectedCategory}
-        />
+          <ResourceGrid
+            resources={resources}
+            selectedCategory={selectedCategory}
+          />
 
-           <FeaturedResource 
-        resource={{
-          title: "🔥 RoadMoney $200K Giveaway + $1,000 Chill Bonus",
-    description:
-      "Register, verify, and trade with Exness — and stand a chance to win a $200K funded prop account and a $1,000 chill bonus. Let’s make more traders funded!",
-    image:
-      "https://res.cloudinary.com/djeorsh5d/image/upload/v1762081423/25f42861-0895-42fa-b3e9-87ebc41265fe.png",
-    link: "https://one.exnesslink.com/a/ttgurtgu",
-        }}/>
-
+          {/* Featured: Giveaway */}
+          <FeaturedResource 
+            resource={{
+              title: "CoffieFX $200K Funded Giveaway + $1,000 Bonus",
+              description: "Trade with Exness → Win a $200K account + $1,000 cash. 10 winners monthly.",
+              image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1762081423/25f42861-0895-42fa-b3e9-87ebc41265fe.png",
+              link: "https://one.exnesslink.com/a/coffiefx",
+            }}
+          />
 
           <Testimonials />
-      <FAQSection />
-      </div>
-    </main>
-
+          <FAQSection />
+        </div>
+      </main>
     </>
   );
 };

@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle2, Zap } from "lucide-react";
 // import { inPersonPackages } from "../../Plans/TestMentordhip";
@@ -52,7 +52,7 @@ export default function CoffieFXQuiz() {
   const [usdToGhs, setUsdToGhs] = useState<number>(16.5);
 
   // Fetch live USD → GHS rate
-  useState(() => {
+  useEffect(() => {
     const fetchRate = async () => {
       try {
         const res = await fetch("https://open.er-api.com/v6/latest/USD");
@@ -114,7 +114,7 @@ export default function CoffieFXQuiz() {
   };
 
   return (
-    <section className="relative py-24 px-6 md:px-16 bg-gradient-to-b from-[#0a0e17] via-[#0f1a2e] to-[#0a0e17] text-white overflow-hidden">
+    <section id="plansQuiz" className="relative py-24 px-6 md:px-16 bg-gradient-to-b from-[#0a0e17] via-[#0f1a2e] to-[#0a0e17] text-white overflow-hidden">
       {/* Glow Background */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 left-20 w-96 h-96 bg-[#00ff88] rounded-full blur-3xl animate-pulse" />

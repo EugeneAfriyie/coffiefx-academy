@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from "react-helmet-async";
 import Hero from '../../components/Home/hero/Hero';
 import AboutMentor from '../../components/Home/AboutMentor/CoffieFXAboutMentor';
 import WhatIsForex from '../../components/Home/WhatIsForex/ForexCard';
@@ -12,10 +11,11 @@ import TradingAcademyAd from '../../components/Home/TradingAcademyAd/TradingAcad
 import AcademyPopupAd from '../../components/Home/TradingAcademyAd/AcademyPopupAd';
 import ContactInvite from '../../components/Home/ContactInvite/ContactInvite';
 import SmartTradingQuiz from '../../components/Home/FreeValueHook/CoffieFXSmartQuiz';
-import FAQSection from '../../components/Home/FAQSection/CoffieFXFAQSection';
+// import FAQSection from '../../components/Home/FAQSection/FAQSection';
 import Testimonials from '../../components/Testimonials/Testimonials';
 import JoinCommunity3D from '../../components/Home/JoinCommunity/JoinCommunity3D';
 import { HomeHelmet } from '../../components/HelmetTags/HelmetTags';
+import CoffieFXFAQSection from '../../components/Home/FAQSection/CoffieFXFAQSection';
 
 const Home: React.FC = () => {
   return (
@@ -40,7 +40,7 @@ const Home: React.FC = () => {
        <AcademyPopupAd />
        <ContactInvite /> 
         <SmartTradingQuiz />
-       <FAQSection />
+       <CoffieFXFAQSection />
        <Testimonials />
 
 

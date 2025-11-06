@@ -25,7 +25,10 @@ export default function CoffieFXFooter() {
 
   // usePathname updates automatically on client-side navigations (Link)
  const location = useLocation();
-const isHomePage = location.pathname === "/" || location.pathname === "/index.html";
+const isHomePage = location.pathname === "/"
+const isAboutPage = location.pathname === "/about"
+const isResourcesPage = location.pathname === "/resources"
+const isPlansPage = location.pathname === "/plans"
 
   // Show scroll-to-top button after scrolling down
   useEffect(() => {
@@ -63,8 +66,24 @@ const isHomePage = location.pathname === "/" || location.pathname === "/index.ht
                 <li><a href="#community" className="hover:text-[#00ff88] transition">Join Community</a></li>
               </>
             )}
-            <li><a href="/faq" className="hover:text-[#00ff88] transition">FAQs</a></li>
-            <li><a href="/plans" className="hover:text-[#00ff88] transition">Mentorship Plans</a></li>
+            {isAboutPage && (
+              <>
+                <li><a href="#mission-vision" className="hover:text-[#00ff88] transition">Mission & Vision</a></li>
+                <li><a href="#about" className="hover:text-[#00ff88] transition">About CoffieFX</a></li>
+              </>
+            )}
+            {isPlansPage && (
+              <>
+                <li><a href="#plansQuiz" className="hover:text-[#00ff88] transition">Smart Quiz</a></li>
+              </>
+            )}
+            {isResourcesPage && (
+              <>
+                <li><a href="#resources" className="hover:text-[#00ff88] transition">Resources</a></li>
+              </>
+            )}
+            <li><a href="#faq" className="hover:text-[#00ff88] transition">FAQs</a></li>
+            <li><a href={isPlansPage ?`#plans` : '/plans'} className="hover:text-[#00ff88] transition">Mentorship Plans</a></li>
           </ul>
         </motion.div>
 
