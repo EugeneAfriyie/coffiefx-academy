@@ -116,24 +116,24 @@ No booking. Just show up.
 **CoffieFX Academy — Where Ghana Gets Funded.**
     `,
   },
-  {
-  id: 25,
-  title: "The Power of Fundamental Analysis in Forex: Turn News Into Profits",
+{
+  id: 2,
+  title: "The Power of Fundamental Analysis: Turn News Into Profits",
   category: "Tutorials",
   description: "Master NFP, CPI, FOMC, and central bank speeches. Learn how to read economic calendars, interpret data, and trade the news like a funded pro.",
-  author: "Coach Ibrahim",
+  author: "Big Coffie",
   date: "2025-11-01",
   image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1762077128/2e5782d3-3fd6-46ff-9dd6-e61e5b774344.png",
-  // video: "https://youtu.be/fundamental2025",
-  link: "https://roadmoney.co/fundamental-kit",
+  video: "https://youtu.be/S9cgc6qRjlU?si=7eUPEV0HbtwkV0Hc",
+  link: "https://t.me/bigCoffie",
   fullText: `
 ### The Power of Fundamental Analysis in Forex  
-**Turn Global News Into Consistent Profits** 💹📈
+**Turn Global News Into Consistent Profits** 
 
 ![Economic Calendar](https://res.cloudinary.com/djeorsh5d/image/upload/v1762077307/3b7c97db-484d-457c-a527-6417f65719cb.png)
 
 > “Price is what you pay. **Value is what you get.**”  
-> — Warren Buffett (and every smart forex trader)
+> — Warren Buffett (and every smart **CoffieFX trader**)
 
 ---
 
@@ -141,11 +141,11 @@ No booking. Just show up.
 
 | Scenario | Technicals Fail | Fundamentals Win |
 |--------|----------------|------------------|
-| **NFP Friday** | Support broken → fakeout | 250K jobs → USD explodes 180 pips |
-| **Rate Hike** | RSI overbought | Fed hikes 50bps → EUR/USD -240 pips |
-| **War/Geopolitics** | Chart patterns vanish | Risk-off → JPY safe-haven surge |
+| **NFP Friday** | Support broken → fakeout | 250K jobs → **USD explodes 180 pips** |
+| **Rate Hike** | RSI overbought | Fed hikes 50bps → **EUR/USD -240 pips** |
+| **War/Geopolitics** | Chart patterns vanish | Risk-off → **JPY safe-haven surge** |
 
-**Fact:** 68% of major forex moves (>100 pips) happen within 30 minutes of high-impact news.
+**Fact:** 68% of major forex moves (>100 pips) happen within **30 minutes** of high-impact news.
 
 ---
 
@@ -155,7 +155,7 @@ No booking. Just show up.
 Use **Investing.com** or **Forex Factory** — filter by:
 - **Impact**: Red only (High)
 - **Currencies**: USD, EUR, GBP, JPY, AUD
-- **Time**: Your session (London/NY overlap = highest volatility)
+- **Time**: **London/NY overlap** (1 PM – 5 PM GMT)
 
 ![Calendar Setup](https://res.cloudinary.com/djeorsh5d/image/upload/v1762078122/a6df57a8-27ea-4f14-a585-7802e74ea091.png)
 
@@ -165,11 +165,11 @@ Use **Investing.com** or **Forex Factory** — filter by:
 
 | Report | When | What to Watch | Typical Move |
 |-------|------|---------------|--------------|
-| **NFP** | 1st Friday | Actual vs Forecast | ±150 pips |
-| **CPI** | Mid-month | Core vs Headline | ±80 pips |
-| **FOMC** | 8x/year | Dot Plot + Powell Tone | ±200 pips |
-| **Retail Sales** | Mid-month | MoM % | ±70 pips |
-| **PMI** | 1st of month | >50 = growth | ±60 pips |
+| **NFP** | 1st Friday | Actual vs Forecast | **±150 pips** |
+| **CPI** | Mid-month | Core vs Headline | **±80 pips** |
+| **FOMC** | 8x/year | Dot Plot + Powell Tone | **±200 pips** |
+| **Retail Sales** | Mid-month | MoM % | **±70 pips** |
+| **PMI** | 1st of month | >50 = growth | **±60 pips** |
 
 ---
 
@@ -177,19 +177,19 @@ Use **Investing.com** or **Forex Factory** — filter by:
 
 | Phrase | Market Reaction |
 |-------|-----------------|
-| *"Patient on rates"* | Dovish → Currency down |
+| *"Patient on rates"* | Dovish → **Currency down** |
 | *"Inflation transitory"* | Dovish |
-| *"Act decisively"* | Hawkish → Currency up |
+| *"Act decisively"* | Hawkish → **Currency up** |
 | *"Balance sheet reduction"* | Hawkish |
 
-**Pro Tip:** Use **FOMC Word Cloud Generator** (free in our kit)
+**Pro Tip:** Use **CoffieFX FOMC Word Cloud** (free in Telegram)
 
 ---
 
 ### 4. **The News Trading Playbook (3 Strategies)**
 
 #### Strategy 1: **Straddle the News** (Beginner)
-- 2 minutes before NFP  
+- 2 mins before NFP  
 - Place **Buy Stop** + **Sell Stop** 20 pips away  
 - Cancel loser after 5 mins  
 - **Win Rate:** 72% | **RR:** 1:2
@@ -197,7 +197,7 @@ Use **Investing.com** or **Forex Factory** — filter by:
 #### Strategy 2: **Post-News Pullback** (Intermediate)
 - Wait 15 mins after release  
 - Enter on 1H candle close in direction of momentum  
-- **Example:** CPI beats → USD up → buy GBP/USD pullback to 8 EMA
+- **Example:** CPI beats → USD up → buy **GBP/USD pullback to 8 EMA**
 
 #### Strategy 3: **Deviation Trade** (Advanced)
 - Actual: 250K  
@@ -209,23 +209,23 @@ Use **Investing.com** or **Forex Factory** — filter by:
 
 ---
 
-## Live Trade: $8,200 NFP Profit (Oct 2025)
+## Live Trade: **$8,200 NFP Profit** (Oct 2025)
 
 | Detail | Value |
 |------|-------|
-| **Pair** | USD/JPY |
+| **Pair** | **USD/JPY** |
 | **Entry** | 149.80 (post-NFP spike) |
 | **Exit** | 151.60 |
-| **Pips** | +180 |
+| **Pips** | **+180** |
 | **Risk** | 0.5% ($500) |
 | **Profit** | **$8,200** (lot size 4.0) |
 
 > “I used to fear news. Now I trade it for breakfast.”  
-> — **Ama Serwaa**, RoadMoney Student
+> — **Kwame Asare**, CoffieFX Academy Student
 
 ---
 
-## Your Fundamental Trading Kit (Free Download)
+## Your **CoffieFX Fundamental Kit** (Free Download)
 
 - Economic Calendar MT5 Indicator  
 - News Impact Tracker (Excel)  
@@ -233,7 +233,7 @@ Use **Investing.com** or **Forex Factory** — filter by:
 - 30-Day News Trade Journal  
 - Central Bank Tone Cheat Sheet  
 
-[Download Full Kit →](https://roadmoney.co/fundamental-kit)
+[Get Free Kit →](https://t.me/bigCoffie)
 
 ---
 
@@ -246,27 +246,27 @@ Master both → become **unstoppable**.
 
 **Next Live Session:**  
 **FOMC Deep Dive – Nov 6th, 7 PM GMT**  
-[RSVP Free →](/mentorship)
+[RSVP Free →](https://t.me/bigCoffie)
 
 ---
 
 **Start trading the news today.**  
 **Stop guessing. Start knowing.**
 
-*RoadMoney Forex Academy — Where Knowledge Meets Profit.*
-  `
-}
+*CoffieFX Academy — Where Ghana Gets Funded.*
+  `,
+},
 ,
 {
   id: 26,
-  title: "Prop Firm Mastery: Pass $200K Challenges & Manage 6-Figure Funded Accounts",
+  title: "Prop Firm Mastery: Pass $200K Challenges & Scale to $1M+",
   category: "Tutorials",
   description: "Exact 7-phase system to pass FTMO, MyForexFunds, The5ers. Includes risk rules, drawdown recovery, payout scaling, and live $180K account breakdown.",
-  author: "Coach Tolu (RoadMoney Prop Lead)",
+  author: "Big Coffie",
   date: "2025-11-01",
   image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1762078611/cea5a203-0d9d-4783-a4d9-1ab5a8671b76.png",
-  // video: "https://youtu.be/propfirm2025",
-  link: "https://roadmoney.co/prop-kit",
+  video: "https://youtu.be/QRt5VzIfzPU?si=aiXSZXFcpZXZ-Npw",
+  link: "https://t.me/bigCoffie",
   fullText: `
 ### Prop Firm Mastery: Pass $200K Challenges & Scale to $1M+  
 **From Demo to 6-Figure Payouts — The Complete Playbook**  
@@ -275,7 +275,7 @@ Master both → become **unstoppable**.
 
 > “90% of traders fail prop challenges.  
 > The 10% who pass? They follow **this system**.”  
-> — **Coach Tolu**, 7-Figure Payout Mentor
+> — **Big Coffie**, 7-Figure Payout Mentor
 
 ---
 
@@ -288,7 +288,7 @@ Master both → become **unstoppable**.
 | **The5ers** | $4M | 80% | 6% daily / 10% total | Low drawdown pros |
 | **FundedNext** | $4M | 95% | 5% / 10% | High RR traders |
 
-**RoadMoney Pick:** **FTMO** — fastest scaling + 90% split after $10K payout.
+**CoffieFX Pick:** **FTMO** — fastest scaling + 90% split after $10K payout.
 
 ---
 
@@ -373,12 +373,12 @@ Master both → become **unstoppable**.
 |------|--------------|
 | **Trade Journal** | 5 mins after every trade |
 | **Weekly Review** | Sunday 7 PM GMT |
-| **Mentor Check-In** | Bi-weekly (RoadMoney Discord) |
+| **Mentor Check-In** | Bi-weekly (CoffieFX Telegram) |
 | **No Revenge Trading** | 1 loss = walk away 1 hour |
 
 ---
 
-## Your Prop Firm Mastery Kit (Free)
+## Your **CoffieFX Prop Mastery Kit** (Free)
 
 - FTMO Challenge MT5 Template  
 - Risk Calculator (Excel + Google Sheets)  
@@ -386,7 +386,7 @@ Master both → become **unstoppable**.
 - 90-Day Trade Journal (PDF)  
 - Payout Scaling Calculator  
 
-[Download Full Kit →](https://roadmoney.co/prop-kit)
+[Get Free Kit →](https://t.me/bigCoffie)
 
 ---
 
@@ -402,31 +402,31 @@ Follow this 7-phase system →
 
 **Next Live Session:**  
 **FTMO Challenge Live Trading – Nov 8th, 2 PM GMT**  
-[Join Free →](/mentorship)
+[Join Free →](https://t.me/bigCoffie)
 
 ---
 
 **Stop applying. Start passing.**  
-**RoadMoney Prop Academy — Where Traders Get Funded.**
-  `
+**CoffieFX Academy — Where Ghana Gets Funded.**
+  `,
 },
 
 {
   id: 27,
   title: "MASSIVE GIVEAWAY: Win a $200K Prop Account + $1,000 Cash Bonus!",
   category: "Announcements",
-  description: "Trade 1 standard lot with Exness using our link — enter to win a fully funded $200K prop account + $1,000 instant cash. Open to all RoadMoney traders!",
-  author: "RoadMoney Team",
+  description: "Trade 1 standard lot with Exness + engage on socials (IG Reels/Stories, YouTube tutorials, TikTok) — enter to win a fully funded $200K prop account + $1,000 instant cash. Open to all CoffieFX traders!",
+  author: "Big Coffie",
   date: "2025-10-15",
   image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1762081423/25f42861-0895-42fa-b3e9-87ebc41265fe.png",
   // video: "https://youtu.be/exnessgiveaway2025",
-  link: "https://one.exnesslink.com/a/ttgurtgu",
+  link: "https://one.exnesslink.com/a/coffiefx",
   fullText: `
 ### MASSIVE GIVEAWAY: $200K PROP ACCOUNT + $1,000 CASH BONUS!  
 
 ![Giveaway Banner](https://res.cloudinary.com/djeorsh5d/image/upload/v1762081423/25f42861-0895-42fa-b3e9-87ebc41265fe.png)
 
-**RoadMoney × Exness**  
+**CoffieFX × Exness**  
 **October 15th – November 15th, 2025**  
 **1 WINNER. 1 LIFE-CHANGING PRIZE.**
 
@@ -439,18 +439,18 @@ Follow this 7-phase system →
 | **Fully Funded $200,000 Prop Account** | $200,000 capital |
 | **Instant $1,000 Cash Bonus** | $1,000 (direct to wallet) |
 | **90-Day FTMO Challenge Bypass** | No evaluation needed |
-| **RoadMoney Pro Mentorship (3 Months)** | 1-on-1 with 6-figure traders |
+| **CoffieFX Pro Mentorship (3 Months)** | 1-on-1 with Big Coffie |
 | **Custom MT5 Template Pack** | Risk tools + journal |
 
 **Total Value: Over $205,000**
 
 ---
 
-## HOW TO ENTER (3 SIMPLE STEPS)
+## HOW TO ENTER (3 SIMPLE STEPS + SOCIAL BONUS)
 
 ### Step 1: Register with Exness  
 Use **our official link** (required for tracking):  
-[REGISTER NOW →](https://one.exnesslink.com/a/ttgurtgu)
+[REGISTER NOW →](https://one.exnesslink.com/a/coffiefx)
 
 ### Step 2: Verify & Fund  
 - Complete KYC  
@@ -466,30 +466,48 @@ Use **our official link** (required for tracking):
 **Every 1 lot = 1 entry**  
 Trade 10 lots → 10 entries → 10x chance to win!
 
+### BONUS ENTRIES: Engage on Socials (Free!)
+Boost your odds with **social participation** — share the love for CoffieFX content!  
+**Each action = +5 entries** (up to 50 bonus max)
+
+| Platform | Action | How to Enter |
+|----------|--------|--------------|
+| **Instagram** | Like/Comment/Reel Share | Tag @the.coffiefx in your story/reel on flipping tips |
+| **YouTube** | Watch & Comment Tutorial | Comment on "NFP Trading 2025" video + subscribe |
+| **TikTok** | Duet or Stitch Video | Duet Big Coffie's prop challenge reel |
+| **Telegram** | Share Post | Forward this giveaway to 3 friends in CoffieFX group |
+
+**Proof:** Screenshot your engagement → DM @bigCoffie  
+[Watch Free Tutorials →](https://www.youtube.com/@TheCoffieFX)  
+[IG Reels →](https://www.instagram.com/the.coffiefx/)
+
 ---
 
 ## WINNER ANNOUNCEMENT
 
 - **Live Draw:** November 18th, 7 PM GMT  
+- **Location:** **CoffieFX Academy, East Legon Okponglo**  
 - **Streamed on:** YouTube + Instagram Live  
 - **Winner Contacted:** Email + Telegram within 24 hrs  
 - **Prize Delivery:** Within 7 business days
 
 ![Live Draw Setup](https://res.cloudinary.com/djeorsh5d/image/upload/v1762081598/8895376a-f5ec-4d63-9238-f94cee886ee5.png)
 
+[Watch Live Draw →](https://vm.tiktok.com/ZMSUT1XT2/)
+
 ---
 
 ## REAL TRADER STORIES
 
-> “I traded 3 lots on XAU/USD during NFP — won a $50K account last year. This time? I’m going for the $200K!”  
-> — **Kofi Mensah**, Accra Trader
+> “I traded 3 lots on XAU/USD during NFP + shared a Reel — won a $50K account last year. This time? I’m going for the $200K!”  
+> — **Kofi Mensah**, East Legon Trader
 
-> “Exness spreads are insane. 0.0 on EUR/USD during London open. Perfect for scalping.”  
-> — **Ama Serwaa**, RoadMoney Student
+> “Exness spreads are insane. 0.0 on EUR/USD during London open. Perfect for scalping + free YouTube tutorials sealed it.”  
+> — **Ama Serwaa**, CoffieFX Academy Student
 
 ---
 
-## WHY EXNESS? (THE ROADMONEY CHOICE)
+## WHY EXNESS? (THE COFFIEFX CHOICE)
 
 | Feature | Exness | Others |
 |--------|--------|--------|
@@ -508,80 +526,81 @@ Trade 10 lots → 10 entries → 10x chance to win!
 | **Do I need to be in Ghana?** | No — open worldwide |
 | **Can I use an existing Exness account?** | No — must use **our link** |
 | **What if I lose money?** | No risk — prize is fully funded |
-| **Is this legit?** | 100% — powered by Exness & RoadMoney |
+| **Is this legit?** | 100% — powered by Exness & CoffieFX |
+| **Social bonus proof?** | DM screenshots to @bigCoffie |
 
 ---
 
 ## ENTER NOW — YOUR $200K ACCOUNT AWAITS
 
-[REGISTER & START TRADING →](https://one.exnesslink.com/a/ttgurtgu)
+[REGISTER & START TRADING →](https://one.exnesslink.com/a/coffiefx)
 
 **Pro Tip:**  
-Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours!
+Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours! Then share your setup on IG Stories for +5 entries.
 
 ---
 
 ### COUNTDOWN TO CLOSE
 
 <div style="font-size: 2rem; font-weight: bold; color: #00c896; text-align: center; margin: 2rem 0;">
-  15 DAYS LEFT
+  9 DAYS LEFT
 </div>
 
 ---
 
-**One trade. One winner. One future.**
+**One trade. One share. One future.**
 
-**RoadMoney & Exness — Powering Africa’s Next Millionaire Trader.**
+**CoffieFX & Exness — Powering Ghana’s Next Millionaire Trader.**
 
 *Terms apply. Must be 18+. Full rules in link.*
-  `
+  `,
 },
 
 {
   id: 28,
-  title: "Why RoadMoney Academy Is the #1 Choice for African Traders in 2025",
+  title: "Why CoffieFX Academy Is the #1 Choice for African Traders in 2025",
   category: "Announcements",
-  description: "Live trading floor in Accra, 87% prop pass rate, 24/7 mentorship, $10M+ in funded payouts. Here's why 5,000+ traders chose us.",
-  author: "RoadMoney Team",
+  description: "Live trading floor in East Legon, 87% prop pass rate, 24/7 mentorship, $10M+ in funded payouts. Here's why 5,000+ traders chose us.",
+  author: "Big Coffie",
   date: "2025-11-01",
   image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1761140171/photo_2025-09-29_09-58-48_ouepjj.jpg",
-  video: "https://youtu.be/whychooseus2025",
-  link: "/mentorship",
+  video: "https://youtu.be/FJGpHDA5Lrg?si=vNjp-9dm-d2vnKoP",
+  link: "https://t.me/bigCoffie",
   fullText: `
-### Why RoadMoney Academy Is the #1 Choice for African Traders  
+### Why CoffieFX Academy Is the #1 Choice for African Traders  
 **5,000+ Students | $10M+ Funded | 87% Prop Pass Rate**  
 
 ![Academy Campus](https://res.cloudinary.com/djeorsh5d/image/upload/v1761140172/photo_2025-10-07_07-13-25_ljyjpa.jpg)
 
 > “I tried 3 online courses. Failed 5 prop challenges.  
-> Joined RoadMoney — passed $100K FTMO in 21 days.”  
-> — **Kofi Adjei**, Lagos Trader
+> Joined CoffieFX — passed $100K FTMO in 21 days.”  
+> — **Kofi Adjei**, Accra Trader
 
 ---
 
-## The RoadMoney Difference (No Fluff, Just Results)
+## The CoffieFX Difference (No Fluff, Just Results)
 
-| Feature | RoadMoney | Others |
-|--------|-----------|--------|
-| **Physical Campus** | ✅ Accra 24/7 Live Floor | ❌ Zoom only |
+| Feature | CoffieFX | Others |
+|--------|----------|--------|
+| **Physical Campus** | **East Legon 24/7 Live Floor** | Zoom only |
 | **Prop Pass Rate** | **87%** | 12–35% |
 | **Mentors** | 6-Figure Funded Traders | YouTube “Gurus” |
 | **Funding Pipeline** | $10M+ Payouts | $0 |
-| **Support** | 24/7 Discord + In-Person | Email (48hr reply) |
+| **Support** | 24/7 Telegram + In-Person | Email (48hr reply) |
 
 ---
 
-## 1. Africa’s Only 24/7 Live Trading Floor
+## 1. Ghana’s Only 24/7 Live Trading Floor
 
 - **40 x 32″ curved monitors**  
 - **Level 2 data** (NYSE, JSE, Forex)  
-- **Prop Challenge Arena** (FTMO, The5ers)  
-- **Rooftop Strategy Sessions** with Accra skyline  
+- **Prop Challenge Arena** (FTMO, FundedNext)  
+- **Rooftop Flipping Sessions** with Accra skyline  
 
-![Live Floor](https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&h=900&fit=crop)
+![Live Floor](https://res.cloudinary.com/djeorsh5d/image/upload/v1760408679/IMG_20251014_022039_477_ri1daj.jpg)
 
-> “It’s like Wall Street — but in Ghana.”  
-> — **BBC Africa Feature, Oct 2025**
+> “It’s like Wall Street — but in **East Legon**.”  
+> — **CoffieFX Student, Nov 2025**
 
 ---
 
@@ -602,9 +621,9 @@ Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours!
 
 | Mentor | Payouts | Specialty |
 |--------|---------|----------|
-| **Coach Tolu** | $2.1M | Gold Scalping |
-| **Coach Aisha** | $1.8M | NAS100 Futures |
-| **Coach Mike** | $3.4M | Prop Scaling |
+| **Big Coffie** | $3.8M | Flipping + Prop Scaling |
+| **Coach Kofi** | $1.6M | XAU/USD News Trades |
+| **Coach Ama** | $2.1M | NAS100 Futures |
 
 **No theory. No slides. Just live P&L.**
 
@@ -614,13 +633,13 @@ Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours!
 
 ## 4. Real Success Stories (Verified)
 
-> “From Uber driver to $1.2M funded. RoadMoney changed my bloodline.”  
-> — **Samuel Osei**, Featured on Forbes Africa
+> “From trotro driver to $1.2M funded. CoffieFX changed my bloodline.”  
+> — **Samuel Osei**, Featured on JoyNews
 
 > “Girls-Only Bootcamp: 100 seats → 87 funded. I’m one of them.”  
 > — **Efua Johnson**, $450K Account
 
-[See All 50+ Stories →](https://roadmoney.co/stories)
+[See All 50+ Stories →](https://t.me/bigCoffie)
 
 ---
 
@@ -628,20 +647,20 @@ Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours!
 
 | Tool | What You Get |
 |------|--------------|
-| **MT5 Template Pack** | 8 EMA, VWAP, Order Blocks |
+| **MT5 Flipping Template** | Multi-position entries |
 | **Risk Calculator** | Auto 1% rule |
 | **Trade Journal Pro** | 90-day PDF + Excel |
-| **FOMC Live Room** | Real-time news trading |
+| **NFP Live Room** | Real-time news trading |
 
-[Download Free Starter Kit →](https://roadmoney.co/starter)
+[Download Free Starter Kit →](https://t.me/bigCoffie)
 
 ---
 
 ## 6. Community That Holds You Accountable
 
-- **Discord (10K+ members)** — 24/7 trade ideas  
+- **Telegram (10K+ members)** — 24/7 trade ideas  
 - **Weekly Live Reviews** — Your journal, dissected  
-- **Trader Meetups** — Accra, Lagos, Nairobi  
+- **Trader Meetups** — East Legon, Kumasi, Takoradi  
 - **Accountability Pods** — 5 traders, 1 goal  
 
 ---
@@ -650,22 +669,23 @@ Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours!
 
 | Plan | Price | Includes |
 |------|-------|----------|
-| **Online Academy** | $99/mo | All courses, Discord |
-| **Live Floor Access** | $299/mo | Campus, mentors, challenges |
-| **1-on-1 Mentorship** | $999/mo | Personal coach, $50K challenge |
+| **Online Flipping Sessions** | **$150** | Live demos, risk rules |
+| **Live Floor Access (Beginner)** | **$50** | Campus, signals, mentors |
+| **Advanced In-Person** | **$150** | Prop lab, 1-month signals |
+| **1-on-1 Mentorship** | **$350** | Personal coach, $50K challenge |
 
-**First 7 Days FREE** — cancel anytime.
+**First Visit FREE** — walk in today.
 
 ---
 
 ## Join the Movement
 
 **Online courses teach you *how* to trade.**  
-**RoadMoney teaches you *how to win*.**
+**CoffieFX teaches you *how to win*.**
 
 ### Next Steps:
-1. [Start Free Trial →](/mentorship)  
-2. Join Live Floor Tour (Accra)  
+1. [Walk In Today →](https://maps.app.goo.gl/2ne63bGsqGFWdyjr7)  
+2. Join Live Floor Tour (East Legon)  
 3. Get Funded in 30 Days  
 
 ![Student Celebration](https://res.cloudinary.com/djeorsh5d/image/upload/v1762078888/cac6b0e2-0021-4a14-a6d7-f6cb93ab9201.png)
@@ -682,42 +702,43 @@ Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours!
 
 ---
 
-**RoadMoney Academy**  
-*Where African Traders Become Global Legends.*
+**CoffieFX Academy**  
+*Where Ghana Gets Funded.*
 
-[Enroll Now — 7-Day Free Trial →](/mentorship)
-  `
+[Visit East Legon Now →](https://maps.app.goo.gl/2ne63bGsqGFWdyjr7)  
+[Join Telegram →](https://t.me/bigCoffie)
+  `,
 },
 
 {
   id: 29,
-  title: "How Forex Is Creating a New Digital Middle Class in Africa",
+  title: "How Forex Is Creating a New Digital Middle Class in Ghana",
   category: "Case Studies",
-  description: "From youth unemployment to $10M+ funded payouts: How 1.3M African traders are building wealth via mobile forex — with real stories, stats, and economic impact.",
-  author: "RoadMoney Research",
+  description: "From youth unemployment to $10M+ funded payouts: How 1.3M African traders — led by Ghana — are building wealth via mobile forex. Real stories, stats, and impact.",
+  author: "Big Coffie",
   date: "2025-11-01",
   image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1762078968/a6edcdd1-3b44-491f-8f29-b0cda1512bf4.png",
   fullText: `
-### How Forex Is Creating a New Digital Middle Class in Africa  
+### How Forex Is Creating a New Digital Middle Class in Ghana  
 **1.3M Traders | $10M+ Funded | 30% YoY Growth**  
 
-![African Trader on Mobile](https://res.cloudinary.com/djeorsh5d/image/upload/v1762079139/4efee111-80ce-4f9d-b19e-5c2d760142a6.png)
+![Ghanaian Trader on Mobile](https://res.cloudinary.com/djeorsh5d/image/upload/v1762079139/4efee111-80ce-4f9d-b19e-5c2d760142a6.png)
 
-> “I went from driving Uber 12 hours a day to managing a $200K funded account — all from my phone.”  
-> — **Kofi Mensah**, Lagos Trader
+> “I went from selling waakye to managing a $200K funded account — all from my phone.”  
+> — **Kofi Mensah**, East Legon Trader
 
 ---
 
-## The Perfect Storm: Why Forex Fits Africa
+## The Perfect Storm: Why Forex Fits Ghana
 
 | Factor | Reality | Impact |
 |--------|--------|--------|
 | **Youth Population** | 60% under 25 | Massive talent pool |
-| **Unemployment** | 38% in Nigeria | Forex = flexible income |
-| **Mobile Internet** | 85% access | Trade from anywhere |
+| **Unemployment** | 38% in Accra | Forex = flexible income |
+| **Mobile Internet** | 90% access | Trade from trotro |
 | **Low Entry** | $10 deposits | No capital barrier |
 
-**Result:** **30% annual growth** in African retail forex — fastest in the world.
+**Result:** **Ghana leads Africa** in retail forex growth — **32% YoY**.
 
 ---
 
@@ -725,34 +746,29 @@ Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours!
 
 | Metric | Stat |
 |-------|------|
-| **Active Traders** | **1.3 million** (2025) |
-| **Daily Volume** | **$72 billion** (Africa-led pairs) |
-| **South Africa** | 190K traders, $2.1B volume |
-| **Nigeria** | 300K+ traders |
-| **Prop Payouts** | **$10.2M+** to African students |
+| **Active Traders in Ghana** | **250,000+** (2025) |
+| **Daily Volume (XAU, NAS)** | **$12 billion** |
+| **CoffieFX Students Funded** | **$10.2M+** |
+| **Prop Payouts to Ghanaians** | **$3.8M** |
 
 ---
 
 ## Real Stories: From Hustle to Funded
 
-### **Ref Wayne (South Africa)**  
-- **Started:** Age 16, township bedroom  
-- **Now:** Millionaire, founded **African Forex Institute**  
-- **Impact:** Mentored 10,000+ youth  
+### **Kwame Asare (Sunyani → East Legon)**  
+- **Started:** CS student, $50 account  
+- **Now:** $450K funded, teaches flipping  
+- **Impact:** Built **CoffieFX website** for mentorship  
 
-### **Sandile Shezi (South Africa)**  
-- **Risked:** University fees on GBP/ZAR  
-- **Built:** $3M empire  
-- **Runs:** Global Forex Institute  
+### **Ama Serwaa (Kumasi)**  
+- **Risked:** Last GH₵200 on NFP  
+- **Built:** $180K FTMO account  
+- **Runs:** Girls-Only Flipping Bootcamp  
 
-### **Uche ParaGon (Nigeria)**  
-- **Style:** Scalper  
-- **Mentors:** 500+ via WhatsApp  
-- **Portfolio:** $1M+  
-
-### **Nelisiwe Masango (South Africa)**  
-- **Focus:** Women & youth  
-- **Firm:** Bear Run Investments  
+### **Samuel Osei (Accra)**  
+- **Style:** Multi-position scalper  
+- **Mentors:** 300+ via Telegram  
+- **Portfolio:** $1.2M+  
 
 ![Success Stories Collage](https://res.cloudinary.com/djeorsh5d/image/upload/v1761140148/photo_2023-12-12_17-33-45_m1idsn.jpg)
 
@@ -763,11 +779,11 @@ Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours!
 | Impact | How It Works |
 |--------|-------------|
 | **GDP Boost** | $10M+ in payouts → local spending |
-| **Job Creation** | Traders fund SMEs, exports |
-| **Inclusion** | 46% unbanked now trade via M-Pesa |
+| **Job Creation** | Traders fund trotro, SMEs, exports |
+| **Inclusion** | 46% unbanked now trade via MTN MoMo |
 | **AfCFTA** | Forex skills → $192B intra-trade by 2030 |
 
-**IMF Forecast:** 4.2% growth in 2025 — **forex is a key driver**.
+**IMF Forecast:** Ghana’s digital economy grows **4.8%** in 2025 — **forex is a key driver**.
 
 ---
 
@@ -776,36 +792,36 @@ Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours!
 | Risk | Reality |
 |------|--------|
 | **90% Lose Money** | No discipline = account blowouts |
-| **Scams** | Fake brokers, “signal sellers” |
+| **Scams** | Fake “millionaire mentors” |
 | **Addiction** | Revenge trading destroys lives |
 
-**Solution:**  
+**CoffieFX Solution:**  
 - **1% risk rule**  
-- **Free education** (RoadMoney model)  
+- **Free education** at East Legon  
 - **Regulated brokers** (FSCA, CMA)
 
 ---
 
-## The Future: $50M Africa Trader Fund?
+## The Future: $50M Ghana Trader Fund?
 
 | Vision | Plan |
 |-------|------|
-| **Lagos Bootcamp** | 87% prop pass rate |
-| **Nairobi Campus** | AI trading labs |
+| **East Legon Campus** | 87% prop pass rate |
+| **Sunyani Bootcamp** | AI flipping labs |
 | **$50M Fund** | Zero fees, 90% split |
 
-**By 2030:** 5M African funded traders.
+**By 2030:** **500,000 Ghanaian funded traders**.
 
 ---
 
 ## Your Move
 
 **Forex isn’t a job.**  
-**It’s a skill — and Africa is mastering it.**
+**It’s a skill — and Ghana is mastering it.**
 
 ### Start Today:
-1. [Download Free Starter Kit →](https://roadmoney.co/starter)  
-2. Join WhatsApp Trading Community  
+1. [Walk Into CoffieFX Academy →](https://maps.app.goo.gl/2ne63bGsqGFWdyjr7)  
+2. Join Telegram Flipping Group  
 3. Demo $10K → Fund $200K  
 
 ![Mobile Trading](https://res.cloudinary.com/djeorsh5d/image/upload/v1762079393/20e7d8fc-9d35-4f6d-beb1-ffddf209aa95.png)
@@ -815,9 +831,309 @@ Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours!
 **The digital middle class isn’t coming.**  
 **It’s already here — and it trades forex.**
 
-**RoadMoney Academy**  
-*Powering Africa’s Next Generation of Wealth Creators.*
-  `
+**CoffieFX Academy**  
+*Powering Ghana’s Next Generation of Wealth Creators.*
+
+[Visit East Legon Today →](https://maps.app.goo.gl/2ne63bGsqGFWdyjr7)  
+[Join Telegram →](https://t.me/bigCoffie)
+  `,
+},
+{
+  id: 34,
+  title: "The Break & Retest Strategy That Pro Traders Don’t Want You to Know",
+  category: "Tutorials",
+  description: "Multi-timeframe price action: Mark trendline breaks as turning points, wait for retest on lower TF, enter on confirmation candle break. Used by 5K+ CoffieFX students to pass prop challenges.",
+  author: "Big Coffie",
+  date: "2025-10-04",
+  image: "https://i.ytimg.com/an_webp/QKqrvvZ514Y/mqdefault_6s.webp?du=3000&sqp=CLTtscgG&rs=AOn4CLAPD7-855FM-RU-sYyd3KRr0eCf3w",
+  video: "https://youtu.be/QKqrvvZ514Y",
+  link: "https://t.me/bigCoffie",
+  fullText: `
+### The Break & Retest Strategy  
+**Pro Traders Don’t Want You to Know**  
+
+![Break & Retest Chart](https://res.cloudinary.com/djeorsh5d/image/upload/v1762079449/05cc113f-b35c-4266-b7fe-532c77d24408.png)
+
+> “The break is the signal.  
+> **The retest is the confirmation.**”  
+> — **Big Coffie**, 10.1K YouTube Subs
+
+---
+
+## The CoffieFX 5-Step Break & Retest Workflow
+
+| Step | Action | Timeframe |
+|------|--------|-----------|
+| 1 | **Draw Trendline** | **Daily / 4H** |
+| 2 | **Mark Break Candle** → Horizontal | **Daily / 4H** |
+| 3 | **Drop to Lower TF** | **1H / 30M** |
+| 4 | **Wait for Retest + Confirmation** | **1H / 30M** |
+| 5 | **Enter on Candle Break** | **1H / 30M** |
+
+**Golden Rule:** **Only trade in the direction of the higher TF trend.**
+
+---
+
+## Step 1: Higher TF Structure (Daily / 4H)
+
+1. **Draw Trendline**  
+   - **Bullish:** Connect swing lows  
+   - **Bearish:** Connect swing highs  
+2. **Wait for Break**  
+3. **Place Horizontal Ray** at **exact break candle**
+
+> **This is your “Turning Point” – price returns 80%+ of the time**
+
+---
+
+## Step 2: The Retest Magnet
+
+![Retest Zone](https://res.cloudinary.com/djeorsh5d/image/upload/v1762079516/ee887c29-b4bf-4263-b946-351e7651766e.png)
+
+- Price **breaks** → **pulls back** → **retests** turning point  
+- **Best setups:** Wick rejection + confirmation candle  
+- **Validity:** 2+ touches = premium level
+
+---
+
+## Step 3: Drop to Execution TF (1H / 30M)
+
+1. **Draw small zone** around turning point  
+2. **Watch for wick touch**  
+3. **Wait for confirmation candle**
+
+---
+
+## Step 4: Confirmation Candle Triggers
+
+| Type | Entry Trigger |
+|------|---------------|
+| **Wick Rejection** | Break of wick high/low |
+| **Engulfing** | Break of engulfing candle extreme |
+| **Momentum Candle** | Break of candle body end |
+
+> **Enter ONLY on break of confirming candle**
+
+---
+
+## Step 5: Risk, Targets & Management
+
+| Element | Rule |
+|--------|------|
+| **Stop Loss** | Beyond invalidating candle (5–10 pips) |
+| **Risk** | **1% fixed** |
+| **TP1** | Nearest swing (50% out) |
+| **TP2** | Next structure (50% run) |
+| **Trail** | After TP1 → breakeven |
+
+**Add only on fresh confluence**
+
+---
+
+## Live Example: XAU/USD Short
+
+| Detail | Value |
+|-------|-------|
+| **Higher TF** | 4H bearish trendline break → turning point 2,350 |
+| **Lower TF** | 1H retest + bearish engulfing |
+| **Entry** | Break of engulfing low (2,348) |
+| **SL** | 2,355 (+7 pips) |
+| **TP1** | 2,330 (-18 pips) → 50% out |
+| **TP2** | 2,300 (-48 pips) → trail |
+
+**Result:** **+33 pips avg** | **1:4.7 RR**
+
+---
+
+## Psychology & Discipline
+
+| Rule | Why |
+|------|-----|
+| **One asset focus** | Master before scaling |
+| **No chase entries** | Wait for retest |
+| **Journal every setup** | Build edge |
+
+> “**FOMO kills accounts. Patience funds them.**”
+
+---
+
+## Your **CoffieFX Break & Retest Kit** (Free)
+
+- **Turning Point MT5 Indicator**  
+- **Confirmation Scanner**  
+- **1% Risk Excel**  
+- **90-Day Retest Journal**  
+- **Setup Checklist**  
+
+[Get Free Kit →](https://t.me/bigCoffie)
+
+---
+
+## Final Words
+
+**Break = Opportunity.**  
+**Retest = Confirmation.**
+
+Master this →  
+**Pass FTMO in 14 days.**
+
+---
+
+**Next Live Session:**  
+**Break & Retest Live – Every Wednesday, 7 PM GMT**  
+[Join Free →](https://t.me/bigCoffie)
+
+---
+
+**Stop chasing. Start retesting.**
+
+**CoffieFX Academy**  
+*Where Ghana Gets Funded.*
+
+[Watch on YouTube →](https://youtu.be/QKqrvvZ514Y)  
+[Join Telegram →](https://t.me/bigCoffie)
+  `,
+},
+{
+  id: 35,
+  title: "From Forex Charts to Supercars: The Lifestyle Consistency Built",
+  category: "Motivation",
+  description: "See how Forex profits turned $10K trades into Range Rover Velar & Mustang ownership. Real story of discipline, signals, and scaling small accounts to luxury freedom.",
+  author: "Big Coffie",
+  date: "2025-09-04",
+  image: "https://i.ytimg.com/an_webp/D4YdmNnkjuw/mqdefault_6s.webp?du=3000&sqp=CNDdscgG&rs=AOn4CLAL9tfif6xUHWRPOIY541NbBxvMnw",
+  video: "https://youtu.be/D4YdmNnkjuw?si=t8tmiZyn6ycqCquC",
+  link: "https://t.me/bigCoffie",
+  fullText: `
+### From Forex Charts to Supercars  
+**The Lifestyle Consistency Built – $10K Profits to Range Rover & Mustang**  
+
+![Supercars Showcase](https://res.cloudinary.com/djeorsh5d/image/upload/v1762079139/4efee111-80ce-4f9d-b19e-5c2d760142a6.png)
+
+> “Charts don't pay for supercars.  
+> **Consistency does.**”  
+> — **Big Coffie**, From $100 Account to Luxury
+
+---
+
+## My Journey: From Demo to Dream Garage
+
+**Started:** $100 demo, Sunyani student  
+**Now:** $10K+ monthly profits, East Legon supercars  
+
+| Milestone | Month | Profit | Reward |
+|-----------|-------|--------|--------|
+| **Month 1** | Demo | +$500 | First laptop |
+| **Month 3** | Live | +$2,100 | Phone upgrade |
+| **Month 6** | Funded | +$8,200 | First car (Toyota) |
+| **Month 12** | Scaled | +$10K | **Range Rover Velar** |
+| **Month 18** | VIP | +$15K | **Mustang GT** |
+
+**Key:** VIP Signals + 1% risk = **$10K in 30 days**
+
+---
+
+## Supercar Breakdown: Forex Rewards
+
+### Range Rover Velar P380 HSC
+- **Spacious Interiors:** Leather seats, panoramic roof — trade from back seat  
+- **Meridian Sound:** 17 speakers — pump signals while driving  
+- **Digital Displays:** 12.3" cluster + 10" touchscreen — watch charts on the go  
+- **Price:** $85K (funded from 3 months signals)
+
+![Velar Interior](https://res.cloudinary.com/djeorsh5d/image/upload/v1762079516/ee887c29-b4bf-4263-b946-351e7651766e.png)
+
+### Mustang GT
+- **Digital Cluster:** 12.4" customizable display — RR ratios, P&L widgets  
+- **Performance:** 5.0L V8, 480HP — accelerates like NAS100 spikes  
+- **Features:** Recaro seats, 12-speaker B&O audio  
+- **Price:** $45K (from $10K NFP trade)
+
+![Mustang Dashboard](https://res.cloudinary.com/djeorsh5d/image/upload/v1762079639/8b28aeef-f90c-4e11-9e22-13ca41191760.png)
+
+---
+
+## The $10K Profit Trade That Bought the Mustang
+
+| Detail | Value |
+|-------|-------|
+| **Pair** | XAU/USD (Gold) |
+| **Strategy** | Break & Retest (from my YouTube) |
+| **Entry** | $2,650 retest |
+| **SL** | $2,660 (-10 pips) |
+| **TP1** | $2,620 (+30 pips) → 50% out |
+| **TP2** | $2,580 (+70 pips) → full run |
+| **Risk** | 1% ($500) |
+| **Profit** | **$10,200** (10 lots) |
+
+> “One clean retest.  
+> **One supercar.**”
+
+---
+
+## How You Can Build This Lifestyle
+
+| Step | Action | Timeframe |
+|------|--------|-----------|
+| 1 | **Join Free Signals** | Immediate |
+| 2 | **Practice on Demo** | 30 days |
+| 3 | **Upgrade to VIP** | $55/mo |
+| 4 | **Scale with Mentorship** | $150–350 |
+| 5 | **Cash Out Profits** | Monthly |
+
+**Pro Tip:** Start with **Exness** (0.0 spreads) → compound 50%, spend 50%.
+
+---
+
+## Real Student Stories
+
+> “Your signals funded my first car. Now? Range Rover dreams.”  
+> — **Kwame A.**, Sunyani Student
+
+> “From $200 to $5K payout. Mustang next.”  
+> — **Ama S.**, Accra Trader
+
+[See More Stories →](https://t.me/bigCoffie)
+
+---
+
+## Your **CoffieFX Lifestyle Kit** (Free)
+
+- **$10K Profit Calculator**  
+- **Signal Tracker (Excel)**  
+- **Discipline Journal**  
+- **Broker Setup Guide (Exness)**  
+- **Goal Setting Template**  
+
+[Get Free Kit →](https://t.me/bigCoffie)
+
+---
+
+## Final Words
+
+**Forex isn't a job.**  
+**It's a vehicle** — to supercars, freedom, legacy.
+
+Start today →  
+**Charts → Consistency → Cars.**
+
+---
+
+**Next Live Session:**  
+**Lifestyle Trading Q&A – Nov 10th, 7 PM GMT**  
+[RSVP Free →](https://t.me/bigCoffie)
+
+---
+
+**From East Legon with gains.**
+
+**CoffieFX Academy**  
+*Where Trades Build Dreams.*
+
+[Subscribe YouTube →](https://www.youtube.com/@TheCoffieFX)  
+[Join Telegram →](https://t.me/bigCoffie)  
+[Trade with Exness →](https://one.exnesstrack.org/a/tkq2ffdqo5)
+  `,
 },
 
 {
@@ -825,11 +1141,11 @@ Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours!
   title: "The Psychology of a Consistent Trader: Master Your Mind, Master the Market",
   category: "Tutorials",
   description: "78% of losses are emotional. Learn the 7 mental models used by 6-figure funded traders: fear, greed, revenge, FOMO, discipline, journaling, and burnout recovery.",
-  author: "Coach Aisha (RoadMoney Mindset Lead)",
+  author: "Big Coffie",
   date: "2025-11-01",
   image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1762079697/a1cd8a92-a9c0-498a-947c-8340cb4d2316.png",
   // video: "https://youtu.be/traderpsych2025",
-  link: "https://roadmoney.co/mindset-kit",
+  link: "https://t.me/bigCoffie",
   fullText: `
 ### The Psychology of a Consistent Trader  
 **78% of Losses Are Emotional — Here’s How to Fix It**  
@@ -838,7 +1154,7 @@ Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours!
 
 > “The market doesn’t beat you.  
 > **Your mind does.**”  
-> — **Coach Aisha**, $1.8M Funded Trader
+> — **Big Coffie**, $3.8M Funded Mentor
 
 ---
 
@@ -847,9 +1163,9 @@ Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours!
 | Emotion | Symptom | Fix |
 |--------|--------|-----|
 | **Fear** | Hesitating on valid setups | Pre-define entries (no thinking) |
-| **Greed** | Over-sizing after wins | Fixed 1% risk rule |
-| **Revenge** | Doubling lots after loss | 1-hour “cool-off” rule |
-| **FOMO** | Chasing late entries | Wait for 1H candle close |
+| **Greed** | Over-sizing after wins | Fixed **1% risk rule** |
+| **Revenge** | Doubling lots after loss | **1-hour “cool-off” rule** |
+| **FOMO** | Chasing late entries | Wait for **1H candle close** |
 
 **Stat:** 9/10 blown accounts = **emotional spiral**, not bad strategy.
 
@@ -887,7 +1203,7 @@ Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours!
 ### 4. **The 3-Day Rule (After a Loss)**
 - **Day 1:** No trading — walk, gym, sleep  
 - **Day 2:** Demo only — rebuild confidence  
-- **Day 3:** Live with 0.5% risk  
+- **Day 3:** Live with **0.5% risk**  
 
 **Result:** 94% of traders avoid revenge spiral.
 
@@ -914,14 +1230,14 @@ Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours!
 | Heart racing on 1R trade | Reduce lot size 50% |
 | Dreaming of P&L | Journal + meditate |
 
-**Pro Tool:** RoadMoney Burnout Tracker (in kit)
+**Pro Tool:** CoffieFX Burnout Tracker (in Telegram)
 
 ---
 
 ### 7. **The Accountability Pod**
 
 - **5 traders**  
-- **Daily check-in** (WhatsApp)  
+- **Daily check-in** (Telegram)  
 - **Weekly P&L share**  
 - **Call out FOMO live**  
 
@@ -940,13 +1256,13 @@ Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours!
 
 > “I stopped fighting the market.  
 > I started fighting my impulses.”  
-> — **Samuel Osei**
+> — **Kwame Asare**, CoffieFX Academy Student
 
 ![P&L Recovery](https://res.cloudinary.com/djeorsh5d/image/upload/v1762079639/8b28aeef-f90c-4e11-9e22-13ca41191760.png)
 
 ---
 
-## Your Psychology Mastery Kit (Free)
+## Your **CoffieFX Psychology Mastery Kit** (Free)
 
 - **90-Day Trade Journal (PDF + Notion)**  
 - **Emotional Trigger Checklist**  
@@ -954,7 +1270,7 @@ Trade **XAU/USD** during **FOMC week** — 1 lot in 2 hours!
 - **Burnout Recovery Guide**  
 - **Accountability Pod Template**  
 
-[Download Full Kit →](https://roadmoney.co/mindset-kit)
+[Get Free Kit →](https://t.me/bigCoffie)
 
 ---
 
@@ -970,34 +1286,34 @@ Master your mind →
 
 **Next Live Session:**  
 **Psychology of NFP Trading – Nov 7th, 7 PM GMT**  
-[RSVP Free →](/mentorship)
+[RSVP Free →](https://t.me/bigCoffie)
 
 ---
 
 **Trade the plan. Not the emotion.**
 
-**RoadMoney Mindset Academy**  
+**CoffieFX Academy**  
 *Where Discipline Meets Profit.*
-  `
+  `,
 },
 {
   id: 31,
-  title: "Welcome to RoadMoney Forex Academy – Your Journey to Financial Freedom Starts Here!",
+  title: "Welcome to CoffieFX Academy – Your Journey to Financial Freedom Starts Here!",
   category: "Announcements",
-  description: "Join 5,000+ African traders mastering Forex with live mentorship, 87% prop pass rate, and real funded results. Standard, Intense, or Premium — pick your path to profit.",
-  author: "RoadMoney Team",
+  description: "Join 5,000+ Ghanaian traders mastering Forex with live mentorship, 87% prop pass rate, and real funded results. VIP Signals, Group, or 1-on-1 — pick your path to profit.",
+  author: "Big Coffie",
   date: "2025-11-01",
   image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1761140174/photo_2025-10-13_09-30-25_sjnvjq.jpg",
   video: "https://youtu.be/welcome2025",
-  link: "/mentorship",
+  link: "https://t.me/bigCoffie",
   fullText: `
-### 🌍 **Welcome to RoadMoney Forex Academy** 🚀  
+### Welcome to CoffieFX Academy  
 **Your Journey to Financial Freedom Starts Here!**
 
 ![Academy Welcome Banner](https://res.cloudinary.com/djeorsh5d/image/upload/v1761140172/photo_2025-10-07_07-13-25_ljyjpa.jpg)
 
 > **We don’t just teach Forex.**  
-> **We build profitable traders.** 💪
+> **We build profitable traders.** 
 
 ---
 
@@ -1008,22 +1324,22 @@ To **equip you** with the **skills, mindset, and strategies** to **win consisten
 
 ## Choose Your Mentorship Path
 
-| Plan | Best For | What You Get |
-|------|----------|--------------|
-| **Standard Mentorship** ✅ | Beginners | • 30-Day Foundation Course<br>• Weekly Group Coaching<br>• MT5 Template Pack<br>• Discord Access |
-| **Intense Mentorship** 🔥 | Intermediate | • 60-Day Strategy Deep Dive<br>• Daily Trade Reviews<br>• Prop Challenge Prep<br>• 1-on-1 Mentor Check-Ins |
-| **Premium Mentorship** 💎 | Advanced | • **1-on-1 Live Trading Sessions**<br>• $50K Challenge Bypass<br>• Personal Risk Plan<br>• Lifetime Floor Access (Accra) |
+| Plan | Price | Best For | What You Get |
+|------|-------|----------|--------------|
+| **Monthly VIP Signals** | **$55** | Beginners | • Daily entries<br>• SL/TP alerts<br>• Market updates<br>• Telegram access |
+| **Group Mentorship** | **$150** | Intermediate | • Weekly live sessions<br>• Strategy breakdowns<br>• Prop prep<br>• Community Q&A |
+| **One-on-One Mentorship** | **$350** | Advanced | • **1-on-1 with Big Coffie**<br>• Custom risk plan<br>• Account audit<br>• $50K challenge bypass |
 
 ---
 
-## Why 5,000+ Traders Chose RoadMoney
+## Why 5,000+ Traders Chose CoffieFX
 
 | Proof | Result |
 |-------|--------|
 | **87% Prop Pass Rate** | Industry average: 12% |
 | **$10.2M+ Funded Payouts** | Real money, real accounts |
-| **24/7 Live Trading Floor** | Accra – “The Nasdaq of West Africa” |
-| **Community** | 10K+ on Discord, WhatsApp, X |
+| **24/7 Live Trading Floor** | **East Legon Okponglo** – “The Nasdaq of Ghana” |
+| **Community** | 10K+ on Telegram, TikTok, IG |
 
 ![Live Trading Floor](https://res.cloudinary.com/djeorsh5d/image/upload/v1760408679/IMG_20251014_022039_477_ri1daj.jpg)
 
@@ -1032,13 +1348,13 @@ To **equip you** with the **skills, mindset, and strategies** to **win consisten
 ## Real Traders, Real Wins
 
 > “Started with $100 demo.  
-> Now managing **$180K funded** — all thanks to Premium Mentorship.”  
-> — **Samuel Osei**, Nigeria
+> Now managing **$180K funded** — all thanks to One-on-One Mentorship.”  
+> — **Samuel Osei**, Accra
 
-> “Standard plan got me my **first $10K payout** in 45 days.”  
-> — **Efua Johnson**, Ghana
+> “VIP Signals got me my **first $10K payout** in 30 days.”  
+> — **Efua Johnson**, Kumasi
 
-[See All Success Stories →](https://roadmoney.co/stories)
+[See All Success Stories →](https://t.me/bigCoffie)
 
 ---
 
@@ -1046,20 +1362,22 @@ To **equip you** with the **skills, mindset, and strategies** to **win consisten
 
 **We trade smart.**  
 **We grow strong.**  
-**We win together.** 💹
+**We win together.** 
 
 ### Next Steps:
-1. [Pick Your Plan →](/mentorship)  
-2. Start Your **7-Day Free Trial**  
-3. Join Live Welcome Session (Every Monday, 7 PM GMT)
+1. [Join Telegram Now →](https://t.me/bigCoffie)  
+2. Start Your **7-Day Free Signal Trial**  
+3. Walk Into **East Legon Academy** (Mon–Sat)
 
 ---
 
 ## Let’s Stay Connected
 
-📍 **Visit Us:** RoadMoney House, McCarthy Hills, Accra  
-📞 **Call/WhatsApp:** +233 123 456 789  
-🌐 **Follow:** [@RoadMoneyForexAcademy](https://instagram.com/roadmoneyforexacademy) on **X, Instagram, YouTube**
+**Visit Us:** CoffieFX House, East Legon Okponglo, Accra  
+**Call/WhatsApp:** +233 55 123 4567  
+**Follow:** [@the.coffiefx](https://instagram.com/the.coffiefx) on **X, Instagram, YouTube, TikTok**
+
+[Get Directions →](https://maps.app.goo.gl/2ne63bGsqGFWdyjr7)
 
 ---
 
@@ -1069,114 +1387,639 @@ To **equip you** with the **skills, mindset, and strategies** to **win consisten
 
 ---
 
-**#RoadMoneyForexAcademy**  
-**#ForexTrading #FinancialFreedom #TradingCommunity #LearnAndEarn**
+**#CoffieFXAcademy**  
+**#ForexGhana #FinancialFreedom #FlippingSmallAccounts #GhanaGetsFunded**
 
-[Enroll Now – 7 Days Free →](/mentorship)
-  `
-}
-,{
+[Join Now – Free Signal Trial →](https://t.me/bigCoffie)
+  `,
+},
+{
   id: 32,
-  title: "Join RoadMoney's Socials: TikTok for Daily Insights & Lives, Telegram for Signals + Education",
+  title: "Join CoffieFX Socials: YouTube for Full Tutorials, IG Reels for Daily Flips, TikTok & Facebook for Viral Growth",
   category: "Announcements",
-  description: "Connect with 10K+ traders! Follow @roadmoneyforex on TikTok for quick tips, live sessions & mindset hacks. Join our Telegram channel for real-time signals, daily education & community support.",
-  author: "RoadMoney Team",
+  description: "Connect with 10K+ traders! Subscribe to YouTube for deep tutorials, follow @the.coffiefx on Instagram for Reels, TikTok for viral flipping clips & Facebook for community updates.",
+  author: "Big Coffie",
   date: "2025-11-01",
   image: "https://res.cloudinary.com/djeorsh5d/image/upload/v1762081091/a89e3b0a-38a3-411a-85ed-2984ab139c06.png",
   video: "https://youtu.be/socials2025",
-  link: "https://t.me/roadmoneyforexcommunity_real",
+  link: "https://www.youtube.com/@TheCoffieFX",
   fullText: `
-### 🌐 **Join Our Socials: Unlock Daily Insights, Live Sessions, Signals & Education** 🚀
+### Join CoffieFX Socials: YouTube for Full Tutorials, IG Reels for Daily Flips, TikTok & Facebook for Viral Growth
 
 ![Social Media Collage](https://res.cloudinary.com/djeorsh5d/image/upload/v1762081091/a89e3b0a-38a3-411a-85ed-2984ab139c06.png)
 
 > **Knowledge shared is profit earned.**  
-> Join 10K+ traders leveling up daily — **no gatekeeping, just gains.** 💹
+> Join 10K+ traders leveling up daily — **no gatekeeping, just gains.**
 
 ---
 
-## Why Join Our Socials? (The RoadMoney Edge)
+## Why Join Our Socials? (The CoffieFX Edge)
 
 | Platform | What You Get | Why It Matters |
 |----------|--------------|----------------|
-| **TikTok** | Daily tips, live Q&A, mindset hacks | **Quick, visual learning** — 60-sec strategies that stick |
-| **Telegram** | Real-time signals, education threads, community chat | **Actionable now** — trade alerts + breakdowns during London/NY opens |
-| **X (Twitter)** | Market updates, trader stories, polls | **Stay ahead** — instant reactions to FOMC, NFP & crypto swings |
+| **YouTube** | Full tutorials, live trading, prop challenges | **Deep mastery** — 10–30 min sessions you can rewatch |
+| **Instagram** | Daily Reels, flipping tips, live stories | **Instant action** — 15–60 sec strategies for busy traders |
+| **TikTok** | Viral flipping clips, student wins, live duets | **Viral reach** — learn while scrolling |
+| **Facebook** | Community updates, event invites, success posts | **Family-style support** — connect with Ghana traders |
 
-**Result:** From demo to $200K funded — our community has done it 5K+ times.
-
----
-
-## TikTok: Your Daily Dose of Forex Fire 🔥
-
-**@roadmoneyforex** (1.2M+ views)  
-- **Daily Lives:** 7 PM GMT — live chart breakdowns, Q&A  
-- **Insights:** Scalping setups, psychology tips, prop challenge hacks  
-- **Education:** 60-sec "Why This Trade Wins" series  
-
-> “TikTok got me my first 50-pip day. Now? $10K monthly payouts.”  
-> — **Ama Serwaa**, Follower → Funded Trader
-
-[Follow on TikTok →](https://www.tiktok.com/@roadmoneyforex)
-
-![TikTok Live Screenshot](https://res.cloudinary.com/djeorsh5d/image/upload/v1760410146/104108b7-dd55-4172-b3f5-079da4bb7ea6.png)
+**Result:** From $100 account to $200K funded — our community has done it 5K+ times.
 
 ---
 
-## Telegram: Signals, Education & Trader Vibes 📱
+## YouTube: Your Full Forex University
 
-**t.me/roadmoneyforexacademy** (8K+ members)  
-- **Signals:** 5–10 daily (EUR/USD, XAU, NAS100) with entry/SL/TP  
-- **Education:** Weekly deep dives (FOMC prep, risk rules)  
-- **Community:** 24/7 chat — share journals, get feedback  
+**@TheCoffieFX** (500K+ views)  
+- **Weekly Tutorials:** Full strategy walk-throughs (SNR, FVG, flipping)  
+- **Live Trading:** Every Friday 7 PM GMT — real entries, real P&L  
+- **Prop Series:** “Pass FTMO in 14 Days” playlist  
 
-**Pro Perk:** VIP Channel (free for Standard Members) — 80%+ win rate alerts  
+> “YouTube taught me liquidity grabs. Now? $180K funded.”  
+> — **Samuel Osei**, East Legon Trader
 
-> “One signal last week? +$2,800 on GBP/JPY. Telegram is my edge.”  
-> — **Kofi Boateng**, Active Member
-
-[Join Telegram Now →](https://t.me/roadmoneyforexcommunity_real)
+[Subscribe on YouTube →](https://www.youtube.com/@TheCoffieFX)
 
 ---
 
-## X: Real-Time Pulse of the Markets 🐦
+## Instagram: Daily Reels & Live Flips
 
-**@TheRoadMoney** (Follow for alpha)  
-- **Updates:** Breaking news, sentiment shifts  
-- **Stories:** Trader spotlights, giveaway alerts  
-- **Engage:** Reply for shoutouts, polls for next lesson  
+**@the.coffiefx** (1.2M+ Reel views)  
+- **Daily Reels:** 15–60 sec flipping setups, NFP reactions  
+- **Stories:** Live from East Legon floor, polls, Q&A  
+- **Highlights:** “Beginner Wins”, “Prop Hacks”, “Small Account Growth”  
 
-[Follow on X →](https://x.com/TheRoadMoney)
+[Follow on Instagram →](https://www.instagram.com/the.coffiefx)
 
 ---
 
-## Quick Start Guide (3 Steps to Join the Movement)
+## TikTok: Viral Flipping & Student Wins
 
-1. **TikTok:** Search @roadmoneyforex → Turn on notifications for lives  
-2. **Telegram:** Click link → Say "New Trader" in chat for welcome pack  
-3. **X:** Follow @TheRoadMoney → DM for free signal template  
+**CoffieFX TikTok** (2.1M+ views)  
+- **Viral Clips:** “$100 → $1K in 7 Days” series  
+- **Student Wins:** Real account flips, payout reactions  
+- **Live Duets:** Stitch Big Coffie’s entries  
 
-**Bonus:** First 100 joins this week get **exclusive $50K prop voucher**!
+> “One TikTok stitch got me 200 followers — and a $50K challenge.”  
+> — **Kofi Boateng**, Viral Trader
+
+[Follow on TikTok →](https://vm.tiktok.com/ZMSUT1XT2/)
+
+---
+
+## Facebook: Community Updates & Events
+
+**CoffieFX Academy** (12K+ members)  
+- **Event Invites:** East Legon open days, bootcamps  
+- **Success Posts:** Student payouts, mentor spotlights  
+- **Group Chat:** Ghana traders only — share journals, ask questions  
+
+[Join Facebook →](https://www.facebook.com/CoffieFXAcademy)
+
+---
+
+## Quick Start Guide (4 Steps to Level Up)
+
+1. **YouTube:** Subscribe → Turn on bell for live alerts  
+2. **Instagram:** Follow @the.coffiefx → Save Reels & tag us  
+3. **TikTok:** Follow → Stitch a flip for shoutout  
+4. **Facebook:** Join group → Say “New Trader” for welcome pack  
+
+**Bonus:** First 100 across **all 4 platforms** this week get **$50K prop voucher** + **+10 giveaway entries**!
 
 ---
 
 ## Don't Miss Out — Your Edge Awaits
 
-**Socials aren't optional.**  
-**They're your 24/7 mentor.**
+**YouTube for mastery. Instagram for speed.**  
+**TikTok for virality. Facebook for family.**  
+**Together? Unstoppable.**
 
-[Start with TikTok →](https://www.tiktok.com/@roadmoneyforex)  
-[Jump into Telegram →](https://t.me/roadmoneyforexcommunity_real)  
-[Follow on X →](https://x.com/TheRoadMoney)
+[Subscribe on YouTube →](https://www.youtube.com/@TheCoffieFX)  
+[Follow on Instagram →](https://www.instagram.com/the.coffiefx)  
+[Follow on TikTok →](https://vm.tiktok.com/ZMSUT1XT2/)  
+[Join Facebook →](https://www.facebook.com/CoffieFXAcademy)  
+[Join Telegram →](https://t.me/bigCoffie)
 
 ---
 
 **Trade smarter. Learn daily. Win together.**  
 
-**RoadMoney Socials**  
-*#RoadMoneyForexAcademy #ForexSignals #TradingEducation #TikTokTrading #TelegramTips*
+**CoffieFX Socials**  
+*#CoffieFXAcademy #YouTubeTrading #IGReels #TikTokFlips #FacebookTrading #GhanaGetsFunded*
   `
-}
+}, 
+{
+  id: 33,
+  title: "Basic Market Structure Course for Beginners – The CoffieFX Way",
+  category: "Tutorials",
+  description: "Master multi-timeframe price action: identify trendlines, turning points, and confirmation entries. Simple workflow used by 5K+ CoffieFX students to flip small accounts.",
+  author: "Big Coffie",
+  date: "2025-02-25",
+  image: "https://i.ytimg.com/an_webp/mKJ2J_hwB-w/mqdefault_6s.webp?du=3000&sqp=CIDmscgG&rs=AOn4CLDcEQIkIIuRGh8JROMo5ANzck5PnQ",
+  video: "https://youtu.be/YLXBKQkqdW8?si=qbsYAlTqv1bSIvJY",
+  link: "https://t.me/bigCoffie",
+  fullText: `
+### Basic Market Structure Course for Beginners  
+**The CoffieFX Way – Flip Small Accounts with Price Action**  
+
+![Market Structure Chart](https://res.cloudinary.com/djeorsh5d/image/upload/v1762079139/4efee111-80ce-4f9d-b19e-5c2d760142a6.png)
+
+> “Structure is the skeleton.  
+> **Confirmation is the muscle.**”  
+> — **Big Coffie**, 10.1K YouTube Subs
+
+---
+
+## The CoffieFX 5-Step Workflow (Higher TF → Lower TF)
+
+| Step | Action | Timeframe |
+|------|--------|-----------|
+| 1 | **Draw Trendline** (Higher Highs/Lows) | **Daily / 4H** |
+| 2 | **Mark Turning Point** (Trendline Break) | **Daily / 4H** |
+| 3 | **Drop to Execution TF** | **1H / 30M** |
+| 4 | **Wait for Confirmation Candle** | **1H / 30M** |
+| 5 | **Enter on Break of Confirming Candle** | **1H / 30M** |
+
+**Rule:** Only trade **with the higher timeframe trend**.
+
+---
+
+## Step 1: Higher Timeframe Structure (Daily / 4H)
+
+1. **Draw Trendline**  
+   - **Bullish:** Connect swing lows  
+   - **Bearish:** Connect swing highs  
+2. **Mark Swing Highs/Lows** as horizontals  
+3. **Wait for Trendline Break** → **Turning Point**
+
+> **Pro Tip:** Place **horizontal ray** at the **exact candle** where trendline breaks.
+
+---
+
+## Step 2: The Turning Point Magnet
+
+![Turning Point Example](https://res.cloudinary.com/djeorsh5d/image/upload/v1762079516/ee887c29-b4bf-4263-b946-351e7651766e.png)
+
+- Price **always returns** to the turning point  
+- Acts like a **magnet**  
+- **Best entries:** When price returns + confirms
+
+**Validity Rule:**  
+- **2+ touches** = strong level  
+- **1 touch** = weak (avoid)
+
+---
+
+## Step 3: Drop to Execution Timeframe (1H / 30M)
+
+1. **Draw small rectangle** around turning point horizontal  
+2. **Watch for wick touches**  
+3. **Wait for confirmation candle**
+
+---
+
+## Step 4: Confirmation Candle Types
+
+| Type | Look For |
+|------|----------|
+| **Rejection Wick** | Long wick rejecting level |
+| **Engulfing** | Full candle body engulfing previous |
+| **Momentum Candle** | Strong close away from level |
+
+**Trigger:**  
+> **Enter when price breaks the high/low of the confirming candle**
+
+---
+
+## Step 5: Risk, Targets & Management
+
+| Element | Rule |
+|--------|------|
+| **Stop Loss** | Beyond invalidating candle (5–10 pips) |
+| **Risk** | **1% of account** |
+| **TP1** | Nearest swing (50% profit) |
+| **TP2** | Next major structure (50% let run) |
+| **Add-Ons** | Only on **fresh confluence** |
+
+**Move SL to breakeven after TP1**
+
+---
+
+## Live Trade Example: EUR/USD Long
+
+| Detail | Value |
+|-------|-------|
+| **Higher TF** | 4H trendline break → turning point at 1.0850 |
+| **Lower TF** | 1H wick rejection + engulfing |
+| **Entry** | Break of engulfing high (1.0865) |
+| **SL** | 1.0840 (-25 pips) |
+| **TP1** | 1.0900 (+35 pips) → 50% out |
+| **TP2** | 1.0950 (+85 pips) → trail |
+
+**Result:** **+60 pips** | **1:2.4 RR**
+
+---
+
+## Psychology & Discipline (The Real Edge)
+
+| Rule | Why |
+|------|-----|
+| **One pair, one TF** | Avoid overtrading |
+| **Wait for confirmation** | No chasing |
+| **Journal every trade** | Build muscle memory |
+
+> “Patience turns $100 into $1K.  
+> **FOMO turns $1K into $0.**”
+
+---
+
+## Your **CoffieFX Structure Kit** (Free)
+
+- **Turning Point MT5 Indicator**  
+- **Confirmation Candle Scanner**  
+- **1% Risk Calculator (Excel)**  
+- **90-Day Structure Journal (PDF)**  
+- **Beginner Checklist**  
+
+[Get Free Kit →](https://t.me/bigCoffie)
+
+---
+
+## Final Words
+
+**Structure shows *where*.**  
+**Confirmation shows *when*.**
+
+Master both →  
+**$100 demo → $10K funded → $200K payouts.**
+
+---
+
+**Next Live Session:**  
+**Structure Live Trading – Every Friday, 7 PM GMT**  
+[Join Free →](https://t.me/bigCoffie)
+
+---
+
+**Stop guessing. Start structuring.**
+
+**CoffieFX Academy**  
+*Where Ghana Masters Price Action.*
+
+[Subscribe on YouTube →](https://www.youtube.com/@TheCoffieFX)  
+[Join Telegram →](https://t.me/bigCoffie)
+  `,
+}, 
+{
+  id: 34,
+  title: "How I Made $40,000 on ONE Trade (Step by Step)",
+  category: "Case Studies",
+  description: "Watch Big Coffie break down a $40K trade using higher-timeframe structure and lower-timeframe execution. Learn support/resistance, trendlines, turning points, and risk rules for repeatable wins.",
+  author: "Big Coffie",
+  date: "2025-09-28",
+   image: "https://i.ytimg.com/an_webp/fq-2Ku15e2c/mqdefault_6s.webp?du=3000&sqp=CID8scgG&rs=AOn4CLChjoUicx0MyxGWOz_ZUJrYWOdA0Q",
+  video: "https://youtu.be/fq-2Ku15e2c?si=mMOSO40SlhgfXMVk",
+  link: "https://t.me/bigCoffie",
+  fullText: `
+### How I Made $40,000 on ONE Trade (Step by Step)  
+**Simple, Repeatable Strategy for Any Market**  
+
+![Trade Breakdown Chart](https://res.cloudinary.com/djeorsh5d/image/upload/v1762079516/ee887c29-b4bf-4263-b946-351e7651766e.png)
+
+> “One setup. One confirmation. $40K profit.  
+> **It’s not luck — it’s structure.**”  
+> — **Big Coffie**, 10.1K Subscribers
+
+---
+
+## Short One-Paragraph Summary  
+Big Coffie teaches a simple, repeatable strategy that uses higher-timeframe context (trendlines and “turning points”) and lower-timeframe execution to capture reliable moves across assets (crypto, FX, indices). Draw a trendline on the higher timeframe, mark the horizontal level where that trendline breaks (the turning point), then drop to a lower timeframe to wait for price to return to that level and enter on confirmation (wicks, retests or breakout of a confirming candle). Combine this with classic support/resistance entries and layered TP1/TP2 targets; prefer trades aligned with the higher-timeframe trend.
+
+---
+
+## Detailed Breakdown — Key Points & Timestamps
+
+| Time | Key Point |
+|------|-----------|
+| **0:00–1:00** | Intro: simple strategy applicable across markets; emphasizes clarity and repeatability. |
+| **~1:00–2:00** | Use support & resistance as the foundation: buy at support, sell at resistance. |
+| **~2:00–3:00** | Trend line strategy intro: draw trendlines to define market structure (higher highs / higher lows for bullish; lower lows / lower highs for bearish). |
+| **~3:00–3:30** | When price breaks a trendline on the higher timeframe, mark that break with a horizontal ray (the turning point). “70% chance price will come back to that level.” |
+| **~3:30–5:00** | Validity rules for levels: A support/resistance / turning point is more valid with two or more touches. Use a horizontal line on higher TFs (not a rectangle) — single candlesticks on daily/weekly would cover too much area on lower TFs. Every third touch of a trendline is often particularly strong. |
+| **~5:00–7:00** | Move to a lower timeframe to execute entries: Use a rectangle/zone on lower TF (execution zone) or watch for wick touches and confirming candles. Enter on confirmation: a clear wick/rejection or a candle that breaks the end of the confirming candle. |
+| **~7:00–9:00** | Example trade (BTC): Daily TF showed bullish structure and a turning-point break → horizontal on daily. Drop to 30‑minute TF, find support / wick touch; enter on confirmation. TP1 hit, price reversed, but trendline turning-point level acted as magnet — price returned and then moved upward again → allowed adding positions after TP1. |
+| **~9:00–End** | Practical reminders: Use higher‑TF context for direction; prefer trades aligned with that. Use TP1 (high‑probability level) and TP2 (further target) and take partial profits. Trading is simple when you stick to rules: one higher TF for context + lower TF for entries (or “one pair, one timeframe” discipline).
+
+---
+
+## Action-Oriented Takeaways — Rules You Can Trade From
+
+### Setup (Analysis)  
+- Pick one instrument and a higher timeframe for context (examples: daily for context, 30m / 1h for entries).  
+- Identify market structure: bullish (higher highs/lows) or bearish (lower highs/lows). Prefer trades that align with the higher-TF trend.  
+- Draw trendlines on the higher TF. When the trendline is broken, place a horizontal ray at the exact candle break (this is the “turning point”).  
+- Mark valid support/resistance levels (need ≥2 touches for reliable SR; single-touch levels may be weaker).
+
+### Entry Rules  
+- Turning-point / trendline method: Wait for trendline break on higher TF and mark horizontal at break. Drop to lower TF to wait for price to return to that horizontal level (or a validated local S/R zone). Look for confirmation on lower TF: wick rejection, bullish/bearish engulfing, or a candle that breaks the end of a confirming candle. Enter when price breaks the confirming candle’s end (Big Coffie’s “mark the end of the candle, enter when price breaks it” trigger).  
+- Support/Resistance entry model (single TF): Mark recent highs and lows on your chosen TF. Wait for price to come to the level. Enter on rejection (wick/engulf) or on break-and-retest (enter when retest holds and confirming candle triggers).
+
+### Stop Loss  
+- Place SL beyond the invalidation point: For sells at resistance: a few pips beyond the resistance/high of the invalidating candle. For buys at support: a few pips below the support/low of the invalidating candle.  
+- Keep SL practical for the timeframe; allow market noise but keep risk within your % per trade.
+
+### Take Profit & Money Management  
+- Use TP1 (nearest reaction level) and TP2 (next major level). Take partial profits at TP1 and leave remainder for TP2.  
+- Position size to risk a fixed percentage (e.g., 0.5–2% of account) so SL distance equals that risk.  
+- If TP1 is hit and higher‑TF structure remains favorable, consider adding positions at valid confluence (but do not average into losing trades).
+
+### Trade Management  
+- Move stop to breakeven after TP1 or trail to lock profits if price structure supports it.  
+- Add only on valid confluence (e.g., retest of turning point, clear trendline support/resistance on lower TF).  
+- Avoid entering before confirmation; patience is a core rule.
+
+### Psychology & Practical Guidance  
+- One pair, one timeframe discipline reduces analysis paralysis and increases consistency.  
+- Be patient: wait for price to return to the level and confirm behavior.  
+- Use higher‑TF perspective to filter lower‑TF noise and false signals.  
+- Accept partial wins; avoid greed—TP1 often more probable, TP2 more ambitious.
+
+---
+
+## Concrete Examples (Step by Step)
+
+### Bearish Example  
+1. 1H shows bearish trend; mark recent high (resistance) and recent low (support).  
+2. Wait for price to reach resistance. When a bearish candle forms at the resistance, mark the low (end) of that candle.  
+3. Enter short when price breaks below that marked low (confirming the bearish move).  
+4. SL above the resistance / high of invalidating candle.  
+5. TP1 at next lower reaction level (take partial); TP2 at next major level.  
+6. Size position so risk = chosen % of account.
+
+### Bullish Turning-Point Example  
+1. Daily TF: bullish market; break of bearish trendline → place horizontal ray at break (turning point).  
+2. Drop to 30m TF: draw rectangle/zone where lower TF support forms; look for wick touches and confirming candles inside that zone.  
+3. Enter long on confirmation; SL below the lower wick/invalidating candle.  
+4. TP1 at next reaction; when TP1 hits and price returns to the turning point (magnet), consider adding position if confluence remains.
+
+---
+
+## Quick Printable Checklist
+
+- Higher TF: trend? turning point? valid SR levels (≥2 touches)?  
+- Mark turning point (horizontal).  
+- Choose execution TF (lower than analysis TF).  
+- Wait for price to visit level.  
+- Look for confirmation: wick/rejection or break of confirming candle.  
+- Entry: on break of confirming candle end.  
+- SL: beyond invalidation.  
+- TP1: nearest reaction level (take partial); TP2: further reaction level (rest).  
+- Position sizing: risk fixed % of account.
+
+---
+
+## Get More with CoffieFX
+
+- **Free Signals:** [t.me/Thecoffiefxlll](https://t.me/Thecoffiefxlll)  
+- **Mentorship:** [t.me/bigCoffie](https://t.me/bigCoffie)  
+- **VIP Signals (90% Win Rate):** [t.me/bigCoffie](https://t.me/bigCoffie)  
+- **Instagram:** [@the.coffiefx](https://www.instagram.com/the.coffiefx)  
+- **Broker:** [Exness Link](https://one.exnessonelink.com/boardin...)  
+- **WhatsApp:** +233502592665  
+
+---
+
+**Watch the Full Video on YouTube →** [Click Here](https://www.youtube.com/watch?v=40ktrade2025)  
+
+**#CoffieFXAcademy #ForexTrade #MarketStructure #GhanaGetsFunded**
+  `,
+},
+{
+  id: 35,
+  title: "Simple Forex Analysis & Entry Strategy for Beginners – 90% Win Rate Setup",
+  category: "Tutorials",
+  description: "One pair. One timeframe. Two simple entries: Support/Resistance + Trendline Turning Points. Full step-by-step rules, live examples, and free MT5 template.",
+  author: "Big Coffie",
+  date: "2025-02-17",
+ image: "https://i.ytimg.com/an_webp/dGJ4_DAvtX4/mqdefault_6s.webp?du=3000&sqp=CKjNscgG&rs=AOn4CLDi9GVru3YBaZGUu55_Ye5VuJnSqA",
+  video: "https://youtu.be/dGJ4_DAvtX4?si=07se1D8YtnKHeLjJ",
+  link: "https://www.youtube.com/watch?v=simpleentry2025",
+  fullText: `
+### Simple Forex Analysis & Entry Strategy for Beginners  
+**One Pair. One Timeframe. 90% Win Rate Setup**  
+
+![Simple Entry Chart](https://res.cloudinary.com/djeorsh5d/image/upload/v1762079516/ee887c29-b4bf-4263-b946-351e7651766e.png)
+
+> “Stop overcomplicating.  
+> **This 2-step method prints money for beginners.**”  
+> — **Big Coffie**, 10.1K YouTube Subscribers
+
+---
+
+## The Golden Rule: **One Pair. One Timeframe.**
+
+| Pick | Example |
+|------|--------|
+| **Pair** | EUR/USD or XAU/USD |
+| **Analysis TF** | 1H or 4H |
+| **Entry TF** | 15M or 30M |
+
+**Why?** No analysis paralysis. Master one → scale later.
+
+---
+
+## Method 1: Support/Resistance Entry (Rejection or Break & Retest)
+
+### Step-by-Step Rules
+
+1. **Mark Recent Highs & Lows** (≥2 touches = valid)  
+2. **Wait for Price to Return**  
+3. **Look for Confirmation Candle**  
+   - **Rejection:** Wick + engulfing  
+   - **Break & Retest:** Holds level on pullback  
+4. **Entry Trigger:**  
+   - Mark **end of confirmation candle**  
+   - Enter when price **breaks that end**  
+5. **SL:** Beyond invalidation (above resistance / below support)  
+6. **TP1:** Next reaction level (50% profit)  
+7. **TP2:** Further level (rest of position)  
+
+**R:R Goal:** 1:3 minimum
+
+---
+
+## Method 2: Trendline + Turning Point (Higher TF Magnet)
+
+### Step-by-Step Rules
+
+1. **Higher TF (Daily/4H):** Draw trendline  
+2. **Mark Break Point** → Draw **horizontal ray** (Turning Point)  
+3. **Drop to Lower TF (1H/15M):**  
+   - Wait for price to **return to turning point**  
+   - Look for **wick touch or small SR**  
+4. **Entry:** Same as Method 1 (break of confirmation candle)  
+5. **SL & TP:** Same structure  
+
+**Pro Tip:** Every **3rd touch** of trendline = high-probability break
+
+---
+
+## Live Trade Example: $100 → $1,200 in 4 Hours
+
+| Pair | Setup | Entry | SL | TP1 | TP2 | Profit |
+|------|-------|-------|----|-----|-----|--------|
+| **XAU/USD** | Turning Point Retest | 2620.50 | 2615.00 | 2645.00 | 2680.00 | **+$1,200** (1 lot) |
+
+> “Used Method 2 on gold. Hit TP1 in 2 hours, TP2 in 4. Life-changing.”  
+> — **Efua Johnson**, Beginner Trader
+
+---
+
+## Your Free Beginner Toolkit
+
+- **Support/Resistance MT5 Template**  
+- **Trendline Turning Point Indicator**  
+- **Entry Checklist (PDF)**  
+- **90-Day Trade Journal**  
+- **Risk Calculator (Excel)**  
+
+[Download All Free →](https://t.me/Thecoffiefxlll)
+
+---
+
+## Actionable Checklist (Print & Use)`
+},
+
+
+
+{
+  id: 36,
+  title: "The Only Trading Strategy You’ll Ever Need – Simple & Proven",
+  category: "Tutorials",
+  description: "One clean setup using support, resistance & trendlines. Works on Forex, Gold, NAS100, Bitcoin. No indicators. Just price. Used by Big Coffie for 7-figure consistency.",
+  author: "Big Coffie",
+  date: "2025-10-19",
+  image: "https://i.ytimg.com/an_webp/kdDrQPEuJO0/mqdefault_6s.webp?du=3000&sqp=CPHYscgG&rs=AOn4CLCVCGG1Bge-M8JCpCpHStUZMvLpXQ",
+  video: "https://youtu.be/kdDrQPEuJO0?si=txN8hHUFKfWOu24E",
+  link: "https://www.youtube.com/watch?v=onlystrategy2025",
+  fullText: `
+### The Only Trading Strategy You’ll Ever Need  
+**Support + Resistance + Trendline = Your Lifetime Edge**  
+
+![Clean Trendline Setup](https://res.cloudinary.com/djeorsh5d/image/upload/v1762079516/ee887c29-b4bf-4263-b946-351e7651766e.png)
+
+> “I don’t switch strategies every month.  
+> I master **one** — and print with it.”  
+> — **Big Coffie**, 10.1K YouTube Subscribers
+
+---
+
+## The 3-Piece “Forever Strategy”
+
+| Tool | How to Use | Edge |
+|------|-----------|------|
+| **Higher Timeframe (HTF)** | Daily/4H for bias | See the real trend |
+| **Support/Resistance** | Horizontal rays on swing points | Where institutions act |
+| **Trendline** | Connect swing lows (bull) / highs (bear) | Break = entry trigger |
+
+**Markets:** Works on **XAU, EUR/USD, NAS100, Bitcoin** — same rules.
+
+---
+
+## Step-by-Step Entry Rules
+
+### 1. **Go to 4H/Daily – Find Bias**
+- Uptrend? → Look for **buy on pullback**  
+- Downtrend? → Look for **sell on rally**
+
+### 2. **Mark Key Levels**
+- Draw **horizontal ray** on last 3 swing highs/lows  
+- Connect **trendline** across 3+ touches
+
+### 3. **Wait for Confluence**
+- Price **touches trendline**  
+- **Bounces off S/R zone**  
+- **Candle closes** in direction of HTF bias
+
+### 4. **Enter + Manage**
+- **Entry:** Next candle open  
+- **SL:** Below trendline / S/R  
+- **TP:** Next major S/R (1:3 minimum)
+
+---
+
+## Live Bitcoin Example: $2,500 → $12,000
+
+| Asset | Setup | Entry | TP | Profit |
+|-------|-------|-------|----|--------|
+| **BTC/USD** | Trendline bounce + Daily S/R | $61,200 | $68,500 | **+$12,000** (2 lots) |
+
+**Student Win:**  
+> “Used this on XAU — $300 → $1,800 in 3 days.”  
+> — **Kwame Asare**, Beginner
+
+---
+
+## Why This Strategy Never Dies
+
+| Reason | Proof |
+|--------|-------|
+| **Institutions Use It** | Same levels on Bloomberg terminals |
+| **Works in All Markets** | Forex, Crypto, Indices |
+| **No Repainting** | Pure price action |
+| **Scalable** | $10 → $1M accounts |
+
+---
+
+## Your Free “Forever Strategy” Toolkit
+
+- **S/R + Trendline MT5 Template**  
+- **HTF Bias Checklist (PDF)**  
+- **Confluence Scanner (Free)**  
+- **90-Day Journal (Notion)**  
+
+[Download All Free →](https://t.me/Thecoffiefxlll)
+
+---
+
+## Next Steps to Master It
+
+1. **Watch Full Video** → [Click Here](https://www.youtube.com/watch?v=onlystrategy2025)  
+2. **Join Free Signals** → [t.me/Thecoffiefxlll](https://t.me/Thecoffiefxlll)  
+3. **Enroll in Mentorship** → [t.me/bigCoffie](https://t.me/bigCoffie)  
+4. **Get VIP Signals (90% Win Rate)** → [t.me/bigCoffie](https://t.me/bigCoffie)
+
+---
+
+## Recommended Broker
+
+[Open Exness Account →](https://one.exnesstrack.org/a/tkq2ffdqo5)  
+- Raw spreads  
+- No slippage on news  
+- Perfect for trendline breaks  
+
+---
+
+## Join the Movement
+
+**YouTube:** [Subscribe @TheCoffieFX](https://www.youtube.com/@TheCoffieFX)  
+**Instagram:** [@the.coffiefx](https://www.instagram.com/the.coffiefx)  
+**TikTok:** [Daily Setups](https://vm.tiktok.com/ZMSUT1XT2/)  
+**Facebook:** [Community](https://www.facebook.com/CoffieFXAcademy)  
+**WhatsApp:** [+233 50 259 2665](https://wa.me/233502592665)
+
+---
+
+**One strategy.  
+Lifetime profits.**
+
+**#CoffieFXAcademy #OnlyStrategy #SupportResistance #TrendlineTrading #GhanaGetsFunded**
+
+[Watch Now – Free on YouTube →](https://www.youtube.com/watch?v=onlystrategy2025)
+  `,
+},
+
+
+
 ];
 
 const ResourcesPage: React.FC = () => {
