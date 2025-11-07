@@ -4,8 +4,7 @@
 import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 import { Filter, ChevronDown } from "lucide-react";
-import { resources } from "../../Pages/Resources/Resources";
-
+import { resources } from "../../assets/data/data";
 interface ResourceFilterProps {
   selectedCategory: string;
   setSelectedCategory: (cat: string) => void;

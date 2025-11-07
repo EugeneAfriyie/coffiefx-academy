@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import ResourceModal from "./ResourceModal";
 import { Calendar, User } from "lucide-react";
 
-interface Resource {
+export interface Resource {
   id: number;
   title: string;
   category: string;

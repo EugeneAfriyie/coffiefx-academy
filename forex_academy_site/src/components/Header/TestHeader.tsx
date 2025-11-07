@@ -32,7 +32,8 @@ const TypewriterText: React.FC = () => {
     const deletingSpeed = 60;
     const pauseDuration = 1500;
 
-    let timer: NodeJS.Timeout;
+    // let timer: NodeJS.Timeout;
+    let timer: ReturnType<typeof setTimeout>;
 
     if (phase === "typing-h1") {
       if (h1Text.length < current.h1.length) {
