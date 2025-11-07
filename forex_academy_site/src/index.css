@@ -52,3 +52,22 @@ html {
 .text-glow {
   text-shadow: 0 0 10px rgba(147, 200, 0, 0.815);
 }
+
+
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-pulse {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(0, 200, 150, 0.5);
+}
+
+.gold-glow {
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+}

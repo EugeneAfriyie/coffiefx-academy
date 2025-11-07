@@ -338,7 +338,7 @@ export default function CoffieFXSmartQuiz() {
             Which CoffieFX Program Fits You?
           </h2>
           <p className="text-xl text-[#ffffffcc] max-w-3xl mx-auto">
-            Answer 5 questions — get your **personalized plan** with Big Coffie (in-person or online).
+            Answer 5 questions — get your personalized plan with Big Coffie (in-person or online).
           </p>
         </div>
 

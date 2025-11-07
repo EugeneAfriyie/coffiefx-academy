@@ -92,7 +92,7 @@ export default function CoffieFXImpact() {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="text-xl text-[#ffffffcc] max-w-3xl mx-auto mb-16"
         >
-          From **small accounts to big wins** — we’ve helped thousands flip, scale, and master the markets with **The CoffieFX Strategy**.
+          From small accounts to big wins — we’ve helped thousands flip, scale, and master the markets with The CoffieFX Strategy.
         </motion.p>
 
         {/* Stats Grid */}
