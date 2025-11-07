@@ -4,7 +4,7 @@
 import { Helmet } from "react-helmet-async";
 
 const siteUrl = "https://coffiefx-academy.web.app";
-const ogImage = "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762302755/SnapInsta.to_486315081_18056517722161244_2095643982265963332_n_yhpgbg.jpg";
+const ogImage = "https://res.cloudinary.com/djeorsh5d/image/upload/v1762081423/25f42861-0895-42fa-b3e9-87ebc41265fe.png";
 const logo = "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762305109/0103d37d-afc1-4517-bece-5901e53d5931.png";
 
 export const HomeHelmet = () => (
