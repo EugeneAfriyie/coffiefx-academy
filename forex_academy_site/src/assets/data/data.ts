@@ -13,6 +13,56 @@ import type { Resource } from "../../components/Resources/ResourceGrid";
 
 
 export const resources = [
+
+  {
+  id: 16,
+  title: "Exness Forex Seminar Highlights – Strategy, Q&A, Giveaways & More",
+  category: "Announcements",
+  description: "Big Coffie + 7 top traders (Koman Forex, Freeman Forex, Cwesi Forex, Rick FX, Eram Dela, Stanle Forex) and Exness deliver live strategy development, open Q&A, and exclusive giveaways for 250+ young traders.",
+  author: "Big Coffie & Multi-Trader Panel",
+  date: "2025-11-01",
+  image: "https://res.cloudinary.com/dzqdfaghg/image/upload/v1762240590/photo_2025-11-01_03-45-41_zzm44t.jpg",
+  video: "https://player.cloudinary.com/embed/?cloud_name=dzqdfaghg&public_id=SnapInsta.to_AQMpQmG3g_9Al3k25-LfRZkEq6JEbtpWYT-fVyNlGZ8o4QiDlxfqsAJG0CKq2U0YB4ama5M5g9AoYTx7akojN20A0S-8_Btwq23_3t0_iq74ns&profile=cld-default",
+  link: "https://t.me/bigCoffie",
+  fullText: `
+# Exness Forex Seminar – Strategy, Q&A, Giveaways & Networking
+**National Theatre, Accra – November 1, 2025**
+
+![Event Flyer](https://res.cloudinary.com/dzqdfaghg/image/upload/v1762240590/photo_2025-11-01_03-45-41_zzm44t.jpg)
+
+**Featuring:**  
+Big Coffie (CoffieFX), Koman Forex, Freeman Forex, Cwesi Forex, Rick FX, Eram Dela, Stanle Forex & **Exness**
+
+---
+
+### What You Get in This Event
+
+| Focus Area | What Happened |
+|------------|---------------|
+| **Strategy Development** | Live Break & Retest demo on EUR/USD with real-time entries, multi-pair risk rules, NAS100 scalping, and small-account flipping strategies. |
+| **Open Q&A** | 250+ young traders asked real questions: "How to risk 1%?", "Best prop firm?", "How to avoid FOMO?" — answered live by all 8 experts. |
+| **Giveaways** | Free $50 online class vouchers, Exness $100 bonus codes, trading journals, and exclusive merch (t-shirts, notebooks). |
+| **Networking** | Connect with top Ghanaian traders, Exness reps, and funded account holders — build your trading circle. |
+| **Exness Edge** | 0.0 pip spreads, instant MoMo withdrawals, $200K challenge walkthrough — all shown live. |
+
+---
+
+### Why It Matters
+- **Beginner-Friendly:** Start with $50, learn from 8 pros in one room.  
+- **Actionable:** Walk away with templates, signals, and a funded path.  
+- **Community-Powered:** Ghana traders leveling up together.
+
+---
+
+### Watch the Full Highlight Video
+See Big Coffie call beginners on stage, run live trades, and celebrate with the crowd.
+
+[Join Telegram for Free Signals →](https://t.me/bigCoffie)  
+[Open Exness Account →](https://one.exnesslink.com/a/coffiefx)
+
+#ExnessSeminar #Strategy #QA #Giveaways #GhanaForex #CoffieFX
+  `.trim(),
+},
   // ──────────────────────────────────────────────────────────────
   // 1. ANNOUNCEMENT – COFFIEFX ACADEMY OPENING (EAST LEGON)
   // ──────────────────────────────────────────────────────────────

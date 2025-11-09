@@ -16,6 +16,7 @@ import Testimonials from '../../components/Testimonials/Testimonials';
 import JoinCommunity3D from '../../components/Home/JoinCommunity/JoinCommunity3D';
 import { HomeHelmet } from '../../components/HelmetTags/HelmetTags';
 import CoffieFXFAQSection from '../../components/Home/FAQSection/CoffieFXFAQSection';
+import SeminarHighlight from '../../components/Home/SeminarHighlight/SeminarHighlight';
 
 const Home: React.FC = () => {
   return (
@@ -29,6 +30,7 @@ const Home: React.FC = () => {
       <Hero />
       <Services />
       <AboutMentor />
+      <SeminarHighlight />
       <WhatIsForex />
       <Quotes />
        <WhyForex />
